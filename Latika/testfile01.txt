@@ -1,0 +1,14 @@
+Hi Learning day 02 
+
+>  git status (new file will show in red color)
+
+->  git add <filename>
+->  git status (New file will show in green color)
+
+-> git commit -m "Adding file to git"
+->  git push
+######################
+If your push is rejected, then first perform pull operation
+
+->  git pull 
+->  close git edit with :wq and hit enter
