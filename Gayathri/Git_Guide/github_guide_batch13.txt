@@ -1,0 +1,44 @@
+# Clone common repo on local system.
+
+-> Install git client on system.
+https://github.com/git-for-windows/git/releases/download/v2.51.0.windows.2/Git-2.51.0.2-64-bit.exe
+
+
+-> Create a folder on C driver with name PythonAutomation
+
+-> Open terminal and run clone command
+   -> git clone https://github.com/sqatools/GTM_PS_BATCH13.git
+
+->  Once clone is successful, then create a folder with your name
+    inside repository folder on local system.
+
+->  Add file inside the folder.
+
+->  Navigate to Terminal again and navigate to GTM_PS_BATCH13 repo folder.
+
+->  Run command to check status.
+    ->  git status (New file will show in red color)
+
+->  Run add command to add file to git
+    -> git add <Filename/filepath>
+
+->  Check status again.
+    -> git status  # New file will show in green color.
+
+->  Run commit operation
+    ->  git commit -m "commit message"
+
+->  Run push operation.
+    ->  git push # It will push local code to the server.
+
+->  If push operation is rejected, then update the code local 
+    ->  git pull 
+    # It will open git editor then close the git editor with command :wq
+
+->  Then re-initiate git push operation.
+
+-> 
+
+    
+
+
