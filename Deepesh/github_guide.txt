@@ -1,0 +1,23 @@
+->  Create GitHub account
+->  Create Git Repository
+->  Install git client on local system.
+->  Open git terminal 
+->  clone repository with command
+    ->  git clone <giturl>
+
+->  create a new file in repository folder
+->  check the status on terminal with command
+    # git status  # new file will show in red color
+
+->  Add file to git with command 
+    # git add <Filename/file_path>
+
+
+->  Initiate git operation
+    # git commit -m "Add git message"
+
+
+->  Perform push operation with command 
+   # git push  (First time it will ask for autherization)
+
+->  once the git push is successful files will be available on GitHub server
