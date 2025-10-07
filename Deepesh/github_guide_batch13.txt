@@ -1,0 +1,99 @@
+# Clone common repo on local system.
+
+-> Install git client on system.
+https://github.com/git-for-windows/git/releases/download/v2.51.0.windows.2/Git-2.51.0.2-64-bit.exe
+
+
+-> Create a folder on C driver with name PythonAutomation
+
+-> Open terminal and run clone command
+   -> git clone https://github.com/sqatools/GTM_PS_BATCH13.git
+
+->  Once clone is successful, then create a folder with your name
+    inside repository folder on local system.
+
+->  Add file inside the folder.
+
+->  Navigate to Terminal again and navigate to GTM_PS_BATCH13 repo folder.
+
+->  Run command to check status.
+    ->  git status (New file will show in red color)
+
+->  Run add command to add file to git
+    -> git add <Filename/filepath>
+
+->  Check status again.
+    -> git status  # New file will show in green color.
+
+->  Run commit operation
+    ->  git commit -m "commit message"
+
+->  Run push operation.
+    ->  git push # It will push local code to the server.
+
+->  If push operation is rejected, then update the code local 
+    ->  git pull 
+    # It will open git editor then close the git editor with command :wq
+
+->  Then re-initiate git push operation.
+
+######################################### Multi Branching  ############################
+
+-> Create New Branch from server
+   ->  Go to main branch dropdown
+   ->  Click on all view branches
+   ->  New branch ->  provide branch e.g feature_branch
+
+    
+->  Open git terminal on local system and run git pull  command
+    # It will update the code repo and get all the branches from server.
+
+
+->  Switch to new branch
+
+    ->  check current active branch with "git branch" ->  It will main as active branch
+        in green color
+    ->  switch to new branch with command "git checkout <branch_name>"
+    ->  User will switch to new branch
+    ->  Check current active branch with command "git branch"
+    ->  New branch should show in green color and active branch.
+
+->  Add some new files to new branch.
+
+    -> Gi to Local to folder in repository with your name 
+    ->  Create a text file and add some content
+    ->  Back to terminal and follow steps to push file to server
+        ->  git status
+        ->  git add <file_name>
+        ->  git commit -m "Adding file to git branch"
+        ->  git push
+
+    ->  Newly added file will push to server in your branch.
+    ->  Go to git hub server and verify new added file should be available in dedicated 
+        branch.
+
+
+
+->  Create a pull Request and Add Review Comment
+    ->  Go to your branch on server
+    ->  There is green button visible "Create Pull Request" on top and click on it
+    ->  Provide code description and evidence of feature implementation
+    ->  Add reviewers -> from right side reviews section -> click on gear button
+    ->  Select the users
+    ->  Click on "Create Pull Request"  green Button in bottom.
+    ->  Every reviewer will receive email to review the code.
+    ->  Review has to review code and provide review or any code that is not looking good.
+    
+
+->  Get Approval in pull and Request and Merge changes.
+    ->  Review has to provide approval in the pull request from right side button
+        code review
+    ->  Select Approve option and click on submit
+    ->  Once the is approve, user can merge code changes.
+        
+
+
+
+  
+
+
