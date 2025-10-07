@@ -1,2 +1,22 @@
 Learning multibranching
 
+Use branches to keep separate lines of development and create as many as you need. Basic multibranch workflow (command line + GitHub):
+
+Start from the branch you want to branch off (usually main):
+Update local repo: git pull
+Create and switch to a new branch:
+git branch BRANCH-NAME
+git checkout BRANCH-NAME
+Or in one step: git checkout -b BRANCH-NAME
+Make changes, stage and commit:
+git add . (or specific files)
+git commit -m "short description of change"
+Push the branch to GitHub:
+First push (set upstream): git push --set-upstream origin BRANCH-NAME
+Subsequent pushes: git push
+Repeat steps 2–4 to create and work on additional branches (feature branches, topic branches).
+Keep branches up to date with remote changes:
+Switch to the target branch (e.g., main) and git pull
+Merge or rebase changes into your feature branch as needed (use git merge from the branch you want to update)
+Open a pull request on GitHub to merge a branch into the base branch (maintainers should review). After merging on GitHub, delete merged branches to keep the repo clean.
+If you use GitHub Desktop, create and switch branches via the Current Branch menu, commit locally, then push (or use Branch → Squash and Merge into Current Branch when appropriate), and use Fetch/Pull (Fetch origin / Pull origin) to keep local branches updated.
