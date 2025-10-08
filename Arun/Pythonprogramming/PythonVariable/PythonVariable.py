@@ -9,3 +9,15 @@ print('b')
 
 
 print("good morning")
+x=8
+y=9
+print(x,y)
+print("good")
+
+print("Good evening")
+
+x=6
+y=8
+Print("value of x")
+
+
