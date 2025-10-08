@@ -19,7 +19,7 @@ print ("print:", z)
 
 print(x, y, z)
 
-#Sinle  varibale multiple value
+#Single varibale multiple value
 
 p=q=r= 100
 
