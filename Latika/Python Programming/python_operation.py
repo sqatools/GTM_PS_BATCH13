@@ -58,7 +58,7 @@ print("Division with double // of a1//a2",a1//a2)
 print("Remainder")
 print("Remainder value ", a1%a2)
 
-print("Power opeartor **")
+print("Power operator **")
 print("Square of 5:",5**2)
 print("Cube of 3:",3**3)
 
