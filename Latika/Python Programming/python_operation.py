@@ -1,4 +1,7 @@
-#If the variable value is same, the their address is also same.
+
+print("Python Learning Session with Basic Arithmatic Operations")
+
+print("If the variable value is same, the their address is also same.")
 A=50
 B=60
 C=50
@@ -7,11 +10,11 @@ print("Value of B",B,id(B))
 print("Value of C",C,id(C))
 
 
-#Rules to declare variables
+print("Rules to declare variables")
 
-#1. There should not be space in the variable name
-#var 123=50     #invalid
-var_123=50      #valid
+print("#1. There should not be space in the variable name")
+print("#var 123=50     #invalid")
+print("var_123=50      #valid")
 
 #2. Can not start variable name with numer
 #1_var=60    #invalid
@@ -58,7 +61,7 @@ print("Division with double // of a1//a2",a1//a2)
 print("Remainder")
 print("Remainder value ", a1%a2)
 
-print("Power opeartor **")
+print("Power operator **")
 print("Square of 5:",5**2)
 print("Cube of 3:",3**3)
 
