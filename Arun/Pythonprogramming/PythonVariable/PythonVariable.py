@@ -1,3 +1,4 @@
+
 x, y, z = 50, 60, 70
 print("value of x:", x)  # value of x : 50
 print("value of y:", y)  # value of y : 60
@@ -18,6 +19,6 @@ print("Good evening")
 
 x=6
 y=8
-Print("value of x")
+#print("value of x")
 
 
