@@ -1,3 +1,5 @@
+#Class - 2 - 09-10-2025
+
 #below are the rules for varable names
 # 1. There should not be space in variable name
 # var 123 = 50  # invalid varaible as theer is a space
