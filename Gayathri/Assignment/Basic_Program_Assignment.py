@@ -1,3 +1,6 @@
+#Assignment 1 -
+# 9-Oct -25
+
  #1. Python Program to add two integer values.
 i = 55
 j = 20
@@ -102,6 +105,15 @@ y = 20
 x, y = y, x
 print("value of x now is : ",x)
 print("value y is :", y)
+
+##### method 3 ###############
+i = 10
+j = 20
+i = i + j #30
+j = i - j # 10
+i = i - j # 20
+print("value of i now is : ",i)
+print("value of j now is :", j)
 
 #9. Python program to solve this Pythagorous theorem.
 #Theorem : (a2 + b2 = c2)
