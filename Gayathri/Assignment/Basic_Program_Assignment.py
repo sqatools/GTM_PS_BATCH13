@@ -107,10 +107,10 @@ print("value y is :", y)
 #Theorem : (a2 + b2 = c2)
 a = 2
 b = 3
-value  = (a** 2) + (b**2)
-print("value of c is : ",value)
+c_value  = (a** 2) + (b**2)
+print("value of c is : ",c_value)
 #get the c2
-c2 = value ** 2
+c2 = c_value ** 2
 print("value of c is : ",c2)
 
 #10). Python program to solve the given math formula.
