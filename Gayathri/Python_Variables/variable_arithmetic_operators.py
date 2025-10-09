@@ -1,4 +1,4 @@
-#Class - 2 - 09-10-2025
+#Class - 2 Variables - 09-10-2025
 #############Variable Operations#########################
 
 #1. Arithmetic operation (+)

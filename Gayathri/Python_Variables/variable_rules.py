@@ -1,4 +1,4 @@
-#Class - 2 - 09-10-2025
+#Class - 2 Variables- 09-10-2025
 
 #below are the rules for varable names
 # 1. There should not be space in variable name
