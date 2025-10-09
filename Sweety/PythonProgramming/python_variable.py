@@ -1,5 +1,5 @@
 a = 10
-# a : varible name
+# a : variable name
 # = : assignment operator
 # 10 : value hold by variable
 
@@ -21,4 +21,3 @@ p = q = r = 100
 print("p:", p)
 print("q:", q)
 print("r:", r)
-
