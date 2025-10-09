@@ -40,3 +40,39 @@ else:
     {
         print("both values are different")
     }
+
+####################### questions #########################
+# (a+b)^2 = a^2 + b^2 + 2ab
+a = 2
+b = 4
+lhs = (a+b)**2
+rhs = a**2+b**2+2*a*b
+print(lhs)
+print(rhs)
+print(lhs==rhs)
+
+######################## Rule to delare variable ######################
+
+# 1. There should not be space in the variable
+#num 1 = 50 invalid
+num_1 = 50 #valid
+
+# 2. Cannot start variable name with number
+#1num = 50 invalid
+num_1 = 50 #valid
+
+# 3. There is no limit for variable name
+this_is_python_programming = 22
+
+# 4. Variable name can not contain special character except _
+#num%1 = 50 invalid
+num_1 = 50 #valid
+
+# 5. Variable name are case sensitive
+City = "Mumbai"
+city = "Bangaluru"
+CITY = "Hydrabad"
+citY = "Chennai"
+
+print(City, city, CITY, citY)
+
