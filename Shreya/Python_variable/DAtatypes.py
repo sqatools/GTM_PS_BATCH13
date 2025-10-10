@@ -1,7 +1,7 @@
 '''
 Datatypes in python:
-Integer
-Seuential
+Numbers: Integer,complex,float.
+Sequential: string,list,tuple
 Dictionary
 Set
 Boolean
