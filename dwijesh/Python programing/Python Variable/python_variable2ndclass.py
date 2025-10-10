@@ -23,4 +23,4 @@ print(a_1,a_2,a_3,a_4,a_5,a_6,a_7)
 print(e,id(e),f,id(f))
 ################
 #ax^3+bx2+cx+d^2
-print(a*x**3+b*x**2+c*x+d**2)
+print(a*x**3+b*x**2+c*x+d **2)
