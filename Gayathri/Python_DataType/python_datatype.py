@@ -14,10 +14,11 @@
 5. Boolean
 """
 
-######################### Integer ##########################
+######################### Integer #########################
 """
 # Integer :  Properties
-1.  Integer is immutable data type
+1.  Integer is immutable data type - It can hold only one value, e.x if i had 100 rs first , then again i get 200 rs
+then latest value will be considered i.e 200
 2.  Integer only contains whole number.
 3.  There is no range limit for integer
 """
@@ -31,7 +32,7 @@ print("num2 :", num2,  type(num2)) # num2 : 400 <class 'int'>
 print("num3 :", num3,  type(num3)) # num3 : 543543534543543543543545543 <class 'int'>
 
 
-print("_"*50)
+print("_"*50) #here the __ will be repeated 50 times
 ######################### Float #########################
 """
 # Integer :  Properties
@@ -54,6 +55,7 @@ print("_"*50)
 # Integer :  Properties
 1.  Complex is immutable data type
 2.  Complex number is combination of real and imaginary number e.g. x+yj
+3. here j is mandatory and cant replace j with any other character
 """
 
 comp1 = 10 + 20j
@@ -130,3 +132,8 @@ print(s5[-5]) # y
 var1 = "P1y 2 Thon"
 print(var1[1])  # 1
 print(var1[4])  # 2
+
+##give this character for next line \n
+str1 = "Hello Gayathri \n Python"
+print(str1, type(str1))
+

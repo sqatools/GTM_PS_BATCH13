@@ -10,7 +10,7 @@ A= B = 70
 print("multiplication is:", A*B)
 #repeatation of the string 5 times
 Str1 = "SQATools"
-print(str1+str1)
+print(Str1*5)
 
 #Average of given numbers
 a=40
@@ -21,5 +21,11 @@ average = z//3
 print("Average is:", average)
 #Square and cube of numbers
 num1 = 9
-print("square of num is:", num1**2 )
-print("cube of num is:", num1**3 )
+print("square of num is:", num1**2)
+print("cube of num is:", num1**3)
+#interchanging  variables
+a= 10
+b= 20
+a,b = b,a
+print("value of a", a)
+print("value of b", b)
