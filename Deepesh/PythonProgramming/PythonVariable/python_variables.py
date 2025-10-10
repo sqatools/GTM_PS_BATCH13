@@ -13,7 +13,6 @@ print("value of q :", q)
 print("value of r :", r)
 
 
-
 ########### assign same value to multiple variables #######
 x = y = z = 100
 print(x, y, z) # 100 100 100
@@ -123,4 +122,6 @@ print("rhs :", rhs)
 
 print(lhs == rhs)  # True
 
+
+###################### Home work ############
 
