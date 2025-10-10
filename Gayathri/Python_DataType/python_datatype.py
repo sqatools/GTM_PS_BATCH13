@@ -135,5 +135,5 @@ print(var1[4])  # 2
 
 ##give this character for next line \n
 str1 = "Hello Gayathri \n Python"
-print(str1, type(str1) )
+print(str1, type(str1))
 
