@@ -1,0 +1,16 @@
+Branch merge 
+
+go to main branch dropdown
+click on all view branches
+then click on new branch -- provide the branch name
+
+open git terminal on local system and run git pull command
+switch to new branch
+check current active branch -- git branch
+switch to current active branch -- git checkout Latika_Branch
+git branch -- to check active branch
+add some file
+do add file
+commit
+push
+

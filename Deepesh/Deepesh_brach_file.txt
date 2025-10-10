@@ -1,0 +1,7 @@
+#Adding new file to feature branch
+
+num = int(input("Please enter value :"))
+if num%3 ==0:
+    print("Number is divisible by 3:", num)
+else:
+    print("Number is not divisible by 3 :", num)

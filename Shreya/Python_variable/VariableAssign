@@ -1,0 +1,14 @@
+num1 = 50
+num2 = 50
+sum = num1 + num2
+print("sum of both num is:", sum)
+
+x, y, z = 20, 50, 30
+sum1 = x + y + z
+print("valuwe of pis :", x)
+print("value of y is:",y)
+
+print("value of all variables is:", sum1)
+########################################################
+p = q = r = 50
+print(x, y, z)
