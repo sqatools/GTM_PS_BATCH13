@@ -14,7 +14,7 @@
 5. Boolean
 """
 
-######################### Integer #########################
+######################### Integer ##########################
 """
 # Integer :  Properties
 1.  Integer is immutable data type
