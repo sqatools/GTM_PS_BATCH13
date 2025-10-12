@@ -99,3 +99,13 @@ print("s1", s1, type(s1))
 print("s2", s2, type(s2))
 print("s3", s3, type(s3))
 
+s5 = "Python"
+
+"""
+0   1   2   3   4  5     +ve indexing
+ P   y   t   h   o  n
+-6   -5 -4  -3  -2  -1    -ve indexing
+"""
+print("s5", s5, s5[0])
+print("s5", s5, s5[-3])
+
