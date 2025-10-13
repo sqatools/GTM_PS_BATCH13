@@ -44,3 +44,52 @@ str1= "P Y T H O N"
 print("str[0]")
 print("str[-4]")
 
+#####  LIST #######
+#List is mutable data type
+
+list1=[1,2,4.5,"hello",[2,3],(8,9),{"a":123},True]
+print(list1,(type(list1)))
+print(list1[4])
+print(list1[5][0])
+
+list2=[20,[20,9],True]
+print(list2[1])
+print(list2[1][0])
+
+####### append -- used to add list##########
+list2.append(40)
+print(list2)
+
+############### TUPLE ##################
+#tuple is immutable
+#tup=()
+
+tup1=(4,3,8,'python',[3,7],(8,9),{'a':45})
+print(tup1,type(tup1))
+print(tup1[0])
+print(tup1[4][1])
+print(tup1[-1])
+print(tup1[-1]['a'])
+
+######### DICTIONARY ###############
+# Dict is mutable data type
+# dict={'Key':Value}
+
+dict={'a':123,'b':456,'c':324}
+print(dict)
+print(dict,type(dict))
+print(dict['a'])
+print(dict['b'])
+
+############# SET #################
+#Set is mutable
+
+set1={20,10,7.4,10+20j,"hello",True}
+print(set1)
+print(set1,type(set1))
+
+############### BOOLEAN ############
+var1=100
+var2=200
+print(var1>var2)
+print(var1<var2)
