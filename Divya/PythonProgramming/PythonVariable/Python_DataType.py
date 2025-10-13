@@ -37,3 +37,9 @@ print(s4,type(s4))
 s5 = "Programming"
 print(s5[0])
 print(s5[-6])
+
+
+set = {1,2.2,"Hi","GM"}
+print(set,type(set))
+
+
