@@ -91,8 +91,8 @@ print(val1==val3)
 
 ###########question Home work##############
 # (a+b)^2 = a^2 + b^2 + 2ab
-a=2
-b=4
+a=4
+b=6
 lhs=(a+b)**2
 rhs=a**2+b**2+2*a*b
 print("square of (a+b):",(a+b)**2)
