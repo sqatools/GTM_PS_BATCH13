@@ -198,8 +198,16 @@ Properties:
      if we mention the duplicate then it will only consider the latest defined value
      it means it will consider a = 789
      
-->  Only immutable data can be key in the dictionary e.g. int, float, string, tuple, boolean
+->  Only immutable data can be key in the dictionary e.g. int, float, complex,  string, tuple, boolean
    not allowed as key e.g. list, dict, set
+   e.g.
+   {1 : 'Python',
+    4.5 : [5, 7, 8],
+    5+60j : {'a': 345},
+    'Python' : (5, 7, 9),
+    True : {4, 7, 9, 1, 2}, 
+    (4, 7, 8) :  {'a': 678}
+    }
    
 -> Dict value can contain any types of data. e.g.  int, float, string, list, complex, tuple, set, boolean.
 -> Dict does not follow indexing.
