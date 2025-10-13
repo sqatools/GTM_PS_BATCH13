@@ -109,3 +109,114 @@ s5 = "Python"
 print("s5", s5, s5[0])
 print("s5", s5, s5[-3])
 
+
+print("_"*100)
+#################################### List ###########################
+"""
+# Properties
+-> List is mutable datatype.
+-> List can contains any types of data e.g int, float, string, complex, list, tuple, bool, dict, set.
+-> List follow positive and negative indexing.
+-> List contains values in square bracket.
+"""
+list1 = [10, 3.6, "name", 50j, [2, 5], (1, 7), False, {'a': 123}, {8, 9}]
+list1.append(200)         #It wll add this value at end
+print(list1, type(list1)) #display type as <class 'list'
+print(list1[1])           #diaplay value of index 1
+print(list1[4][0])        #diaplay value of child index of list 0
+
+
+
+print("_"*100)
+#################################### Tuple ###########################
+"""
+# Properties
+-> Tuple is immutable datatype.
+-> Tuple can contains any types of data e.g int, float, string, complex, list, tuple, bool, dict, set.
+-> Tuple follow positive and negative indexing.
+-> Tuple contains values in round bracket.
+-> Can not modify tuple values.
+-> When we want to keep data constant then we should tuple. e.g. days in week, months in year etc.
+"""
+
+tup1 = (22, 1.2, "Hi", 10+40j, [3, 4], (1, 2), True, {'b': 567}, {6, 7})
+print(tup1, type(tup1))
+print(tup1[3])
+print(tup1[5][1])
+
+
+print("_"*100)
+#################################### dictionary ###########################
+"""
+Properties:
+->  Dict is mutable datatype, we can modify any point of time.
+->  Dict contains data in curly braces in keys value pair e.g.   {key : value}, {'a': 123}
+->  Dict contains unique keys, duplicate keys are not allowed.
+     {'a': 123, 'b': 456, 'a': 789}
+     if we mention the duplicate then it will only consider the latest defined value
+     it means it will consider a = 789
+
+->  Only immutable data can be key in the dictionary e.g. int, float, string, tuple, boolean
+   not allowed as key e.g. list, dict, set
+
+-> Dict value can contain any types of data. e.g.  int, float, string, list, complex, tuple, set, boolean.
+-> Dict does not follow indexing.
+
+-> Dict follow LIFO (LAST IN FIRST OUT) concept 
+"""
+
+dict1 = {'a': 123, 'b': 456, 'c': 789}
+print(dict1, type(dict1))
+print(dict1['a'])         # Get data from dict
+
+dict1["email"] = "name@gmail.com"
+print(dict1)
+
+dict1.popitem()
+print(dict1.popitem())
+
+print("_"*100)
+
+
+print("_"*100)
+#################################### set ###########################
+
+"""
+Properties:
+->  Set is mutable data type, we can modify any point of time.
+->  Set only store unique values, duplicate data is not allowed.
+->  Set store values in random order.
+->  Set store values in curly braces. e.g. {6, 8, 9, 2, 5, 6}
+->  Only immutable data type are allowed as member e.g. int. float, string, tuple, boolean.
+
+"""
+
+set1 = {22, 3.4, 'Hi', (3, 5), True}
+print(set1, type(set1))
+
+# List is not allowed as set member
+#set2 = {2, 3.4, 60+20j, 'Hello', (4, 7, 9), True, 2, 3.4, [4, 6, 7]}
+#print(set2)
+# TypeError: unhashable type: 'list'
+
+
+print("_"*100)
+#################################### Boolean ###########################
+"""
+Properties:
+
+->  Boolean is immutable data type.
+->  Boolean contains value as True or False.
+->  Boolean is result of any conditional output.
+
+"""
+
+var1 = True
+var2 = False
+print(var1, type(var1))
+print(var1, type(var2))
+
+print(200 == 100)
+print(100 == 100)
+
+
