@@ -47,7 +47,9 @@ print("value of a:",a)
 print("value of b:",b)
 
 #9Python program to solve this Pythagorous theorem.
-#Theorem : (a2+b2=c2)
+#Theorem :(a2+b2=c2)
+
+
 
 
 #10).Python program to solve the given math formula.
