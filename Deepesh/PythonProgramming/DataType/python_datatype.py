@@ -10,6 +10,7 @@
      iii) Tuple
 
 3. Dictionary
+
 4. Set
 5. Boolean
 """
@@ -243,7 +244,17 @@ print(user_details)
 result = user_details.popitem()
 print(result) # ('email', 'rahul123@gmail.com')
 
+dict3 = {1 : 'Python',
+    4.5 : [5, 7, 8],
+    5+60j : {'a': 345},
+    'Python' : (5, 7, 9),
+    True : {4, 7, 9, 1, 2},
+    (4, 7, 8) :  {'a': 678},
+    100: 5000,
+    }
 
+print(dict3[4.5]) # [5, 7, 8]
+print(dict3[100])  # 5000
 
 print("_"*40)
 #################################### set ###########################
