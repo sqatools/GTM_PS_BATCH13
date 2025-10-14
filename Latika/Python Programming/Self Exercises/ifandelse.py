@@ -1,6 +1,6 @@
 print("Python program to check given number is divided by 3 or not.")
 
-num1=int(input("Please enter a no"))
+num1=int(input("Please enter a no : "))
 
 if num1%3==0:
     print("The",num1 ,"is divisible by 3")
