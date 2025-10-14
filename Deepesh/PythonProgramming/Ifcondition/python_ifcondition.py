@@ -96,3 +96,7 @@ var1 = 21
 result = "even" if var1%2 == 0 else "odd"
 print("result :", result)  # result : even
 
+
+###########################################
+#home work programs:
+# 1. write a python program to check person is eligible to vote as per age.
