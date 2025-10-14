@@ -54,4 +54,31 @@ if r1 == "Pass":
         print("Failed 2nd round")
 else:
     print("Failed 1st round")
+########################################################################################################################
+print("."*100)
 
+marks1=60
+marks2=75
+marks3=35
+marks4=30
+
+if marks1==60:
+    print("Congrats, you received 60%")
+
+    if marks2==75:
+        print("Congrats, you received 75% distinction")
+
+        if marks3==35:
+            print("You are just pass, need to improve")
+
+            if marks4==30:
+                print("Sorry dude, you are fail")
+            else:
+                print("You Pass the subject")
+
+        else:
+            print("Failed in 3rd subject")
+    else:
+        print("Failed in 2nd subject")
+else:
+    print("Failed in 1st subject")
