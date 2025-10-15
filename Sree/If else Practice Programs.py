@@ -117,12 +117,12 @@ else:
     print("12."+"_" * 70)
     ###########################################
        #And Operators
-age = 20
+age = 25
 
 if age > 18 and age <=30:
-    print("eligible for vote")
+    print("eligible to work")
 else:
-    print("not eligible for vote")
+    print("not eligible to work")
 
     print("_" * 50)
     #############################################
@@ -200,4 +200,58 @@ elif b >= c and b <= c:
 else:
     print("c is largest")
 #############################################
+# Check eligibility to vote
+
+age = 25
+
+if age >=18:
+    print("Eligible for vote")
+else:
+    print("Not eligible for vote")
+#############################################
+# Check if a year is a leap year( divisible by 4, and Either not divisible by 100, or divisible by 400.
+
+Year = 2025
+
+#if Year%4 ==0 or Year%400 ==0:
+
+if Year%4 ==0 and Year%100 != 0:
+    print("Leap year")
+else:
+    print("Not a leap year")
+    print("_"*50)
+#####################################
+# Logical operators
+
+a = 80
+b = 30
+c = 50
+
+if a > b and a > c:
+    print(" a has greater value")
+elif b > a and b >c:
+    print("b has greater value")
+elif c > a and c >b:
+    print("c has greater value")
+else:
+    print("No one has greater value")
+    print("_" * 50)
+#####################################
+
+num1 = int(input("please enter the number: "))
+
+if num1%3 ==0 and num1%5 ==0:
+    print("This number is divisible by 3 and 5")
+else:
+    print("This number is not divisible by 3 and 5:", num1)
+
+    print("_" * 50)
+##########################################
+
+num1 = int(input("please enter the number"))
+
+if num1%3 ==0 or num1%5 ==0:
+    print("This number is divisible by 3 or 5 :" , num1)
+else:
+    print("This number is not divisible by 3 or 5 :", num1)
 
