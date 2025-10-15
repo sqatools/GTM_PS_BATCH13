@@ -1,5 +1,5 @@
 
-# Writing
+# Writing program
 a=30
 b=70
 c=50
