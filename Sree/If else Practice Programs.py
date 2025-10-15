@@ -92,9 +92,8 @@ if a % 3 == 0 and a % 5 == 0:
 else:
     print("Not")
 
-
-    print("11.", "_" * 70)
-
+    print("11." + "_" * 70)
+#############################################################
 
 a = 10
 
@@ -115,5 +114,90 @@ if a > 0:
 else:
     print("It is not less than 0")
 
-    print("11.", "_" * 70)
+    print("12."+"_" * 70)
     ###########################################
+       #And Operators
+age = 20
+
+if age > 18 and age <=30:
+    print("eligible for vote")
+else:
+    print("not eligible for vote")
+
+    print("_" * 50)
+    #############################################
+    #or Operators
+Day = "Sunday"
+
+if Day == "Saturday" or Day == "Sunday":
+        print("Weekend")
+else:
+        print("Weekday")
+    #############################################
+    # Not Operators
+is_raining= True
+
+if not is_raining:
+        print("You can go outside with out umbrella")
+else:
+        print("You should take umbrella")
+########################################################
+# Check if a number is positive or negative
+
+a = 10
+
+if a > 0:
+    print("positive number")
+elif a < 0:
+    print("negative number")
+else:
+    print("The number is equal to Zero")
+##############################################
+# Check if a number is even or odd
+
+a = 24
+
+if a%2 ==0:
+    print("Even number")
+else:
+    print("odd number")
+
+b = 17
+if b%2 == 0:
+    print("Even number")
+else:
+    print("odd number")
+#######################################
+# Check if a number is divisible by 5
+
+a = 100
+
+if a%5 ==0:
+    print("Divisible by 5")
+else:
+    print("Not divisible by 5")
+######################################
+# Find the largest of two numbers
+
+a = 50
+b =100
+
+if a > b:
+     print(" a is larger")
+else:
+    print("b is larger")
+############################################
+# Find the largest of three numbers
+
+a = 200
+b = 400
+c = 600
+
+if a >= b and a <= c:
+    print("a is largest")
+elif b >= c and b <= c:
+    print("b is largest")
+else:
+    print("c is largest")
+#############################################
+
