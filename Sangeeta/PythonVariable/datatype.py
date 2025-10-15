@@ -52,6 +52,9 @@ dict1 = {'a':123, 'b': 45.6, 911: 789, 'd': 'Thankyou', 'f' : 5+15j, 5: [8, 9], 
 print(dict1, type(dict1))
 print(dict1['b'])
 print(dict1['f'])
+user_info = {'name': 'Ash', 'height': 5.8, 'color': 'Wheatish', 'phone': 7894561234}
+print(user_info)
+print(user_info['phone'])
 print(" ")
 print(n*50)
 print(" ")
@@ -59,7 +62,6 @@ print(" ")
 print("Set data type")
 set1 = {'addie', 45.3, True, 'hello', (4, 7, 9)}
 print(set1, type(set1))
-set.add('Hi there')
 print(set1)
 print(" ")
 print(n*50)
@@ -69,5 +71,6 @@ print("Boolean data type")
 var1 = True
 var2 = False
 print (var1, type(var1))
+
 
 

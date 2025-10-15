@@ -1,7 +1,13 @@
 n = "_"
 print(n*75)
 
-print("6. Python program to get the median of given numbers.")
+print("6. Python program to get the median of given set of numbers - [45, 60, 61, 66, 70, 77, 80].")
+list1 = [45, 60, 61, 66, 70, 77, 80]
+sortedlist = list.sort(list1)
+n1 = len(list1)
+print(n1)
+
+
 print(n*75)
 print(" ")
 
