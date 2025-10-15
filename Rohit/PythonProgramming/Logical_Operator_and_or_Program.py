@@ -56,3 +56,22 @@ if num1%3==0 or num1%5==0:
 else:
     print("The number is not divisible by 3 or 5:",num1)
 
+print("-"*50)
+
+###########################In operator#############
+#write a prigram with In operator
+list1= (1,5,8,34,66)
+n1=9
+if n1 in list1:
+    print("n1 number present in list1")
+else:
+    print("n1 number not present in list1")
+print("-"*50)
+
+list1 = (1, 5, 8, 34, 66)
+n1 = 34
+if n1 in list1:
+    print("n1 number present in list1")
+else:
+    print("n1 number not present in list1")
+
