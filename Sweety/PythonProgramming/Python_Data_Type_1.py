@@ -10,29 +10,29 @@
      iii) Tuple
 
 3. Dictionary
-
 4. Set
 5. Boolean
 """
 
-######################### Integer ##########################
+######################### Integer #########################
 """
 # Integer :  Properties
 1.  Integer is immutable data type
 2.  Integer only contains whole number.
 3.  There is no range limit for integer
 """
+num = 0
+num1 = 145
+num2 = 3535662536988980925324545143
 
-num1 = 0
-num2 = 400
-num3 = 543543534543543543543545543
-
-print("num1 :", num1, type(num1))  # num1 : 0 <class 'int'>
-print("num2 :", num2,  type(num2)) # num2 : 400 <class 'int'>
-print("num3 :", num3,  type(num3)) # num3 : 543543534543543543543545543 <class 'int'>
+print("num", num, type(num))
+print("num1", num1, type(num1))
+print("num2", num2, type(num2))
 
 
-print("_"*50)
+
+print("_"*100)
+
 ######################### Float #########################
 """
 # Integer :  Properties
@@ -40,39 +40,33 @@ print("_"*50)
 2.  Float contains pointer/decimal value.
 3.  There is no range limit for Float.
 """
+f1 = 23.8
+f2 = 0.0
+f3 = 4244126556435461413461.543324212311221321
+print("f1", f1, type(f1))
+print("f2", f2, type(f2))
+print("f3", f3, type(f3))
 
-f1 = 0.0
-f2 = 56.78
-f3 = 7189354435.3454353445678445
-print("f1 :", f1, type(f1)) # 0.0 <class 'float'>
-print("f2 :", f2, type(f2)) # 56.78 <class 'float'>
-print("f3 :", f3, type(f3)) # 7189354435.345435 <class 'float'>
+print("_"*100)
 
-
-print("_"*50)
 ######################### Complex #########################
 """
 # Integer :  Properties
 1.  Complex is immutable data type
 2.  Complex number is combination of real and imaginary number e.g. x+yj
 """
-
 comp1 = 10 + 20j
-# real = 10
-# img = 20
 comp2 = 0 + 1j
 comp3 = 50j
+#real = 10
+#img = 20j
+
+print("comp1", comp1, type(comp1))
+print("comp2", comp2, type(comp2))
+print("comp3", comp3, type(comp3))
 
 
-print("comp1", comp1, type(comp1))  # (10+20j) <class 'complex'>
-print("real value :", comp1.real) # 10.0
-print("imag value :", comp1.imag) # 20.0
-
-print("comp2", comp2, type(comp2))  # 1j <class 'complex'>
-print("comp3 :", comp3,  type(comp3)) # comp3 : 50j <class 'complex'>
-
-
-print("_"*50)
+print("_"*100)
 ######################### string #########################
 
 """
@@ -82,22 +76,17 @@ print("_"*50)
 3. string follows positive and negative indexing.
 4. There is no specific range for string.
 """
-
 s1 = ""
-
 s2 = 'Hello'
-
 # to assign a paragraph value, we can use triple quotes.
 s3 = """
 I'm AI Companion, your personal Zoom assistant. I can help you with:
 Searching meetings, chats, emails, or files using keywords, attendees, or dates
 Summarizing or answering questions about meetings, chats, emails, or files
-Preparing for upcoming meetings 12345 with relevant materials
+Preparing for upcoming meetings with relevant materials
 Finding people based on relationships like team members or managers
-Getting someone's profile details such as email, ^&^*&^&^ location, or job title
+Getting someone's profile details such as email, location, or job title
 """
-
-
 s4 = '''
 I'm AI Companion, your personal Zoom assistant. I can help you with:
 Searching meetings, chats, emails, or files using keywords, attendees, or dates
@@ -106,34 +95,22 @@ Preparing for upcoming meetings with relevant materials
 Finding people based on relationships like team members or managers
 Getting someone's profile details such as email, location, or job title
 '''
-
-print("s1 :", s1, type(s1))  # <class 'str'>
-print("-"*20)
-print("s2 :", s2, type(s2))  #  Hello <class 'str'>
-print("-"*20)
-print("s3 :", s3, type(s3))  # <class 'str'>
-print("-"*20)
-print("s4 :", s4, type(s4))  # <class 'str'>
-print("-"*20)
-
+print("s1", s1, type(s1))
+print("s2", s2, type(s2))
+print("s3", s3, type(s3))
 
 s5 = "Python"
 
 """
- 0   1   2   3   4  5     +ve indexing
+0   1   2   3   4  5     +ve indexing
  P   y   t   h   o  n
 -6   -5 -4  -3  -2  -1    -ve indexing
 """
-
-print(s5[0])  # P
-print(s5[-5]) # y
-
-var1 = "P1y 2 Thon"
-print(var1[1])  # 1
-print(var1[4])  # 2
+print("s5", s5, s5[0])
+print("s5", s5, s5[-3])
 
 
-print("_"*40)
+print("_"*100)
 #################################### List ###########################
 """
 # Properties
@@ -142,27 +119,15 @@ print("_"*40)
 -> List follow positive and negative indexing.
 -> List contains values in square bracket.
 """
-
-list1 = [1, 4.5, 'Hello', [4, 7], (3, 7), {'a': 123}, {45, 67}, True]
-print(list1, type(list1))
-# [1, 4.5, 'Hello', [4, 7], (3, 7), {'a': 123}, {67, 45}, True] <class 'list'>
-print(list1[2])  # Hello
-
-#        0    1       2
-list2 = [20, [4, 8], True]
-#       -3    -2     -1
-
-print(list2[-2])  # [4, 8]
-print(list2[-2][1])  # 8
-
-# Add value to the list
-list2.append(100)
-print("list2 :", list2)
-# list2 : [20, [4, 8], True, 100]
+list1 = [10, 3.6, "name", 50j, [2, 5], (1, 7), False, {'a': 123}, {8, 9}]
+list1.append(200)         #It wll add this value at end
+print(list1, type(list1)) #display type as <class 'list'
+print(list1[1])           #diaplay value of index 1
+print(list1[4][0])        #diaplay value of child index of list 0
 
 
 
-print("_"*40)
+print("_"*100)
 #################################### Tuple ###########################
 """
 # Properties
@@ -174,20 +139,13 @@ print("_"*40)
 -> When we want to keep data constant then we should tuple. e.g. days in week, months in year etc.
 """
 
-
-tup1 = (4, 7.9, 'Python', [3, 6], (2, 7), {'a': 345}, {76, 8}, True)
+tup1 = (22, 1.2, "Hi", 10+40j, [3, 4], (1, 2), True, {'b': 567}, {6, 7})
 print(tup1, type(tup1))
-# (4, 7.9, 'Python', [3, 6], (2, 7), {'a': 345}, {8, 76}, True) <class 'tuple'>
+print(tup1[3])
+print(tup1[5][1])
 
 
-print(tup1[4])  # (2, 7)
-print(tup1[4][1])  # 7
-print(tup1[-4]) # (2, 7)
-print(tup1[-4][-1]) # 7
-
-
-
-print("_"*40)
+print("_"*100)
 #################################### dictionary ###########################
 """
 Properties:
@@ -197,66 +155,30 @@ Properties:
      {'a': 123, 'b': 456, 'a': 789}
      if we mention the duplicate then it will only consider the latest defined value
      it means it will consider a = 789
-     
-->  Only immutable data can be key in the dictionary e.g. int, float, complex,  string, tuple, boolean
+
+->  Only immutable data can be key in the dictionary e.g. int, float, string, tuple, boolean
    not allowed as key e.g. list, dict, set
-   e.g.
-   {1 : 'Python',
-    4.5 : [5, 7, 8],
-    5+60j : {'a': 345},
-    'Python' : (5, 7, 9),
-    True : {4, 7, 9, 1, 2}, 
-    (4, 7, 8) :  {'a': 678}
-    }
-   
+
 -> Dict value can contain any types of data. e.g.  int, float, string, list, complex, tuple, set, boolean.
 -> Dict does not follow indexing.
 
 -> Dict follow LIFO (LAST IN FIRST OUT) concept 
 """
 
-dict1 = {'a': 123, 'b': 567, 'c': 789}
+dict1 = {'a': 123, 'b': 456, 'c': 789}
 print(dict1, type(dict1))
+print(dict1['a'])         # Get data from dict
 
-# {'a': 123, 'b': 567, 'c': 789} <class 'dict'>
+dict1["email"] = "name@gmail.com"
+print(dict1)
 
-# Get data from dict
-print(dict1['a'])
-# 123
+dict1.popitem()
+print(dict1.popitem())
+
+print("_"*100)
 
 
-user_details = {
-    "name" : "Rahul",
-    "age" : 25,
-    "DOB" : "1/02/2000",
-    "phone": 78979798789,
-
-}
-
-print(user_details) # {'name': 'Rahul', 'age': 25, 'DOB': '1/02/2000', 'phone': 78979798789}
-print(user_details['phone'])  #78979798789
-
-# Add new detail to dict
-user_details["email"]  = "rahul123@gmail.com"
-print(user_details)
-# {'name': 'Rahul', 'age': 25, 'DOB': '1/02/2000', 'phone': 78979798789}
-
-result = user_details.popitem()
-print(result) # ('email', 'rahul123@gmail.com')
-
-dict3 = {1 : 'Python',
-    4.5 : [5, 7, 8],
-    5+60j : {'a': 345},
-    'Python' : (5, 7, 9),
-    True : {4, 7, 9, 1, 2},
-    (4, 7, 8) :  {'a': 678},
-    100: 5000,
-    }
-
-print(dict3[4.5]) # [5, 7, 8]
-print(dict3[100])  # 5000
-
-print("_"*40)
+print("_"*100)
 #################################### set ###########################
 
 """
@@ -269,10 +191,8 @@ Properties:
 
 """
 
-set1 = {2, 3.4, 60+20j, 'Hello', (4, 7, 9), True, 2, 3.4}
+set1 = {22, 3.4, 'Hi', (3, 5), True}
 print(set1, type(set1))
-# {True, 2, 3.4, (4, 7, 9), (60+20j), 'Hello'} <class 'set'>
-
 
 # List is not allowed as set member
 #set2 = {2, 3.4, 60+20j, 'Hello', (4, 7, 9), True, 2, 3.4, [4, 6, 7]}
@@ -280,9 +200,7 @@ print(set1, type(set1))
 # TypeError: unhashable type: 'list'
 
 
-
-
-print("_"*40)
+print("_"*100)
 #################################### Boolean ###########################
 """
 Properties:
@@ -295,8 +213,10 @@ Properties:
 
 var1 = True
 var2 = False
-print(var1, type(var1))  # True <class 'bool'>
-print(var2, type(var2))  # False <class 'bool'>
+print(var1, type(var1))
+print(var1, type(var2))
 
-print(200 == 100)  # False
-print(300 == 300) # True
+print(200 == 100)
+print(100 == 100)
+
+
