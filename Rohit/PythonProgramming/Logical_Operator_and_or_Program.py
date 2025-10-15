@@ -75,3 +75,5 @@ if n1 in list1:
 else:
     print("n1 number not present in list1")
 
+   print("-"*50)
+
