@@ -126,6 +126,8 @@ if age>=18==0:
 else:
     print("Not Eligible for driving license")
 
+#################################################
+print("_"*50)
 # 13) Check if a number is positive, negative, or zero
 num=int(input("Enter a number:"))
 if num>0:
@@ -134,9 +136,10 @@ elif num<0:
     print("Negative number")
 else:
     print("Zero")
-
+##################################################
+print("_"*50)
 # 14) Check if a triangle is valid based on sides
-a=int(input("Enter side1:"))
-b=int(input("Enter side2:"))
-c=int(input("Enter side3:"))
-if a+b>c and b+c>a and c+a>b
+#a=int(input("Enter side1:"))
+#b=int(input("Enter side2:"))
+#c=int(input("Enter side3:"))
+#if a+b>c and b+c>a and c+a>b
