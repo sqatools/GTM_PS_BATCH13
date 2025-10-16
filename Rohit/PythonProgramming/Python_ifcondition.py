@@ -123,3 +123,7 @@ if round1=="Pass":
         print("Sorry you have not clear 2nd round try next time")
 else:
     print("sorry try next time")
+
+print("-"*50)
+
+#############################################################################
