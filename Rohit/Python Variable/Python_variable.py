@@ -4,6 +4,7 @@ c=a+b
 print(c)
 print("Value of c:" ,c)
 
+print("-"*50)
 #############Assign different value to different variable at a time###########
 x,y,z=15,33,42
 print(x,y,z)
@@ -15,6 +16,7 @@ print("value of y:",y)
 print("value of z:",z)
 print("value of x:",x)
 
+print("-"*50)
 ################Assign same value to multiple variables################
 p=q=r=35
 print(p,q,r)
@@ -27,6 +29,7 @@ print("p:",p)
 print("q:",q)
 print("r:",r)
 
+print("-"*50)
 ###########If the variable values is same, then their address is also same i.e.id(A)
 # means memory#####
 A=100
@@ -36,7 +39,7 @@ print("value of A:",A,id(A))
 print("value of B:",B,id(B))
 print("value of C:",C,id(C))
 
-
+print("-"*50)
 ##############Variable name are case sensitive##################
 name= "Rohit"
 NAME= "Rohan"
@@ -45,6 +48,7 @@ NAMe= "Pushkar"
 
 print(name,NAME,nAME,NAMe)
 
+print("-"*50)
 ################################### Variable Operations #######################
 # Addition of value  +
 n1=10
@@ -98,3 +102,7 @@ rhs=a**2+b**2+2*a*b
 print("square of (a+b):",(a+b)**2)
 print("Result of lhs:",lhs)
 print("Result of rhs",rhs)
+
+print("-"*50)
+
+###################################################################
