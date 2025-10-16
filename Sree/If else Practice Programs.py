@@ -390,7 +390,7 @@ print("_"*50)
 sum = 0
 for i in range(1,12): ## i = 1, 2, 3,
     sum = sum+i   #0+1 = 1 | 1 +2 = 3 | 3+ 3 = 6
-    print("total:", sum)
+print("total:", sum)
 
 
 
