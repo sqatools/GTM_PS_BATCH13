@@ -174,10 +174,29 @@ while num < 10:
 
 
 # infinite loop
+"""
 num = 1
 while True:
     print(num)
     #num = num + 1
     num += 1
+"""
+
+print("_"*40)
+######################### Continue and Break Statement ##############
+# Continue :  continue statement help to move next iteration of the loop without executing the remaining portion of the code.
+
+for i in range(10): # i = 0
+    if i == 3 or  i == 5 or i == 7:
+        continue # police man
+    print(i)
+
+# break :  break statement will break the loop execution immediately once break condition is satisfied.
+print("_"*40)
+for i in range(10, 1, -1):
+    if i == 5:
+        break
+    print(i)
 
 
+#########################################
