@@ -38,3 +38,38 @@ while num < 10:
     print(num)
     num +=1
 
+################################
+print("!-*-!"*50)
+
+for i in range(5,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
