@@ -98,6 +98,33 @@ for i in range(1,6):
     print("_"*8)
 ######################################
 #While loop: it iterates s
+#continue statement
+for i in range(15):
+    if i==3 or i ==4 or i==6:
+        continue
+    print(i)
+###################################
+#Break statement
+for i in range(10):
+    if i ==6:
+        break
+    print(i)
+#########################
+# Pattern program
+for i in range(1,6):
+    for j in range(1,i+1):
+        print("*",end= " ")
+    print()
+##########################
+print()
+print("_" * 8)
+
+for i in range(7,1,-1):
+    for j in range(1, i-1):
+        print("*",end=" ")
+    print()
+
+
 
 
 
