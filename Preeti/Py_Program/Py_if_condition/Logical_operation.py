@@ -1,5 +1,5 @@
 
-# Writing program
+# Writing program 
 a=30
 b=70
 c=50
@@ -29,3 +29,12 @@ if val not in str1:
     print("val is not available in the string")
 else:
     print("val is available in the string")
+
+############# find vowels ############
+
+ch=input("Enter character")
+if ch.lower() in 'aeiou':
+    print("Its Vowel")
+else:
+    print("Its not a Vowel")
+
