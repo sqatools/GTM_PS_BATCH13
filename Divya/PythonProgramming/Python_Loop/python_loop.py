@@ -58,5 +58,17 @@ while num<10:
 """
 
 
+"""
+##################Continue and break statement #####
+for i in range(10):
+    if i==3 or i ==5:
+        continue
+    print(i)
+"""
 
-##################Infinite Loop #####
+###### Break statement#######
+print("_"*30)
+for i in range(1,10,2):
+    if i==5:
+        break
+    print(i)
