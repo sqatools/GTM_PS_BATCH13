@@ -55,6 +55,9 @@ for i in range(1, 6): # i = 1, 2, 3
     print()
 
 
+print()
+print("_"*50)
+
 # write a program for this pattern.
 """
 * * * * * 
@@ -63,6 +66,14 @@ for i in range(1, 6): # i = 1, 2, 3
 * *
 *
 """
+
+
+for i in range(5, 0, -1):
+    for j in range(i, 0, -1):
+        print("*", end=" ")
+    print()
+
+
 
 """
 1
