@@ -37,19 +37,19 @@ print ("The number is not divisble by any")
  ###   to check if the person is eligibe to vote
 
 
-Logical
-operator:
-cond1 and cond2
-True and False: False
-False and True: False
-False and False: False
-True and True: True
+################Logical
+#operator:
+#cond1 and cond2
+#True and False: False
+#False and True: False
+#False and False: False
+#True and True: True
 
-OR
-logical
-operator
+##OR
+#logical
+#operator
 
-True or False: True
+###True or False: True
 False or True: True
 True or True: True
 False or False: False
