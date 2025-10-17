@@ -84,4 +84,13 @@ else:
     print("Sorry you are not eligible for next round")
 
 ##################################################
+a = 30
+b = 40
+
+if a > b:
+    print("a is greater than b")
+elif a < b:
+    print("b is greater than a")
+else:
+    print("Both values are equal")
 
