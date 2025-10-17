@@ -52,13 +52,24 @@ for i in range(1,6):
 **
 *
 
-for i in range(5,0,-1):
-        print("*" * i)
-"""
+
+
 
 for i in range(5,0,-1):
     for j in range(i):
         print("*", end= '')
     print()
 
+"""
 
+#Prgrm for
+1
+22
+333
+4444
+55555
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(i, end=" ")
+    print()
