@@ -70,9 +70,22 @@ for i in range(1, 6):  # i =1, 2
 ############################# While Loop ########################
 
  # while loop : condition loop
-num= 1
-while num< 10:
-      print(num)
+num = 1
+while num < 10:
+    print(num)
+    #num = num + 1
+    num += 1
+######################### Continue and Break Statement ##############
+# Continue :  continue statement help to move next iteration of the loop without executing the remaining portion of the code.
+for a in range(10):
+    if a == 3 or a ==5 or a == 7:
+        continue
 
+ ##break :  break statement will break the loop execution immediately once break condition is satisfied.
+print("_"*40)
+for i in range(15, 1, -1):
+    if i == 7:
+        break
+    print(i)
 
 
