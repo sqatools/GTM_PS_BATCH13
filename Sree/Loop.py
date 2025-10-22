@@ -1,4 +1,4 @@
-for i in range (1, 10, 1):
+""""for i in range (1, 10, 1):
     print(i)
 ####################################
 print("1.","_"*50)
@@ -128,12 +128,142 @@ for i in range(5,0,-1):
     #for j in range(i):
     #    print("*", end=" ")
    # print()
-
+print("_" * 8)
+print()
 ####################################
 
 for i in range(1,6):
     for j in range(1,i+1):
         print(i,end= " ")
+    print()
+"""""
+print("_" * 8)
+print()
+##################################Continue##################]
+for i in range(10):
+    if i==3 or i == 5 or i ==7:
+     continue
+    print(i)
+print("_" * 8)
+print()
+for j in range(50):
+    if j % 2 == 0 or j % 3 == 0 or j % 5 == 0:
+        continue
+    print(j)
+print("_" * 8)
+print()
+for k in range(10):
+    if k ==4:
+        break
+    print(k)
+print("_" * 8)
+print()
+for k in range(10,1,-1):
+    if k ==8:
+        break
+    print(k)
+###############################################
+print("_" * 8)
+print()
+#Check given numeber is prime or not- A prime number is a number greater than 1 that has no divisors other than 1 and itself
+# only divisible by 1 or itself:
+N= 12      # need to take flag = prime =True- a flag is a variable used to signal a condition — basically, a True/False marker that helps you control the flow of your program.
+prime =True
+for i in range(2,N):
+    if N %i==0:
+        prime = False
+        break
+    else:
+        continue
+if prime ==True:  # you can use alternate : prime
+    print("It is a prime number")
+else:
+    print("It is not a prime numbe")
+#############################################################
+print("_" * 8)
+print()
+Num = 41
+Prime = True
+for j in range(2,Num):
+    if Num % j == 0:
+        Prime = False
+        break
+    else:
+        continue
+if Prime:
+    print("Prime number")
+else:
+    print("Not a prime number")
+############################################
+print("_" * 8)
+print()
+# How many Prime numbers are in the given list
+
+
+
+for Num in range(1,100):
+    Prime = True
+    for j in range(2,Num):
+        if Num % j == 0:
+            Prime = False
+            break
+        else:
+            continue
+    if Prime:
+        print("Prime number",Num)
+    else:
+        pass
+#########################Pattern program##################
+print("_" * 8)
+print()
+for i in range(1,6):
+    for j in range(1,6):
+
+        print("*",end="")
+    print()
+#######################################
+print("_" * 8)
+print()
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end=" ")
+        #print("*", end=" "
+    print()
+##########################################
+print("_" * 8)
+print()
+for i in range(6,0,-1):
+    for j in range(i):
+       # print(j, end="")
+       print("*",end="")
+    print()
+#########################################
+print("_" * 8)
+print()
+for i in range(1,6):
+    for j in range(i):    # Growing numbers each line, J = range(i), If i =1 j= range(1) print j value =0
+        print(j,end="")                     # If i =2  j= range(2)  print J value: 0 1
+                                            #  If i =3 J =range(3)  print j value : 0 1 2
+    print()
+print("_" * 8)
+print()
+for i in range(1,6):
+    for j in range(1,6):   # Same numbers each line
+        print(j,end="")
+    print()
+##############################
+print("_" * 8)
+print()
+for i in range(5,0, -1):
+    for J in range(i):
+        print("*", end="")
+    print()
+###############################
+print("_" * 8)
+print()
+for i in range(1, 6):
+    for j in range(1, i+1 ):
+        print(i, end="")
     print()
 
 
