@@ -11,3 +11,8 @@ for sita in ["a", "b", "c"]:
 for rama in range(0, 10):
     print(f"This number is {rama}")
 
+number = 0
+while number < 10:
+    print(f"This number is {number}")
+    number = number + 1
+
