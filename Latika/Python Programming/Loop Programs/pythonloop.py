@@ -44,3 +44,30 @@ num=1
 while num<=10:
     print(num)
     num+=1
+
+#*******************************************************************************************************************#
+print("."*100)
+print("Continue Statement")
+"""
+Continue statement help tp move next iteration of the loop without executing the remaining portion of the code.
+"""
+for i in range(10):
+    if i==3 or i==5 or i==7:
+        continue
+    print(i)
+
+#*******************************************************************************************************************#
+print("."*100)
+print("Break Statement")
+"""
+Break statement will break the loop execution imidiately once break condition is satisfied.
+"""
+for i in range(1,10):
+    if i==5:
+        break
+    print(i)
+print("."*50)
+for j in range(10,1,-1):
+    if j==5:
+        break
+    print(j)
