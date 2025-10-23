@@ -25,7 +25,7 @@ num2=1
 count=0
 range1=int(input("Enter your range:"))
 print("The Fibonacci sequence upto",range1,"is")
-while count<range1 and num1<range1:
+while count<range1 and num1<=range1:
     print(num1)
     num3=num1+num2
     num1 = num2
