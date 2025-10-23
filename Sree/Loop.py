@@ -136,7 +136,7 @@ for i in range(1,6):
     for j in range(1,i+1):
         print(i,end= " ")
     print()
-"""""
+
 print("_" * 8)
 print()
 ##################################Continue##################]
@@ -167,7 +167,7 @@ print("_" * 8)
 print()
 #Check given numeber is prime or not- A prime number is a number greater than 1 that has no divisors other than 1 and itself
 # only divisible by 1 or itself:
-N= 12      # need to take flag = prime =True- a flag is a variable used to signal a condition — basically, a True/False marker that helps you control the flow of your program.
+N= 13      # need to take flag = prime =True- a flag is a variable used to signal a condition — basically, a True/False marker that helps you control the flow of your program.
 prime =True
 for i in range(2,N):
     if N %i==0:
@@ -254,23 +254,49 @@ for i in range(1,6):
 ##############################
 print("_" * 8)
 print()
-for i in range(5,0, -1):
+for i in range(5,0,-1):
     for J in range(i):
-        print("*", end="")
+        print(J, end="")
     print()
 ###############################
 print("_" * 8)
 print()
 for i in range(1, 6):
-    for j in range(1, i+1 ):
-        print(i, end="")
+    for j in range(1, i+1 ):  ##when i = 1, j runs 1 time → prints 1
+        print(i, end="")         #When i = 2, j runs 2 times → prints 2  2
     print()
+"""
+#########################################
+##rite a Python loops program to find those numbers which are divisible by 7 and multiple of 5, between 1500 and 2700 (both included).
+#nput1:1500 nput2:2700
+print("_" * 8)
+print()
+for i in range(1500,2700):
+    if i%7==0 and i%5==0:
+       print(i,end="  ")
 
 
+##Python Loops program to construct the following pattern, using a nested for loops.
 
+for i in range(6):
+   print(i*"*")
 
+for i in range(6,-1,-1):
+    print(i*"*" )
 
-
+####################################
+print("_" * 8)
+print()
+for i in range(1,6):
+    for j in range(i):
+        #print("*",end="")
+      print(j,end="")
+    print()
+for i in range(4,-1,-1):
+    for j in range(i):
+       # print("*", end="")
+       print(j,end="")
+    print()
 
 
 

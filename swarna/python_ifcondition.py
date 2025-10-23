@@ -94,3 +94,31 @@ elif a < b:
 else:
     print("Both values are equal")
 
+##############################################
+# Write a program to compare 3 values and which is greater
+a=80
+b=60
+c=70
+
+if a > b and a > c:
+    print("A has greater value", a)
+elif b > a and b > c:
+    print("B has greater value", b)
+elif c > a and c > b:
+    print("C has greater value", c)
+else:
+    print("No one has greater value")
+
+##############################################
+
+for i in range(5, 0, -1):
+    for j in range(i, 0, -1):
+        print("*", end=" ")
+    print()
+
+##############################################
+
+
+
+
+
