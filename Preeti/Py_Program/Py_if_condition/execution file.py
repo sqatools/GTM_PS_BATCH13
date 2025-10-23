@@ -1,6 +1,5 @@
-str1="Hello world"
-val="JAVA"
-if val not in str1:
-    print("val is not available in the string")
+ch=input("Enter character")
+if ch.lower() in 'aeiou':
+    print("Its Vowel")
 else:
-    print("val is available in the string")
+    print("Its not a Vowel")
