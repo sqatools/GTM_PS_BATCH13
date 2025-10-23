@@ -55,6 +55,77 @@ for i in range(1,51):
 
 print("_"*100)
 #############################################################################
+list1 = [22, 55, 8, 3]
+for i in list1:
+    print(i)
+
+print("_____")
+
+list1 = [22, 55, 8, 3]
+for i in list1:
+    print(i, end=" ")  #It will print all values in single line
+
+
+print("_"*100)
+############################# Nested For Loop ########################
+# In nested for loop, for each value of outer loop, then entire inner loop will be executed.
+# outer loop
+for i in range(1, 6):
+    print("Address i: ", i)
+    # inner loop
+    for j in range(1, 4):
+        print(" Package j: ", j)
+
+
+print("_"*100)
+#########################################################################
+#outer loop
+for i in range(1, 6):
+    print("value of i: ", i)
+    #inner loop
+    for j in range(1, 4):
+        print(" value of j: ", j)
+    # inner loop
+    for k in range(1, 4):
+        print(" value of k: ", k)
+
+
+print("_"*100)
+##########################################################################
+#outer loop
+for i in range(1, 6):
+    print("value of i: ", i)
+    #inner loop
+    for j in range(1, 4):
+        print(" value of j: ", j)
+        #inner loop
+        for k in range(1, 4):
+            print("  value of k: ", k)
+
+
+print("_"*100)
+############################# While Loop ########################
+"""
+num = 1
+while num <= 10:
+    print(num)
+num = num + 1
+#or num += 1
+
+"""
+print("_"*100)
+############################# ########################
+for i in range(1, 6):
+    for j in range(1, i-1):
+        print("*", end="")
+    print()
+
+for i in range(5, 0, -1):
+    for j in range(i):
+        print("*", end=" ")
+    print()
+
+
 
 
 

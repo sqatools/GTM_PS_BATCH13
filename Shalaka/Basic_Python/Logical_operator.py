@@ -45,7 +45,7 @@ else:
 
 print('_'*5, " Use 'not in ' opertator", '_'*5)
 
-str1  = "Hello worild"
+str1  = "Hello world"
 val = 'Shalaka'
 
 if val in str1:
