@@ -183,8 +183,8 @@ print("_"*50)
 #######################
 # Apply loop on string.
 str_a = "Programming"
-for char in str_a:
-    print(char)
+for var in str_a:
+    print(var)
 """
 P
 r
