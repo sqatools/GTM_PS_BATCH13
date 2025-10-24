@@ -22,7 +22,7 @@ n2 = 78954
 print("n1=", n1)
 print("n2 =", n2)
 c = n1//n2
-d = n1%n2
+d = n1 % n2
 print("Value of n1/n2=", c)
 print("Remainder of n1/n2=", d)
 print(" ")
