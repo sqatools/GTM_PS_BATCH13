@@ -49,7 +49,7 @@ print(a1)
 print(b1)
 print(c1)
 print(d1)
-e = (a1+b1+c1+d1)/2
+e = (a1+b1+c1+d1)/4
 print("Average of these numbers-", e)
 print(n*75)
 

@@ -11,25 +11,24 @@ print ("Hello World")
 #for i == 3
 
 
-#Write a python prg to ffind out if the given number is a prime number
+#Write a python prg to find out if the given number is a prime number
 # prime is only divisible by 1 and self. not divisible by any other number.
-num=13
+num = 13
 prime = True
-for i in range(2,num):
-    if num%i == 0:
-        prime = false
+for i in range(2, num):
+    if num % i == 0:
+        prime = False
         break
     else:
         continue
+if prime:
+    print("This is prime number", num)
+else:
+    print("This is not a prime number", num)
 
-    if prime == true:
-        print("This is prime number", num)
-    else:
-        print("This is not a prime number", num)
+print("*"*50)
 
-    print("*"*50)
-
-#= Write a prg to print start patter triangle
+#= Write a prg to print star pattern triangle
 
 for i in range(1, 6):
     for j in range(1, i+1):
