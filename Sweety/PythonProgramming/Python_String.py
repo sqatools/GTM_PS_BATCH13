@@ -87,4 +87,126 @@ print(str_c[0:6:-1]) #give blank output because for +ve index step value should 
 print(str_c[0:10])
 print(str_c[-10:-1])
 
+print("_"*50)
+############################# string method ################
+# lower() and upper() method
+str3 = "We Are Learning Python"
+print(str3.lower())
+print(str3.upper())
+
+print("_"*50)
+#######################
+# isupper() and islower() :  These methods check given string is in upper case or lower case and return boolean output (True/Fals
+
+str4 = "Hello"
+str5 = "hello"
+str6 = "HELLO"
+print(str4.isupper(), str4.islower())
+print(str5.islower())
+print(str6.isupper())
+
+print("_"*50)
+#######################
+# swapcase method :  This method convert upper to lower and lower to upper in one single string.
+str7 = "wE aRE lEARNING pYTHON"
+print(str7.swapcase())
+
+
+print("_"*50)
+#######################
+# capitalize method : convert first letter in upper case and keep remaining in lower case.
+str8 = "We ArE LeArNing PytHon, Its Easy to Learn"
+print(str8.capitalize())
+
+print("_"*50)
+#######################
+# title method: convert first letter of each word in upper case.
+str9 = "we arE leArNing PytHon, itS easY to LearN"
+print(str9.title())
+
+
+print("_"*50)
+#######################
+# count method :  This method return the total count/occurrences of any character/substring in the string
+str10 = "We Are 12345 Learning Python, Its Easy 12345 To Learn doing 12345"
+print("count of e", str10.count('e'))
+print("count of ing", str10.count("ing"))
+
+
+print("_"*50)
+#######################
+# index() method :  this  method return the index position of any character /substring
+str11 = "Good Morning, Hope you are doing good"
+print(str11.index("Hope"))
+print(str11.index('o'))
+
+print("_"*50)
+#######################
+# Apply loop on string.
+str_a = "Programming"
+for character in str_a:
+    print(character)
+
+
+print("_"*50)
+len_string = len(str_a)
+print(len_string)
+
+for i in range(len_string):
+    print(i, str_a[i])
+
+"""
+0 P
+1 r
+2 o
+3 g
+4 r
+5 a
+6 m
+7 m
+8 i
+9 n
+10 g
+"""
+
+print("_"*40)
+# get all o from string
+str12 = "Good Morning, Hope you are doing good"
+temp = 0
+for char in str12:
+    if char == "o":
+        print(char)
+        temp +=1
+
+print("total count :", temp)
+
+print("_"*50)
+#######################
+# split method : this method split string from given char/space/comma and return as list of words.
+str13 = "Good Morning, Hope you are doing good"
+result = str13.split(" ")
+print(result)
+# ['Good', 'Morning,', 'Hope', 'you', 'are', 'doing', 'good']
+
+str14 = "we,are,Learning,Python"
+print(str14.split(","))  # ['we', 'are', 'Learning', 'Python']
+
+
+
+print("_"*50)
+#######################
+# replace method:  This method help us to replace one from another word.
+str15 = "JAVA is great Programming Language, and JAVA is hard to understand JAVA"
+# replace all occurrences
+result1 = str15.replace("JAVA", "Python")
+print(result1) # Python is great Programming Language, and Python is hard to understand
+
+result2 = str15.replace("JAVA", "PYTHON").replace("hard", "easy")
+print(result2)
+# PYTHON is great Programming Language, and PYTHON is easy to understand
+
+# replace first occurrence
+result3 = str15.replace("JAVA", "Python", 2)
+print(result3)
+# Python is great Programming Language, and Python is hard to understand JAVA
 
