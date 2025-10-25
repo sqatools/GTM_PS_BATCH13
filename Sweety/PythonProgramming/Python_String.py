@@ -210,3 +210,71 @@ result3 = str15.replace("JAVA", "Python", 2)
 print(result3)
 # Python is great Programming Language, and Python is hard to understand JAVA
 
+
+print("_"*50)
+#####################################################################
+# write a python program to replace all java word without replace method.
+str16 = "PYTHON is great programming language and Python is easy to understand, PYthon"
+word_list = str16.split()
+print(word_list)
+result = ""
+for word in word_list:
+    if word.lower() == "python":
+        result = result + "JAVA" + " "
+    else:
+        result = result + word + " "
+print("Result:", result)
+
+
+print("_"*50)
+#####################################################
+# join method: This method join any string or iterable data with any character/special char/substring.
+list1 = ["Hello", "We", "Learning", "Python"]
+result1 = " ".join(list1)
+print(result1)
+
+pass1 = "P@ssw0rd"
+result2 = "&^%*".join(pass1)
+print(result2)
+
+result3 = "".join(pass1)
+print(result3)
+
+
+print("_"*50)
+###################################
+# strip method :  this method remove all trailing spaces from given string.
+# trailing spaces :  spaces which is available in the beginning and end of the string.
+str_b = "    I am learning Python           "
+
+# remove left and right spaces
+print(str_b.strip())
+
+# remove left spaces
+print(str_b.lstrip())
+
+# remove right spaces
+print(str_b.rstrip())
+
+
+print("_"*50)
+###################################################
+# find method :  find method return the index position of given char/sub-string from target string, but if the char/sub-string
+# is not available, then it will return the -1
+
+str_c = "India is great country"
+
+# check existing word
+r2 = str_c.find("great")
+print(r2)
+
+# check non - existing word
+r3 = str_c.find("city")
+print(r3)
+
+# r4 = str_c.index("city")
+# print(r4)
+# ValueError: substring not found
+
+
+

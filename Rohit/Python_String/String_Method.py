@@ -99,11 +99,9 @@ str16 = "programming"
 for char in str16:
     print(char, end="") ## programming
 
-print("-"*50)
 len_string = len(str16)
 print(len_string)   ## 11
 
-print("-"*50)
 for i in range(len_string):
     print(i, str16[i])
 """"
@@ -120,5 +118,53 @@ for i in range(len_string):
 10 g
 """
 print("-"*50)
-
 #######################################################################
+# join method: This method join any string or iterable data with any character/special char/substring.
+str = ["I" , "am","Leaving", "in", "Karad", "city"]
+result = " ".join(str)
+print("result :", result)  ## I am Leaving in Karad city
+
+str1 = "Password"
+result2 ="&%34*/".join(str1)
+print("result2 :",result2) ## P&%34*/a&%34*/s&%34*/s&%34*/w&%34*/o&%34*/r&%34*/d
+
+result3 =str1.replace("&%34*/","")
+print("result3 :",result3)  ## Password
+
+print("-"*50)
+#######################################################################
+# strip method :  this method remove all trailing spaces from given string.
+# trailing spaces :  spaces which is available in the beginning and end of the string.
+
+str17 = " Programming Language "
+print(str17)
+print(str17.strip()) #Programming Language space is removed here
+
+# Remove left space
+print(str17.lstrip()) #Programming Language here left space is removed
+
+# Remove Right space
+print(str17.rstrip()) # Programming Language here right space is removed
+
+print("-"*50)
+###################################################
+# find method :  find method return the index position of given char/sub-string from target string, but if the char/sub-string
+# is not available, then it will return the -1
+# This find method is same as Index method only difference is find method we can get -ve value
+# if char is not their in string but in index we will not get -ve value it will show error
+
+str_a = "Karad is good city"
+result = str_a.find("good")
+# check existing word
+print("result :",result) # 9
+
+# check non - existing word
+result1 = str_a.find("District")
+print("result1 :",result1)  # -1
+
+result2 =str_a.index("good")
+print("result2 :",result2)
+
+result3 =str_a.index("Great")
+print("result3 :",result3)
+## ValueError: substring not found
