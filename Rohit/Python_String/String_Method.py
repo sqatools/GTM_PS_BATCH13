@@ -1,4 +1,6 @@
 ##Reverse Entire String
+from Deepesh.PythonProgramming.PythonString.Python_string import len_string
+
 str1 = "Good Morning"
 print(str1[::-1]) ## gninroM dooG
 print(str1[-1:-len(str1)-1:-1]) ## elaborate how its work -ve (Interview questions)
@@ -61,6 +63,7 @@ print("Index of are :",str11.index('are')) # Index of are : 23
 print("Index of d :",str11.index('d')) # Index of d : 3
 
 print("-"*50)
+
 #######################################################################
 # split method : this method split string from given char/space/comma and return as list of words.
 str12 = "Good Morning, Hope you are doing good"
@@ -88,3 +91,34 @@ print(result1)
 result2 = str14.replace("JAVA","Python",2)
 print(result2)
 #Python is great Programming Language, and Python is hard to understand JAVA
+
+print("-"*50)
+#######################################################################
+## Apply loop in string
+str16 = "programming"
+for char in str16:
+    print(char, end="") ## programming
+
+print("-"*50)
+len_string = len(str16)
+print(len_string)   ## 11
+
+print("-"*50)
+for i in range(len_string):
+    print(i, str16[i])
+""""
+0 p
+1 r
+2 o
+3 g
+4 r
+5 a
+6 m
+7 m
+8 i
+9 n
+10 g
+"""
+print("-"*50)
+
+#######################################################################
