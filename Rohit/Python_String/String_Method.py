@@ -99,11 +99,9 @@ str16 = "programming"
 for char in str16:
     print(char, end="") ## programming
 
-print("-"*50)
 len_string = len(str16)
 print(len_string)   ## 11
 
-print("-"*50)
 for i in range(len_string):
     print(i, str16[i])
 """"
@@ -120,5 +118,4 @@ for i in range(len_string):
 10 g
 """
 print("-"*50)
-
 #######################################################################
