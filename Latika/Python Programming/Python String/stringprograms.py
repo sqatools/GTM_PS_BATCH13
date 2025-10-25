@@ -173,6 +173,28 @@ print(result2)
 # replace first occurrence
 result3 = str15.replace("JAVA", "Python", 2)
 print(result3)
+##########################################################################################3
+
+str16="Hello students lets learn java"
+word_list=str16.split(" ")
+print(word_list)
+result=""
+for word in word_list:
+    print(word)
+    if word.lower()=="java":
+        result=result +"Python"+  " "
+    else:
+        result=result+word+ " "
+print("result : ",result)
+
+#################################################################################################
+
+"""
+Join Method - This Method join any string or interable data with any character/special char/substring.
+"""
+list1=["Hello","We","Are","Learning","Python"]
+result1=" ".join(list1)
+print(result1)
 
 
 
