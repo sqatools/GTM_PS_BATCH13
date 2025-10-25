@@ -183,8 +183,8 @@ print("_"*50)
 #######################
 # Apply loop on string.
 str_a = "Programming"
-for char in str_a:
-    print(char)
+for var in str_a:
+    print(var)
 """
 P
 r
@@ -263,12 +263,70 @@ print(result3)
 # Python is great Programming Language, and Python is hard to understand JAVA
 
 
+print("_"*50)
+#####################################################################
+# write a python program to replace all java word without replace method.
+
+str16 = "JAVA is great Programming Language, and Java is HARD to understand JAva"
+word_list = str16.split(" ")
+print(word_list)
+result = ""
+for word in word_list:
+    print(word)
+    if word.lower() == "java":
+        result = result + "PYTHON" + " "
+    else:
+        result = result + word + " "
+
+print("Result :", result)
+
+print("_"*50)
+#####################################################
+# join method: This method join any string or iterable data with any character/special char/substring.
+
+list1 = ["Hello", "We", "Are", "Learning", "Python"]
+result1 = " ".join(list1)
+print("result1 :", result1) # Hello We Are Learning Python
 
 
+pass1 = "P@ssw0rd"
+result2 = "&^%*".join(pass1)
+print("result2 :", result2) # P&^%*@&^%*s&^%*s&^%*w&^%*0&^%*r&^%*d
+
+pass2 = result2.replace("&^%*","")
+print("result pass2:", pass2) # P@ssw0rd
+
+print("_"*50)
+###################################
+# strip method :  this method remove all trailing spaces from given string.
+# trailing spaces :  spaces which is available in the beginning and end of the string.
+str_b = "  Python Programming  "
+print(str_b)
+print(str_b.strip())  # Python Programming
+
+# remove left spaces
+print(str_b.lstrip())
+
+# remove right spaces
+print(str_b.rstrip())
 
 
+###################################################
+# find method :  find method return the index position of given char/sub-string from target string, but if the char/sub-string
+# is not available, then it will return the -1
 
+str_c = "India is great country"
 
+# check existing word
+r2 = str_c.find("great")
+print("r2 :", r2)  # r2 : 9
 
+# check non - existing word
+r3 = str_c.find("city")
+print("r3 :", r3) #  -1
+
+# r4 = str_c.index("city")
+# print(r4)
+# ValueError: substring not found
 
 
