@@ -173,11 +173,60 @@ print(result2)
 # replace first occurrence
 result3 = str15.replace("JAVA", "Python", 2)
 print(result3)
+##########################################################################################3
 
+str16="Hello students lets learn java"
+word_list=str16.split(" ")
+print(word_list)
+result=""
+for word in word_list:
+    print(word)
+    if word.lower()=="java":
+        result=result +"Python"+  " "
+    else:
+        result=result+word+ " "
+print("result : ",result)
 
+#################################################################################################
+print("."*100)
+"""
+Join Method - This Method join any string or interable data with any character/special char/substring.
+"""
+list1=["Hello","We","Are","Learning","Python"]
+result1=" ".join(list1)
+print("result1",result1)
 
+pass1="P@ssw0rd"
+result2="&^%*".join(pass1)
+print("Result2 :", result2)
 
+pass2=result2.replace("&^%*"," ")
+print("Result pass2 is:",pass2)
 
+#################################################################################################
+print("."*100)
 
+"""
+Strip Method - this method remove all trailing spaces from given string
+"""
+str_b="  Added Space in the start and end  "
+print("Orignal String is: ",str_b)
+print("strip result is:",str_b.strip())
+
+print("Remove left and right spaces")
+print("Remove left spaces:", str_b.lstrip())
+print("Remove right spaces:",str_b.rstrip())
+
+#################################################################################################
+print("."*100)
+"""
+Find method return the index position of given char/sub string from target string, but if the char/substring is not available then it will return -1
+"""
+str_c="India is my country"
+r2=str_c.find("my")
+print("find of my is:",r2)
+
+r3=str_c.find("python")
+print("find of python is:",r3)
 
 
