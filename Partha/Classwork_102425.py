@@ -1,5 +1,5 @@
-str8 = "It's my Life. I live by my own rule. It's a test."
-translator = str.maketrans('','','.')
+str8 = input("Enter a string: ")
+translator = str.maketrans('','','.,:&')
 cleanstr = str8.translate(translator)
 word_list = cleanstr.split(" ")
 print(word_list)
