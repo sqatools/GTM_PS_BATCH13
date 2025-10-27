@@ -26,10 +26,13 @@ for val in list2:
 
 print("_"*50)
 # loop to get value with indexing
-list_len = len(list2)
+list_len = len(list2) # 6
 
 for i in range(list_len):
     print(i, list2[i])
+
+# for i in range(0, 6, 1):
+#     print(i)
 
 """
 0 a
@@ -109,3 +112,19 @@ l4 = ['a', 'b', 'c']
 l4.extend(set1)
 print("l4 :", l4) # ['a', 'b', 'c', 9, 5, 7]
 
+print("_"*50)
+##########################################################
+# list concatenation:
+l6 = [7, 8, 9]
+l7 = [10, 20, 30]
+l8 = l6+l7
+print("l8 :", l8) # [7, 8, 9, 10, 20, 30]
+
+
+
+
+# print(dir(list))
+# print(dir(dict))
+# dict1 = {'a': 123}
+# dict1['b'] = 456
+# print(dict1)
