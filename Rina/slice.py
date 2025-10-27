@@ -13,5 +13,9 @@ print(len(str_b))
 print(str_b[-1:-16:-1])
 
 """
+"""
+
 str_c = "3       3    yes!"
 print(str_c[0:12])
+
+"""
