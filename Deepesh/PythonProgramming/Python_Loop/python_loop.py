@@ -1,6 +1,5 @@
 print(1)
 print(2)
-
 """
 # range(start, end, step value)
 ->  Output of the range will include start value and exclude the end value.
@@ -10,6 +9,7 @@ print(2)
     range(3, 10) -> range(3, 10, 1)
 ->  start value, end value and step value could be +ve or -ve
 """
+
 print("_"*40)
 for i in range(1, 10, 1):
     print(i)
