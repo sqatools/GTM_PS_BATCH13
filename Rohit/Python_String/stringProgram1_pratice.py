@@ -54,3 +54,12 @@ for i in str4:
     else:
         continue
 print("Total vowels :",count)   # 9
+
+##Write a program to combine two strings into one.
+str1 = 'abc'
+str2 = 'def'
+str3 = str1 + str2
+print(str3) # abcdef
+
+
+
