@@ -32,4 +32,25 @@ for word in word_list:
 
 print("-"*50)
 
-## 
+## write a program to count vowels from string.
+str4 = "Hello Guys good morning, hope you are doing well"
+vowels = "aeiou"
+count = 0
+for i in str4:
+    if i in vowels:
+        count += 1
+    else:
+        continue
+
+print("Total vowels :",count)       # 16
+
+print("-"*50)
+
+vowels = "ou"
+count = 0
+for i in str4:
+    if i in vowels:
+        count +=1
+    else:
+        continue
+print("Total vowels :",count)   # 9
