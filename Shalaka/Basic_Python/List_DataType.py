@@ -17,10 +17,12 @@ for i in range(list_len):
 
 #list slicing
 list3 =[6,7,8,1,'a','b','c','d']
+print(list3[0:5])
+print(list3[5:9:1])
+print(list3[::-1])
+print(list3[::1])
 
 
-
-#List Methods
 # Append Method - add valun in list at the end
 
 l1 = [5,6,7,8]
