@@ -6,5 +6,17 @@ for char in str3:
 if char in vowels:
     count+=1
 else:
-      
-print("total words:",count)
+
+     print("total words:",count)
+
+###list##
+
+list1=[2,3,5,"hello",(5,6,7),[6,7,8]]
+print(list1[2])
+print(list1[4])
+print(list1[4][1])#0,1
+
+#slicing#
+
+list3= [5,8,9,2,15,'a','b','c','d']
+print(list3[-5:-10:-1])
