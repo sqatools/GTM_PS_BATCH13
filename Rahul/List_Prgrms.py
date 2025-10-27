@@ -15,7 +15,7 @@ print("_"*50)
 
 list2 = [4, 10, 11, 3, 6]
 list2.insert(2, 99)
-print("list2 :", list2)  # [8, 9, 100, 12, 4, 7]
+print("list2 :", list2)
 
 
 list4 = ['Rahul', 'Arnold', 4, 7]
