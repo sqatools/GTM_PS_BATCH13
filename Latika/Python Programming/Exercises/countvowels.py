@@ -9,3 +9,16 @@ for i in string:
         print(i)
 print("Number of vowels are:")
 print(vowels)
+
+########################################################################
+print("."*100)
+
+vowels1="aeiouAEIOU"
+count=0
+for ch in string:
+    print(ch)
+    if ch in vowels1:
+        count=count+1
+    else:
+        continue
+print("Total vowels :",count)

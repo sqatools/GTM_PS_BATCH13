@@ -1,11 +1,3 @@
-"""
-# Properties
--> List is mutable datatype.
--> List can contains any types of data e.g int, float, string, complex, list, tuple, bool, dict, set.
--> List follow positive and negative indexing.
--> List contains values in square bracket.
-"""
-
 list1 = [12, 3.5, 'Hello', (5, 6, 7), [6, 7, 8], {'a': 123}, {5, 7, 9}, True]
 print(list1, type(list1))
 
@@ -26,13 +18,10 @@ for val in list2:
 
 print("_"*50)
 # loop to get value with indexing
-list_len = len(list2) # 6
+list_len = len(list2)
 
 for i in range(list_len):
     print(i, list2[i])
-
-# for i in range(0, 6, 1):
-#     print(i)
 
 """
 0 a
@@ -119,12 +108,3 @@ l6 = [7, 8, 9]
 l7 = [10, 20, 30]
 l8 = l6+l7
 print("l8 :", l8) # [7, 8, 9, 10, 20, 30]
-
-
-
-
-# print(dir(list))
-# print(dir(dict))
-# dict1 = {'a': 123}
-# dict1['b'] = 456
-# print(dict1)
