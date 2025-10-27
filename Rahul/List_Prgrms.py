@@ -4,7 +4,7 @@ list2 = [99, 4.5, 'rahul', (9, 4, 2), [8, 3, 4]]
 print(list2, type(list2))
 
 print("_"*50)
-print("Pls the selected from the list")
+print("Pls find the selected item from the list")
 print(list2[2])
 print(list2[-2])
 print(list2[4][2])
