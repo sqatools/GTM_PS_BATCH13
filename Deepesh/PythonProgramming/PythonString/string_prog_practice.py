@@ -38,7 +38,26 @@ print("Long len :", long_len)
 
 
 
+print("_"*50)
+# Q3 :  Wright a prograaam to count vowels from string.
+str3 =  "good morning, hope you are doing good."
+vowels = "aeiouAEIOU"
+count = 0
+for char in str3:
+    #print(char)
+    if char in vowels:
+        count += 1
+        # count = count + 1
+    else:
+        continue
+
+print("Total vowels :", count)
+# Total vowels : 14
 
 
 
+print("_"*50)
+str4 = "Morning"
+for x in str4:
+    print(x*3)
 
