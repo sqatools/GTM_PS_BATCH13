@@ -26,3 +26,13 @@ print("count",str.count("a"))
 print("index of badri",str.index("badari"))
 split=str.split(" a")# it will split the words in the sentence from the given referance in the split function
 replace=str.replace("badari","b")
+
+str5=" i am learning  "
+str6="""python"""
+str7=["abc","abcd","abcde","abcdef"]
+
+res1="abc".join(str6)
+print(res1)
+res2=" ". join(str7)
+print(res2)
+print("strip is for removing space",str5.strip())
