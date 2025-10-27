@@ -38,7 +38,14 @@ print(str2.index("are"))
 print(str2.replace("python","Java"))
 print(str2.strip())  #removes whitespace (or other specified characters) from both the beginning and end of a string.
 
-print(str2.find("python"))             ##the index (position) of the first occurrence of substring, or
+print(str2.find("java"))             ##the index (position) of the first occurrence of substring, or
+print(str2.strip())
+str3="Password 1234"
+str4="#$%^".join(str3)
+print(str4)
+list=["Hello ","How ","are ","You ""ornage,""apple,"'grape,']
+Result="".join(list)
+print(Result)
 
                                    ##-1 if the substring is not found.
 #Q1 write a python program to remove duplicate words from given string.
