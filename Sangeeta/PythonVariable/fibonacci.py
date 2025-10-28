@@ -6,7 +6,7 @@ fib = []
 while a <= 20:
     a, b = b, a+b
     fib.append(a)
-    print(", ".join(str(num) for num in fib))
+print(", ".join(str(num) for num in fib))
 
 
 
