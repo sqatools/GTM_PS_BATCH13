@@ -126,3 +126,43 @@ l7 = ['a','b','c','d']
 l8 = ['M','N','T','Z']
 l13= l7+l8
 print("result of l13 :",l13) # ['a', 'b', 'c', 'd', 'M', 'N', 'T', 'Z']
+
+print("-"*50)
+###########################################################
+# remove method :  remove any specific value from list
+list1 = [2,4,9,10,11]
+list1.remove(9)
+print("list1 :", list1) # [2, 4, 10, 11]
+
+list1.remove(4)
+print("list1 :", list1) # [2, 10, 11]
+
+print("-"*50)
+###########################################################
+# pop method :  this method remove value from list using index position.
+#              ->  default index position is -1
+#              -> This method return the removed value, that we can store in a variable
+
+list_a = [33,22,23,11,55]
+
+# remove default index -1
+v1=list_a.pop()
+print("Removed value :",v1) # 55
+print("list_a :",list_a) # [33, 22, 23, 11]
+
+# remove from specific index
+v2 =list_a.pop(2)
+print("Removed value :",v2) # 23
+print("list_a :",list_a)  # [33, 22, 11]
+
+print("-"*50)
+##################################################################
+# clear method : clear all data from list
+list3 = [1,2,4,55,67]
+list3.clear()
+print("list3 :",list3)
+
+list4 = [33,55,'a',77,'t']
+list4.clear()
+print("list4 :",list4)
+print("-"*50)

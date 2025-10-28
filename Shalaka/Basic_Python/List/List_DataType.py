@@ -62,3 +62,101 @@ set1 = { 45,89,20}
 l7=['r','y','i']
 l7.extend(set1)
 print(l7)
+
+#list with concationation
+l8 =[4,6,7,9]
+l9=[6,7,3,1]
+l10= l8+l9
+print(l10)
+
+#Remove Method
+l11= [4,6,8,1,3,5]
+l11.remove(5)
+print(l11)
+
+#POP Method - default start value is -1
+list_c =[3,5,7,9]
+v1= list_c.pop()
+print(v1)
+print(list_c)
+
+#with index position
+list_d =[5,3,8,9]
+v2=list_d.pop(3)
+print(v2)
+print(list_d)
+
+#clear method : clear all the list
+list_1 = [5,6,7,8]
+list_1.clear()
+print(list_1)
+
+#Copy method : Shallow Method - changes will reflect in all list
+
+list_d =[5,7,9]
+list_e =list_d
+
+list_d.append(100)
+list_e.append(200)
+
+print(list_d)
+print(list_e)
+
+#Copy method : Deep Method - changes will reflect listwise
+
+list_f =[5,7,9]
+list_g =list_f.copy()
+
+list_f.append('d')
+list_g.append(200)
+
+print(list_f)
+print(list_g)
+
+
+#Sort method
+#Ascending order
+list_2 =['a','z','c']
+
+list_2.sort()
+print(list_2)
+
+#dscending order
+list_2 =['a','z','c']
+
+list_2.sort(reverse=True)
+print(list_2)
+
+#Reverse Method
+
+list_3 =[200,30,23,77,93]
+list_3.reverse()
+print(list_3)
+
+# write a program to get all the evn numbers
+
+list_4 =[22,55,66,32,54]
+output =[]
+
+for val in list_4:
+    if val%2==0:
+        output.append(val)
+    else:
+        continue
+print(output)
+
+# write a program to get all the even numbers with llist comphersion
+
+list_5 =[22,55,66,32,54]
+output = [val for val in list_5 if val%2==0]
+print(output)
+
+# write a program to get reuquired output list
+list_6 =[22,5,6,9,54]
+
+for val in list_6:
+    if val%2==0:
+        output.append(val)
+    else:
+        continue
+print(output)
