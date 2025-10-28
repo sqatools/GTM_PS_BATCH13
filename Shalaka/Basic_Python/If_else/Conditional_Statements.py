@@ -49,7 +49,7 @@ if round1 == 'pass':
         if round3 == 'pass':
             print('Third round is clear', round3)
         else:
-            print('Second round is fail', round3)
+            print('Third round is fail', round3)
             if round4 == 'pass':
                 print('Fourth round is clear', round4)
             else:

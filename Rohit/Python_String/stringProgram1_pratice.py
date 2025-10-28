@@ -31,3 +31,35 @@ for word in word_list:
     print("Long len :", long_len)
 
 print("-"*50)
+
+## write a program to count vowels from string.
+str4 = "Hello Guys good morning, hope you are doing well"
+vowels = "aeiou"
+count = 0
+for i in str4:
+    if i in vowels:
+        count += 1
+    else:
+        continue
+
+print("Total vowels :",count)       # 16
+
+print("-"*50)
+
+vowels = "ou"
+count = 0
+for i in str4:
+    if i in vowels:
+        count +=1
+    else:
+        continue
+print("Total vowels :",count)   # 9
+
+##Write a program to combine two strings into one.
+str1 = 'abc'
+str2 = 'def'
+str3 = str1 + str2
+print(str3) # abcdef
+
+
+

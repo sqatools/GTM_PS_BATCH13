@@ -1,4 +1,6 @@
 ##Get a string made of first and the last 2 chars
+from Rahul.String_Prgrms import word_len
+
 str1 = "Rohit Chavan"
 ##print(str1[2]+str1[-2])
 ##print(str1[0:2:1])
@@ -70,3 +72,17 @@ str7 = "I Join class of JAVA programming as JAVA has more scope in Market"
 
 print("Result :",str7.replace("JAVA","Python"))
 #I Join class of Python programming as Python has more scope in Market
+
+print("-"*50)
+####################################################################
+# Find the longest and smallest word in the input string
+str8 = "I learn python programming"
+word_list = str8.split()
+print(word_list)
+
+print("longest word :",max(word_list,key=len)) #programming
+print("smallest word :",min(word_list,key=len)) #I
+
+print("-"*50)
+####################################################################
+#
