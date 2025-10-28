@@ -1,3 +1,11 @@
+"""
+# Properties
+-> List is mutable datatype.
+-> List can contains any types of data e.g int, float, string, complex, list, tuple, bool, dict, set.
+-> List follow positive and negative indexing.
+-> List contains values in square bracket.
+"""
+
 list1 = [12, 3.5, 'Hello', (5, 6, 7), [6, 7, 8], {'a': 123}, {5, 7, 9}, True]
 print(list1, type(list1))
 
@@ -18,10 +26,13 @@ for val in list2:
 
 print("_"*50)
 # loop to get value with indexing
-list_len = len(list2)
+list_len = len(list2) # 6
 
 for i in range(list_len):
     print(i, list2[i])
+
+# for i in range(0, 6, 1):
+#     print(i)
 
 """
 0 a
@@ -109,26 +120,11 @@ l7 = [10, 20, 30]
 l8 = l6+l7
 print("l8 :", l8) # [7, 8, 9, 10, 20, 30]
 
-####################################################
-
-# Append method :  This method add value to the list at the end.
-list4 = [5, 7, 9, 23]
-list4.append(10)
-print("list4 :", list4)
-list4.append(500)
-print("list4 :", list4)
 
 
-print("_"*50)
-#####################
-# insert method :  this method insert data at specific index position.
-list5 = [1,2,56,6,99,102]
-list5.insert(7, 100)
-print("list5 :", list5)
 
-list5.insert(0, 109)
-print("list5 :", list5)
-
-list6 = ['Arun', 'Tej', 'Learning''python', 4, 7]
-list6.insert(3, 'Programming')
-print("list6 :", list6)
+# print(dir(list))
+# print(dir(dict))
+# dict1 = {'a': 123}
+# dict1['b'] = 456
+# print(dict1)
