@@ -1,0 +1,2 @@
+##### strings concantation
+  Str1= ""
