@@ -108,3 +108,27 @@ l6 = [7, 8, 9]
 l7 = [10, 20, 30]
 l8 = l6+l7
 print("l8 :", l8) # [7, 8, 9, 10, 20, 30]
+
+####################################################
+
+# Append method :  This method add value to the list at the end.
+list4 = [5, 7, 9, 23]
+list4.append(10)
+print("list4 :", list4)
+list4.append(500)
+print("list4 :", list4)
+
+
+print("_"*50)
+#####################
+# insert method :  this method insert data at specific index position.
+list5 = [1,2,56,6,99,102]
+list5.insert(7, 100)
+print("list5 :", list5)
+
+list5.insert(0, 109)
+print("list5 :", list5)
+
+list6 = ['Arun', 'Tej', 'Learning''python', 4, 7]
+list6.insert(3, 'Programming')
+print("list6 :", list6)
