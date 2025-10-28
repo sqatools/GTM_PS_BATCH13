@@ -39,7 +39,7 @@ print("*"*50)
 list_c = [5,7,2,15,18]
 v1 = list_c.pop()
 print("removed value  :", v1)
-print ("list _C", list_C)
+print ("list _C", list_c)
 
 #to remove from specific index
 v2 = list_c.pop(1)
@@ -64,7 +64,7 @@ print("list_d :", list_d)
 # Deep copy -In this concept we have to copy method to create a list and modification done in one list will not impact the other
 
 list_x = ['a','b','c']
-list_y = list_x.copy
+list_y = list_x.copy()
 list_x.append('d')
 list_y.append(100)
 
@@ -81,12 +81,12 @@ print("list1 :", list1)
 
 list2=[5,8,15,17,82,87]
 #sort in descending order
-list2.sort(reverse=true) # We have to mention reverse=true to see the desc.
+list2.sort(reverse = True) # We have to mention reverse=true to see the desc.
 print("list2 :", list2)
 
 # reverse method : this will reverse the entire list
 list_n = [8,14,'hi',27,42,'true']
-listn.reverse()
+list_n.reverse()
 print("list_n :", list_n)
 
 
