@@ -166,3 +166,120 @@ list4 = [33,55,'a',77,'t']
 list4.clear()
 print("list4 :",list4)
 print("-"*50)
+############################################################
+# copy() method:
+
+# Shallow copy: when we assign one list to another list, and modify any value in both the list
+# then changes will reflect in both lists.
+
+list5 = [1,4,6,9]
+list_e = list5
+#print(list_e)
+#print(list5)
+list_e.append(199)
+list5.append(100)
+print("list_e :", list_e)  # [1, 4, 6, 9, 199, 100]
+print("list5 :", list5)   # [1, 4, 6, 9, 199, 100]
+
+print("-"*50)
+
+# Deep Copy: In this concept we have to copy method to create a of list, and if we will do modification in any of the list
+# then changes will not reflect in another list.
+
+list_a = [33,76,'a',99,'b']
+y = list_a.copy()
+#print(y)
+#print(list_a)
+y.append(100)
+list_a.append(200)
+print("y :",y)
+print("list_a :", list_a)
+
+##y : [33, 76, 'a', 99, 'b', 100]
+##list_a : [33, 76, 'a', 99, 'b', 200]
+
+print("-"*50)
+###############################################################
+# sort method :
+list1= [2,1,0,99,77,65]
+# sort in ascending order
+list1.sort()
+print("list1 Ascending order :",list1)
+# list1 Ascending order : [0, 1, 2, 65, 77, 99]
+
+# sort in descending order
+list1.sort(reverse=True)
+print("list1 Descending order :", list1)
+#list1 Descending order : [99, 77, 65, 2, 1, 0]
+
+print("-"*50)
+
+list_a = ['c','a','d','b']
+list_a.sort()
+print("list_a Ascending order :",list_a)
+# list_a Ascending order : ['a', 'b', 'c', 'd']
+
+list_a.sort(reverse=True)
+print("list_a descending order :", list_a)
+# list_a descending order : ['d', 'c', 'b', 'a']
+
+print("-"*50)
+###########################################################
+# reverse method : this method reverse entire list
+list_x = [5, 7, 9, 23, 4, 78, 'Hello', 'Python']
+list_x.reverse()
+print("list_x :",list_x)
+# ['Python', 'Hello', 78, 4, 23, 9, 7, 5]
+
+list_z = ['Rohit','chavan','karad','city','satara']
+list_z.reverse()
+print("list_z :",list_z)
+#['satara', 'city', 'karad', 'chavan', 'Rohit']
+
+print("-"*50)
+###########################################################
+# write a python program to get all the even values from list
+list1 = [2,7,8,10,11]
+output= []
+for val in list1:
+    if val%2==0:
+        output.append(val)
+    else:
+         continue
+
+print("output :",output)  # output : [2, 8, 10]
+
+print("-"*50)
+
+# solve above program to with list comprehension
+result=[val for val in list1 if val%2==0 ]
+print("result :",result) # [2, 8, 10]
+
+print("-"*50)
+###################################################################
+# write a python program to get all the required output values from list
+list2 = [2,5,12,17]
+output = []
+for val in list2:
+    if val%2==0:
+        output.append((val,'even'))
+    else :
+        output.append((val,'odd'))
+
+print("output :",output)
+# [(2, 'even'), (5, 'odd'), (12, 'even'), (17, 'odd')]
+
+# solve above program to with list comprehension:
+result1 = [(val,'even') if val%2==0 else (val,'odd') for val in list2]
+print("result1 :",result1)
+# [(2, 'even'), (5, 'odd'), (12, 'even'), (17, 'odd')]
+
+##display only even and odd for numbers
+result2 = [('even') if val%2==0 else ('odd') for val in list2]
+print("result2 :", result2)
+#['even', 'odd', 'even', 'odd']
+
+##Square and cube
+result3 =[val**2 if val%2==0 else val**3 for val in list2]
+print("result3 :",result3)
+# [4, 125, 144, 4913]
