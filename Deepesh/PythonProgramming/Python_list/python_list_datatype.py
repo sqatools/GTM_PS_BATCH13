@@ -281,16 +281,6 @@ print("result4 :", result4) # [16, 343, 729, 144]
 
 
 
-# Deep Copy
-
-
-
-
-
-
-
-
-
 
 
 
