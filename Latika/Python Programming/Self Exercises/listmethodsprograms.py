@@ -37,3 +37,4 @@ print("with list compr")
 
 result2=[(y,'even') if y%2==0 else (y,'odd') for y in list2]
 print(result2)
+
