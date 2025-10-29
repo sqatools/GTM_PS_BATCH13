@@ -23,7 +23,7 @@ print(list3[::-1])
 print(list3[::1])
 
 
-# Append Method - add valun in list at the end
+# Append Method - add value in list at the end
 
 l1 = [5,6,7,8]
 print('before append :', l1)
