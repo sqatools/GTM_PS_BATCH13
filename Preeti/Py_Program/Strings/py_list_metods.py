@@ -31,3 +31,6 @@ list_x.append('e')
 list_y.append(100)
 print(list_x)
 print(list_y)
+
+###### sort #########
+list1=[3,8,9,2,1,0,4,5]
