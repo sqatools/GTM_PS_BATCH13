@@ -283,3 +283,26 @@ print("result2 :", result2)
 result3 =[val**2 if val%2==0 else val**3 for val in list2]
 print("result3 :",result3)
 # [4, 125, 144, 4913]
+
+print("_"*50)
+######################################################################
+# sorted function.
+
+# Increasing order
+list2 = [6, 8, 9, 2, 1]
+result2 = sorted(list2)
+print(result2) # [1, 2, 6, 8, 9]
+
+result3 = list(sorted(list2))
+print(result3) # [1, 2, 6, 8, 9]
+
+# Decreasing order
+result4 = sorted(list2,reverse=True)
+print("decreasing sorted result :",result4) # [9, 8, 6, 2, 1]
+
+result5 = list(sorted(list2,reverse=True))
+print("decreasing sorted result :",result5) # [9, 8, 6, 2, 1]
+
+# reversed function
+result6 = list(reversed(list2))
+print(result6) # [1, 2, 9, 8, 6]

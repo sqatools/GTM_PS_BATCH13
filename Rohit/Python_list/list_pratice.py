@@ -1,4 +1,6 @@
 # 1.  write a python program to get max value from list without using inbuilt function.
+from Deepesh.PythonProgramming.Python_list.python_list_datatype import output
+
 list1 = [22,67,45,89,77,23]
 max_val = 0
 for val in list1:
@@ -31,7 +33,9 @@ for val in list3:
         post_value.append(val)
     else:
         neg_value.append(val)
+
+#post_value.extend(neg_value)
 result = post_value + neg_value
 print("Display Positive & Negative values :", result)
-
+#print("post_value :", post_value)
 
