@@ -62,10 +62,10 @@ print("."*100)
 
 list5=[6,8,10,3,2]
 result=list(sorted(list5))
-print(result)
+print("increasing sorted order",result)
 
 result=list(sorted(list5,reverse=True))
-print(result)
+print("decreasing sorted order",result)
 
 
 
