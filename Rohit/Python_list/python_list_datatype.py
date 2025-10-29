@@ -303,6 +303,6 @@ print("decreasing sorted result :",result4) # [9, 8, 6, 2, 1]
 result5 = list(sorted(list2,reverse=True))
 print("decreasing sorted result :",result5) # [9, 8, 6, 2, 1]
 
-# reversed function
+# reversed function :
 result6 = list(reversed(list2))
 print(result6) # [1, 2, 9, 8, 6]
