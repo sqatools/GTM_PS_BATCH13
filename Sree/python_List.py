@@ -30,3 +30,57 @@ list4.append(800)
 list3.append(500)
 print(list3)
 print(list4)
+print("-"*40)
+## sort method :#############
+l1=[100,40,700,30]
+l1.sort()
+print(l1)
+l1.sort(reverse=True)
+print(l1)
+print("-"*40)
+############################### reverse method : this method reverse entire list
+l1=[100,40,700,30,'Java','python']
+l1.reverse()
+print(l1)
+print("-"*40)
+###############################
+# solve above program to with list comprehension
+l2=[2,4,8,9,4,6,3]
+
+for i in l2:
+    if i % 2==0:
+        print('even number:',i)
+    else:
+        print('odd number:',i)
+print("-"*40)
+Value=[i for i in l2 if i%2==0]
+print('even number:',Value)
+print("_"*50)
+####################################################
+# write a python program to get all the required output values from list.
+#output = [(4, 'even'), (7, 'odd'), (9, 'odd'), (12, 'even')]
+l4=[4,7,9,12]
+output=[]
+for i in l4:
+    if i%2==0:
+        output.append((i,'even'))
+    else:
+        output.append((i,'Odd'))
+print('values:',output)
+# solve above program with list comp.
+output=[(i,'even')if i%2==0 else(i,'odd')for i in l4]
+print('values:',output)
+print("_"*50)
+####################################################
+
+
+
+
+
+###############################
+
+
+
+
+
+
