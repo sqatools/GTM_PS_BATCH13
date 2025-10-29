@@ -5,5 +5,6 @@ list_1.remove(4)
 print("list_1:", list_1)
 
 ################################pop methods################333333333333
-list_2=list_1.pop()
-print("remo")
+list_2= list_1.pop()
+print("removed value :", list_2)
+print("list_1 :",list_1)
