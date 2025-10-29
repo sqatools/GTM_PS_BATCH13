@@ -27,3 +27,9 @@ print("-"*50)
 print("")
 for i in range(-Y,0,1):
     print(i)
+print("-"*50)
+print("")
+#####################################tuple##################
+tupl=(5,5.5,'Hi',[1,2,3],{'a': 55},{22,9},False,(2,5))
+print('tupl',type(tupl))
+
