@@ -12,6 +12,8 @@ print(max(list1))
 print(min(list1))
 print(sum (list1))
 print(len(list1))
+print(sorted(list1))
+
 
 # write a python program to remove duplicate values from list
 list2 = ["Rohit", "Rahul", "Rohan",  "Ravi", "Rahul", "Rohit"]
