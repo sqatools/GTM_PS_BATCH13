@@ -7,7 +7,6 @@
 -> Can not modify tuple values.
 -> When we want to keep data constant then we should tuple. e.g. days in week, months in year etc.
 """
-from Preeti.Py_Program.Py_set.Py_set_30 import set_1, result
 
 tup1 = (3,4.6,"World",[4,6,2],(2,4),{'a':12},{3,4,5},True)
 print(tup1,type(tup1))
@@ -51,6 +50,12 @@ print(tup2[2:6])
 # ('Hello', [4, 7, 8], (6, 7), {'a': 123})
 print(tup2[-1:-4:-1])
 # (True, {8, 4, 7}, {'a': 123})
+
+print(tup2[::-1])
+# (True, {8, 4, 7}, {'a': 123}, (6, 7), [4, 7, 8], 'Hello', 3.5, 3)
+
+print(tup2[-2:2:-1])
+# ({8, 4, 7}, {'a': 123}, (6, 7), [4, 7, 8])
 
 print("-"*50)
 ############################# method #######################
