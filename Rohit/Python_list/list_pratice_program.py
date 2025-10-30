@@ -1,6 +1,4 @@
 #Python program to combine two lists.
-from Deepesh.PythonProgramming.DataType.python_datatype import result
-
 l1 = [1,2,3,4]
 l2 = [5,6,7,8]
 #1st way output
@@ -144,12 +142,12 @@ print("-"*50)
 #Python program to reverse a list with reversed and reverse methods.
 list1 = [2,3,7,9,3,1]
 # using reverse methods
-list1.reverse()
-print(list1)  ## [1, 3, 9, 7, 3, 2]
+#list1.reverse()
+#print(list1)  ## [1, 3, 9, 7, 3, 2]
 
 # Using reversed method
-#result = list(reversed(list1))
-#print("result of Reversed list :",result)
+result1  = list(reversed(list1))
+print(result1)
 
 print("-"*50)
 ########################################################
@@ -187,5 +185,56 @@ for val in list1:
 print(list2)
 # ['aqS', 'slooT', 'enilnO', 'gninraeL', 'mroftalP']
 
+print("-"*50)
+###########################################################
+#Python program to split the list into two-part, the left side all odd values and
+# the right side all even values.
+list1 = [5, 7, 2, 8, 11, 12, 17, 19, 22]
+even_value = []
+odd_value = []
+for val in list1:
+    if val%2==0:
+        even_value.append(val)
+    else:
+        odd_value.append(val)
+#print(even_value)
+#print(odd_value)
+odd_value.extend(even_value)
+#result = odd_value + even_value
+print(odd_value)  # [5, 7, 11, 17, 19, 2, 8, 12, 22]
+#print(result)
 
+print("-"*50)
+############################################################
+# Problem to get common elements from two lists.
+list1 = [4, 5, 7, 9, 2, 1]
+list2 = [2, 5, 8, 3, 4, 7]
+common_values = []
+for val in list1:
+    if val in list2:
+        common_values.append(val)
+print("common_values :",common_values)
 
+print("-"*50)
+############################################################
+# reverse a list with reversed Using reversed method
+list1 = [2,3,7,9,3,1]
+result1  = list(reversed(list1))
+print(result1)
+
+print("-"*50)
+############################################################
+#Problem to print true if common elements between lists.
+list1 = [2,4,7,8,3]
+list2 = [4,5,0]
+for val in list1:
+    if val in list2:
+        print("True")
+print("-"*50)
+############################################################
+# Python program to insert items at a specific position in the list.
+list11 = [2,4,6,8,3,33]
+#Index: 3
+#Item: 55
+list11.insert(3,55)
+print(list11) # [2, 4, 6, 55, 8, 3, 33]
