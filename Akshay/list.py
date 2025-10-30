@@ -19,4 +19,16 @@ print(list1[4][1])#0,1
 #slicing#
 
 list3= [5,8,9,2,15,'a','b','c','d']
-print(list3[-5:-10:-1])
+print(list3[5:9])##from a it will print
+print(list3[-1:-10:-1])###start ,step,stop
+
+#append method
+list8= [4,5,6]
+list8.append(10)
+print("list8:",list8)
+
+#insert#
+
+list10=[1,2,3,4,5,6]
+list10.insert(6,7)
+print("list10:",list10)
