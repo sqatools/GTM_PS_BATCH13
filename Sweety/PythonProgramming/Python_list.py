@@ -202,6 +202,117 @@ list2 = [5, 8, 15, 1, 2, 6, 100, 20]
 list2.sort(reverse=True)
 print("list2 after sorting: ", list2)
 
+print("_"*50)
+#####################################################
+# reverse method : this method reverse entire list
+list_x = [5, 7, 9, 23, 4, 78, 'Hello', 'Python']
+list_x.reverse()
+print("After reversing list_x:", list_x)
+
+print("_"*50)
+#####################################################
+# write a program o find out numer is divisible by 2
+list1 = [2, 6, 3, 7]
+count = []
+for val in list1:
+    if val%2 == 0:
+        count.append(val)
+    else:
+        continue
+print(count)
+
+print("_"*50)
+####################################################
+result = [x for x in list1 if x%2 == 0]
+print("Result: ", result)
+# solve above program to with list comprehension
+
+print("_"*50)
+####################################################
+# write a python program to get all the required output values from list.
+
+list2 = [4, 7, 9, 12]
+count = []
+for val in list2:
+    if val%2 == 0:
+        count.append((val, "even"))
+    else:
+        count.append((val, "odd"))
+print(count)
+
+# solve above program with list comp.
+list2 = [4, 7, 9, 12]
+
+count = [(val, "even") if val%2 == 0 else (val, "odd") for val in list2]
+print(count)
+
+######################## Max, Min, sum of list values ##############
+list1 = [4, 7, 10, 50, 23, 45]
+
+print("max value :", max(list1))  # max value : 50
+print("min value :", min(list1))  # min value : 4
+print("sum of values :", sum(list1))  # sum of values : 139
+
+print("_" * 50)
+###########################################################
+# sorted function.
+
+# Increasing order
+list2 = [6, 8, 9, 2, 1]
+result2 = list(sorted(list2))  # [1, 2, 6, 8, 9]
+print("sorted result :", result2)
+
+# Decreasing order
+result4 = list(sorted(list2, reverse=True))  # [9, 8, 6, 2, 1]
+print("decreasing sorted result :", result4)
+
+# reversed function
+result3 = list(reversed(list2))
+print("result3 :", result3)  # [1, 2, 9, 8, 6]
+
+print("_" * 50)
+#######################################################################################
+# 1.  write a python program to get max value from list without using inbuilt function.
+list1 = [66, 2, 8, 99, 4]
+max_val = 0
+for val in list1:
+    if val > max_val:
+        max_val = val
+    else:
+        continue
+print("Maximum value is: ", max_val)
+
+print("_"*50)
+#######################################################################################
+# 2. write a python program to remove duplicate values from list
+list2 = ["Rohit", "Rahul", "Rohan",  "Ravi", "Rahul", "Rohit"]
+result2 = []
+
+for val in list2:
+    if val not in result2:
+        result2.append(val)
+    else:
+        continue
+print("Result2 is:", result2)
+
+print("_"*50)
+#######################################################################################
+# 3. write a python program to move all positive value in left side and negative values in right side.
+list3 = [5, 8, -9, 2, -30, 10, -60]
+positive_val = []
+negative_val = []
+
+for val in list3:
+    if val>0:
+        positive_val.append(val)
+    else:
+        negative_val.append(val)
+result3 =  positive_val + negative_val
+print("result3 is", result3)
+
+
+
+
 
 
 
