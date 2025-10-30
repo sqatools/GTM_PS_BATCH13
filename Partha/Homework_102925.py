@@ -31,7 +31,7 @@ list1 = [5, 7, 9, 23, 0, 80, 56, 10, -1]
 print("The Max value in the list is: ", max(list1))
 print("The Min value in the list is: ", min(list1))
 
-print('*'*50+"Program 7 - Separate Odd & even from a List"+'*'*50)
+print('*'*50+"Program 6 - Separate Odd & even from a List"+'*'*50)
 list1 = [5, 7, 9, 34.98, 23, 0, "roger", 80, 56, 10, -1, 'abc']
 odd_list =[]
 even_list = []
@@ -45,3 +45,18 @@ for val in list1:
 print("The even list is: ", sorted(even_list))
 print("The odd list is: ", sorted(odd_list))
 
+print('*'*50+"Program 7 - Remove duplicates from a List"+'*'*50)
+list1 = [5, 7, 23, 9, 23, 80, 56]
+list2 = []
+for val in list1:
+    if val not in list2:
+        list2.append(val)
+print(list2)
+
+print('*'*50+"Program 8 - Remove duplicates from a List"+'*'*50)
+list1 = [5, 7, 23, 9, 23, 80, 56]
+list2 = []
+for val in list1:
+    if val not in list2:
+        list2.append(val)
+print(list2)
