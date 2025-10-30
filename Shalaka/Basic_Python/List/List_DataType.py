@@ -23,7 +23,7 @@ print(list3[::-1])
 print(list3[::1])
 
 
-# Append Method - add valun in list at the end
+# Append Method - add value in list at the end
 
 l1 = [5,6,7,8]
 print('before append :', l1)
@@ -145,18 +145,26 @@ for val in list_4:
         continue
 print(output)
 
-# write a program to get all the even numbers with llist comphersion
+# write a program to get all the even numbers with list comphersion
 
 list_5 =[22,55,66,32,54]
 output = [val for val in list_5 if val%2==0]
 print(output)
 
-# write a program to get reuquired output list
+# write a program to get required output list
 list_6 =[22,5,6,9,54]
-
+output =[]
 for val in list_6:
     if val%2==0:
-        output.append(val)
+        output.append((val, 'Odd'))
     else:
-        continue
+        output.append((val, 'even'))
+
 print(output)
+
+# write a program to get required output with list comphersion
+
+list_7 =[3,6,10,4]
+output = [(val, 'odd') if val%2==0 else (val,'even') for val in list_7]
+print (output)
+
