@@ -18,3 +18,7 @@ dict4 = {'e': (4,8,44), 'b': 'hello', 'a': 'pinch', 'g': (66,11,90)}
 val = dict4.pop('a')
 print("remove value: ", val)
 """
+list1 = ['v', 'w', 'g']
+list2 = [10, 2200, 130]
+dict1 = dict(zip(list1, list2))
+print(dict1)
