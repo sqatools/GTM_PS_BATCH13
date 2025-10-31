@@ -7,8 +7,6 @@ Properties:
 ->  Only immutable data type are allowed as member e.g. int. float, string, tuple, boolean.
 
 """
-from os import set_handle_inheritable
-
 set1 = {3, 3.5, 'Hello', (3, 5, 6), True, 3, 3.5, True}
 print(set1, type(set1))
 # {True, 3.5, 3, 'Hello', (3, 5, 6)} <class 'set'>
@@ -58,7 +56,7 @@ set_b = {4,6,11,70,50}
 
 # remove existing value
 set_b.discard(70)
-print("set_b :",set_b) # {50, 4, 6, 11
+print("set_b :",set_b) # {50, 4, 6, 11}
 
 # remove non-existing value
 set_b.discard(100)
