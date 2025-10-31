@@ -23,7 +23,7 @@ Properties:
 
 -> Dict follow LIFO (LAST IN FIRST OUT) concept
 """
-from Deepesh.PythonProgramming.Python_Dict.python_dict_datatype import result, first_char
+from Deepesh.PythonProgramming.Python_Dict.python_dict_datatype import result, first_char, output
 
 dict1 = {'a': 13,'b':34,'c':22}
 print(dict1,type(dict1)) # {'a': 13, 'b': 34, 'c': 22} <class 'dict'>
@@ -68,4 +68,68 @@ print("result :", result2)
 # {2: 4, 4: 16, 6: 36, 8: 64, 10: 100, 12: 144, 14: 196, 16: 256, 18: 324, 20: 400}
 
 print("-"*50)
+######################################################################
+# Q3:  write a python program to get desire result: sum of values
+dict1 = {'a': [1, 2, 3], 'b': [4, 5, 6], 'c': [7, 8, 9]}
+output = {}
+for k,v in dict1.items():
+    output[k] = sum(v)
 
+print("output :",output) # {'a': 6, 'b': 15, 'c': 24}
+
+print("-"*50)
+######################################################################
+# dictionary methods :
+
+# 1.update method:  this method combine 2 dicts data
+dict1 = {'a': 77, 'b': 88, 'c': 99}
+dict2 = {12: 'Hello', 13: [5, 6, 7], 16: (3, 5, 7)}
+dict2.update(dict1)
+print("dict2 :",dict2) # only dict2 will get modify
+#print("dict1 :", dict1)
+# dict2 : {12: 'Hello', 13: [5, 6, 7], 16: (3, 5, 7), 'a': 77, 'b': 88, 'c': 99}
+# dict1 : {'a': 77, 'b': 88, 'c': 99}
+
+print("-"*50)
+###################
+# 2.pop() method :  This method remove any specific data using key and return it.
+dict3 = {12: 'Hello', 13: [5, 6, 7], 16: (3, 5, 7), 'a': 77, 'b': 88, 'c': 99}
+val = dict3.pop('b')
+print("Removed value :", val) # 88
+print(dict3) # {12: 'Hello', 13: [5, 6, 7], 16: (3, 5, 7), 'a': 77, 'c': 99}
+
+print("-"*50)
+val1 = dict3.pop(16)
+print("Removed value1 :", val1) # (3, 5, 7)
+print(dict3) #{12: 'Hello', 13: [5, 6, 7], 'a': 77, 'c': 99}
+
+print("-"*50)
+###################
+# 3.delete data using del keyword : it will delete entire value from dictionary will not store to restore
+dict4 = {12: 'Hello', 13: [5, 6, 7], 'a': 77, 'c': 99}
+del dict4[13]
+print("dict4 :",dict4) #{12: 'Hello', 'a': 77, 'c': 99}
+
+# this will remove entire variable from memory.
+dict5 = {12: 'Hello', 'a': 77, 'c': 99}
+#del dict5
+#print(dict5)
+
+print("-"*50)
+###################
+# popitem() method : last value will get deleted/removed
+dict6 = {12: 'Hello', 13: [5, 6, 7], 'b': 88, 'c': 99}
+val = dict6.popitem()
+print("value :", val) # ('c', 99)
+print("dict6 :",dict6) # {12: 'Hello', 13: [5, 6, 7], 'b': 88}
+#########################
+# if we want combination of  2 list then zip is used and convert to dict:
+list1 = ['p', 'q', 'r']
+list2 = [100, 200, 300]
+dict1 = dict(zip(list1,list2))
+print(dict1) # {'p': 100, 'q': 200, 'r': 300}
+
+list3 = ['p', 'q', 'r']
+list4 = [100, 200, 300,400]
+dict2 = dict(zip(list3,list4))
+print(dict2) # {'p': 100, 'q': 200, 'r': 300} if combination is not their then 400 will get ignored
