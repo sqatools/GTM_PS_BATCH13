@@ -1,3 +1,5 @@
+from itertools import combinations
+
 print('*'*50+"Program 1 - Square List"+'*'*50)
 
 list1 = [5, 7, 9, 23, 80, 56]
@@ -31,7 +33,7 @@ list1 = [5, 7, 9, 23, 0, 80, 56, 10, -1]
 print("The Max value in the list is: ", max(list1))
 print("The Min value in the list is: ", min(list1))
 
-print('*'*50+"Program 7 - Separate Odd & even from a List"+'*'*50)
+print('*'*50+"Program 6 - Separate Odd & even from a List"+'*'*50)
 list1 = [5, 7, 9, 34.98, 23, 0, "roger", 80, 56, 10, -1, 'abc']
 odd_list =[]
 even_list = []
@@ -45,3 +47,46 @@ for val in list1:
 print("The even list is: ", sorted(even_list))
 print("The odd list is: ", sorted(odd_list))
 
+print('*'*50+"Program 7 - Remove duplicates from a List"+'*'*50)
+list1 = [5, 7, 23, 9, 23, 80, 56]
+list2 = []
+for val in list1:
+    if val not in list2:
+        list2.append(val)
+print(list2)
+
+print('*'*50+"Program 8 - List of 2 numbers whose sum is 10"+'*'*50)
+list1 = [0, 1, 2, 3, 4, 5, 7, 9, 10, 23, 80, 56]
+list2 = []
+list3 = []
+list4 = []
+for val in list1:
+    if val<=10:
+        list2.append(val)
+list3 = tuple(combinations(list2, 2))
+for val in list3:
+    if sum(val) == 10:
+        list4.append(val)
+print(list4)
+
+print('*'*50+"Program 9 - List of Squares for all even numbers in a list"+'*'*50)
+list1 = [0, 1, 2, 3, 4, 5, 7, 9, 10, 23, 80, 56]
+list2 = []
+for val in list1:
+    if val%2 == 0:
+        list2.append(pow(val,2))
+print(sorted(list2))
+
+print('*'*50+"Program 10 - Left Odds, Right evens"+'*'*50)
+list1 = [0, 1, 2, 3, 4, 5, 7, 9, 10, 23, 80, 56]
+list2 = []
+list3 = []
+for val in list1:
+    if val%2 == 0:
+        list2.append(val)
+    elif val%2 != 0:
+        list3.append(val)
+list4 = sorted(list2)
+list5 = sorted(list3)
+list5.extend(list4)
+print(list5)
