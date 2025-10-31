@@ -90,3 +90,19 @@ list4 = sorted(list2)
 list5 = sorted(list3)
 list5.extend(list4)
 print(list5)
+
+print('*'*50+"Program 11 - Common Items"+'*'*50)
+list1 = [0, 1, 2, 3, 4, 5, 7, 9, 10, 23, 80, 56]
+list2 = [13, 5, 7, 9, 10, 44, 67]
+list3 = []
+for val in list1:
+    if val in list2:
+        list3.append(val)
+    else:
+        continue
+print(list3)
+
+print('*'*50+"Program 12 - Reverse a list with for loop"+'*'*50)
+list1 = [0, 1, 2, 3, 4, 5, 7, 9, 10, 23, 80, 56]
+for i in range(len(list1)-1, -1, -1):
+   print(list1[i], end=' ')
