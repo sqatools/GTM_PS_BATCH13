@@ -109,10 +109,24 @@ list1 = [4,7,9,12]
 output =[]
 for val in list1:
     if val%2 == 0:
-        output.append(val, 'even')
+        output.append((val, 'even'))
     else:
-        output.append(val, 'odd')
+        output.append((val, 'odd'))
 print("output :", output)
 
 # Write the same in list comprehension
 #result2 = [y, 'even') if y % 2 == 0 else(y,'odd') for y in list1]
+
+# Write a Python program to replace the second occurrence of any char with the special character $.
+# Input = “Programming”
+# Output = “Prog$am$in$”
+
+str1 = 'programming'
+st2 = " "
+for char in str1:
+    if char in st2:
+        st2 = st2 + '$'
+    else:
+        st2 = st2 + char
+print("Revised string :", st2)
+print("_"*50)
