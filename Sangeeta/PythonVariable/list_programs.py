@@ -59,5 +59,9 @@ for char in str1:
     else:
         st2 = st2 + char
 print("Revised string :", st2)
+print("_"*50)
 
+# Write a python program to get to swap the last character of a given string.
+# Input = “SqaTool”
+# Output = “IqaTooS”
 
