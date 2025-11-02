@@ -23,10 +23,28 @@ list2 = [10, 2200, 130]
 dict1 = dict(zip(list1, list2))
 print(dict1)
 
-"""
+
 
 dict7 = {'a': [3, 3, 3], 'b': [4, 4, 4], 'c': [9, 9, 9]}
 output = {}
 for k, v in dict7.items():
     output[k] = sum(v)
     print("output :", output)
+
+
+dic8 = {'a': 19, 'b': 29, 'c': 29, 'd': 49}
+dic9 = {'e': 79, 'g': 59, 'h': 99, 'd': 49}
+
+dic9.update(dic8)
+print("dic9 :", dic9)
+
+
+dict8 = {'a': 19, 'b': 29, 'c': 29, 'd': 49}
+val_c = dict8.pop('c')
+val_b = dict8.pop('b')
+print("Removed values :", val_c, val_b)
+print('dict8 :', dict8)
+"""
+
+
+
