@@ -46,5 +46,9 @@ print("Removed values :", val_c, val_b)
 print('dict8 :', dict8)
 """
 
-
+dic9 = {'e': 79, 'g': 59, 'h': 99, 'd': 49, 'e': 69, 'f': 79}
+val_h = dic9.pop('h')
+val_f = dic9.pop('f')
+print("Removed Values :", f"{val_h}, {val_f}")
+print('dic9 :', dic9)
 
