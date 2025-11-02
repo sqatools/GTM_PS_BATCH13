@@ -61,12 +61,28 @@ print(dict1, type(dict1))  # <class 'dict'>
 dict1['k'] = 1100
 dict1['b'] = 457
 print("dict1 :", dict1)
-"""
 
 #   apply loop
 dict9 = {'e': 79, 'g': 59, 'h': 99, 'd': 49, 'e': 69, 'f': 79}
 #for m, k in dict9.items():
 #    print(m, '|', k)
-for m in sorted(dict9):
-    print(m, "|", dict9[m])
+
+#for m in sorted(dict9):
+#    print(m, "|", dict9[m])
+
+"""
+
+dict9 = {'e': 79, 'g': 59, 'h': 99, 'd': 49, 'e': 69, 'f': 79}
+def get_value(item):
+    return item[1]
+
+sorted_items = sorted(dict9.items(), key = get_value)
+
+for m, k in sorted_items:
+    print(m, "|", k)
+
+
+
+
+
 
