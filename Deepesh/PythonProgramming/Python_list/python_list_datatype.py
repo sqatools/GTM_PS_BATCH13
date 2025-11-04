@@ -250,8 +250,8 @@ print("result3 :", result3)
 result4 = [y ** 2 if y % 2 == 0 else y ** 3 for y in list2]
 print("result4 :", result4)  # [16, 343, 729, 144]
 
-print("_" * 50)
-######################## Max, Min, sum of list values ##############
+print("_" * 50),,,,,nbnv
+######################## Max, Min, sum of list values ##############nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn  vvvv v   v vvvvvv vv
 list1 = [4, 7, 10, 50, 23, 45]
 
 print("max value :", max(list1))  # max value : 50
