@@ -1,6 +1,4 @@
 # 1.Program to create a tuple with 2 lists of data
-from Deepesh.PythonProgramming.DataType.python_datatype import result
-
 list1 = [4, 6, 8]
 list2 = [7, 1, 4]
 tup = tuple(zip(list1,list2)) #converted list to tuple

@@ -164,7 +164,16 @@ for i in l2:
     if i >x:
         x *=i
 print(x)
-
+print('_____'*40)
+######################################
+l1=[4,6,9,22,90,86,109]
+x=0
+for i in l1:
+    if i > x:
+        x=i
+    else:
+        continue
+print('max val:',x)
 
 
 
