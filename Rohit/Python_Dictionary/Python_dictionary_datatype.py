@@ -111,9 +111,10 @@ del dict4[13]
 print("dict4 :",dict4) #{12: 'Hello', 'a': 77, 'c': 99}
 
 # this will remove entire variable from memory.
-dict5 = {12: 'Hello', 'a': 77, 'c': 99}
+#dict5 = {12: 'Hello', 'a': 77, 'c': 99}
 #del dict5
 #print(dict5)
+## NameError: name 'dict5' is not defined
 
 print("-"*50)
 ###################
@@ -128,8 +129,89 @@ list1 = ['p', 'q', 'r']
 list2 = [100, 200, 300]
 dict1 = dict(zip(list1,list2))
 print(dict1) # {'p': 100, 'q': 200, 'r': 300}
+print("-"*50)
 
 list3 = ['p', 'q', 'r']
 list4 = [100, 200, 300,400]
 dict2 = dict(zip(list3,list4))
 print(dict2) # {'p': 100, 'q': 200, 'r': 300} if combination is not their then 400 will get ignored
+
+print("-"*50)
+##############################################################################
+# keys and values:
+dict7 = {12: 'Hello', 13: [5, 6, 7], 'b': 88, 'c': 99}
+print("list of keys :",dict7.keys()) # ([12, 13, 'b', 'c'])
+print("list of values :",dict7.values()) # (['Hello', [5, 6, 7], 88, 99])
+
+# get method: get value with the help of key
+print(dict7.get('b')) # 88
+print(dict7.get(12)) # Hello
+
+print("-"*50)
+#############################################
+#from pprint import pprint : pprint is use to get structure as it is
+
+from pprint import pprint
+
+# get data from dictionary
+school = {
+    'teacher': {
+        'English': [
+            {'name': 'Rohit', 'email': 'rohit@gmail.com', 'phone': 6546456},
+            {'name': 'Rahul', 'email': 'rahul@gmail.com', 'phone': 916736636}
+        ],
+        'Maths': [],
+    },
+    'student': {
+        '10th': [
+            {'name': 'mohit', 'email': 'mohit@gmail.com', 'phone': 8866868686},
+            {'name': 'akshay', 'email': 'akshay@gmail.com', 'phone': 876766766},
+        ],
+        '11th': [],
+    },
+    'admin': {
+        'account': [],
+        'admission': []
+    }
+
+}
+#pprint(school)
+pprint(school['teacher']['English'][1]['email']) #'rahul@gmail.com'
+
+print("-"*50)
+
+#################################################
+# program to practice"
+fruit_price = {"Apple": 50, "Mango": 30, "Banana": 10, "Watermelon": 25}
+fruit_purchased ={"Banana": 12,"Apple": 10, "Mango": 5,  "Watermelon": 2}
+# calculate total bill
+total_bill = 0
+
+for fruit,purchased in fruit_purchased.items():
+    f_fruit_price = fruit_price[fruit]
+    fruit_bill = f_fruit_price*purchased
+    total_bill = total_bill + fruit_bill
+    print(fruit, ":", f_fruit_price, ":", purchased, ":", fruit_bill)
+
+print('-'*20)
+
+print("total bill :", total_bill) # 820
+
+print("-"*50)
+#############################################
+# sorted dictionary.
+dict_x = {'a': 56, 'z': 2, 'p': 123, 'g': 10}
+print(dict_x)
+
+print(dict_x.items()) # ([('a', 56), ('z', 2), ('p', 123), ('g', 10)])
+
+print("-"*50)
+# sort the dict with keys.
+result1 = dict(sorted(dict_x.items()))
+print("sorted by keys :",result1) # {'a': 56, 'g': 10, 'p': 123, 'z': 2}
+
+# sort with the help of values.
+result2 = dict(sorted(dict_x.items(), key=lambda item : item[1]))
+print("sorted by values :",result2) # {'z': 2, 'g': 10, 'a': 56, 'p': 123}
+
+print("-"*50)
