@@ -21,4 +21,5 @@ for fruit,price in fruit_price.items():
     f_purchase = fruit_purchased[fruit]
     fruit_bill =price*f_purchase
     total_bill = total_bill + fruit_bill
+
 print("Total bill:",total_bill)
