@@ -13,7 +13,11 @@ for i in range(2, num):  #here we are starting from 2 as we dont want 1 , we are
         #nned not have to check other numbers - so it will break the loop, it wont go and check if 12%3,12%4
     else:
         continue  #here it will continue with rest of the loop, except when its divisble
+        #here above else condition can be removed as its not required
+
 if prime == True:
+#above can be defined in a differnt way
+#if prime: #we need not have to mention == True, as by default its True
     print("this is a prime number:",num)
 else:
     print("this is not a prime number")
