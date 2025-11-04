@@ -70,7 +70,7 @@ dict9 = {'e': 79, 'g': 59, 'h': 99, 'd': 49, 'e': 69, 'f': 79}
 #for m in sorted(dict9):
 #    print(m, "|", dict9[m])
 
-"""
+
 
 dict9 = {'e': 79, 'g': 59, 'h': 99, 'd': 49, 'e': 69, 'f': 79}
 def get_value(item):
@@ -81,7 +81,7 @@ sorted_items = sorted(dict9.items(), key = get_value)
 for m, k in sorted_items:
     print(m, "|", k)
 
-
+"""
 
 
 
