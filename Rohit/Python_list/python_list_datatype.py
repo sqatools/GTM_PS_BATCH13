@@ -12,7 +12,7 @@ print(list1[0:5:1])
 #[12, 3.5, 'Hello', (10+20j), [6, 7, 8]]
 print(list1[6]) # True
 print(list1[4][1]) # 7
-print(list1[-4])
+print(list1[-4]) # (5, 6, 7)
 print(list1[-4][-1]) # 7
 
 print("-"*50)
