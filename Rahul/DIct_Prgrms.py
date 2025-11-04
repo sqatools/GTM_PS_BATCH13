@@ -11,7 +11,7 @@ Workout_schedule = {
         ],
     },
     'Legs': [
-            {'name': 'Squats', 'name': 'curls01', 'name3': 'Raises'},
+            {'name': 'Squats', 'name2': 'curls01', 'name3': 'Raises'},
     ]
 
     }
