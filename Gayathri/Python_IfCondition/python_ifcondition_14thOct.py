@@ -119,7 +119,4 @@ result = 20
 result = "even" if result % 2 == 0 else "odd"
 print("result value is", result) #result value is even
 
-
-
-
-
+#################################################################################
