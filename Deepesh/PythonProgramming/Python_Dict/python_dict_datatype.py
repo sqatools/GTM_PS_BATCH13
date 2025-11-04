@@ -98,7 +98,6 @@ print("_" * 50)
 # update method:  this method combine 2 dicts data
 dict1 = {'a': 77, 'b': 88, 'c': 99}
 dict2 = {12: 'Hello', 13: [5, 6, 7], 16: (3, 5, 7)}
-
 dict2.update(dict1)
 print("dict2 :", dict2)
 # {12: 'Hello', 13: [5, 6, 7], 16: (3, 5, 7), 'a': 77, 'b': 88, 'c': 99}
