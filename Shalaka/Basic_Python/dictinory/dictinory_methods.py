@@ -81,3 +81,11 @@ print(dict_10)
 
 dict_10= dict(zip(list_1,list_2))
 print(dict_10)
+
+
+## Key & Values in dictionary
+
+dict_11= {'23':'Hi', '30':'John', '77': [12,23,27]}
+print(dict_11.keys())
+print(dict_11.values())
+
