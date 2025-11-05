@@ -190,8 +190,8 @@ result1 = dict(sorted(dict_x.items()))
 print("sorted with keys :", result1)
 
 # sort with the help of values.
-result2 = dict(sorted(dict_x.items(), key=lamda item: item[1]))
-print("sorted value: ", result2)
+result2 = dict(sorted(dict_x.items(), key=lambda item: item[1]))
+print("sorted with values :", result2)  # {'z': 2, 'g': 10, 'a': 56, 'p': 123}
 
 print("_"*50)
 #####################################################
