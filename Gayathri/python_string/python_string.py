@@ -107,6 +107,31 @@ print(str1[-1:-6:-1])#this is same as above, so it will go from -1 to -5 from ne
 print(str1[:5:-1]) #printing reverse of this , Programming
 print(str1[-10:12]) #rogr
 
+###############################################################################################
+
+#24th Oct-25
+#write a program to reverse the string
+str_r = "Good Morning"
+print(str_r[::-1]) #gninroM dooG
+#slicing way of reverse string
+#starting value is -1 and end index is beginning of teh string -1 and end index is -1
+print(str_r[-1:-len(str_r)-1:-1])  #gninroM dooG, here the length is negative as its going in reverse
+#above 2 gives same result, above 1 is internal execution of ::-1
+
+print(str_r[::1]) #Good Morning
+#start is 0 index and end if end of the string
+print(str_r[0:len(str_r):1]) #Good Morning
+
+print("_"*50)
+#################################################################################
+
+
+
+
+
+
+
+
 
 
 
