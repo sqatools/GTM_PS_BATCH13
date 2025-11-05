@@ -121,3 +121,15 @@ l4.extend(set1)
 print("l4 :", l4)  # ['a', 'b', 'c', 9, 5, 7]
 
 print("_" * 50)
+
+##########################################################
+# list concatenation:Combing 2 list and create a new list
+l6 = [7, 8, 9]
+l7 = [10, 20, 30]
+l8 = l6 + l7
+print("l8 :", l8)  # [7, 8, 9, 10, 20, 30]
+
+##################################################################
+#to know the methods associated with any datatype - give dir - it lists all the methods
+print(dir(list))
+print(dir(dict))
