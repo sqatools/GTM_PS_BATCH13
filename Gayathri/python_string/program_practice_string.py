@@ -52,6 +52,8 @@ learn 5
 #output is : Programming
 
 #####################################################################
+#27th Oct 25 -Class
+####################################################################
 # Q3 :  Wright a prograaam to count vowels from string.
 #vowels = a,e,i,o,u
 str3 =  "good morning, hope you are doing good."
