@@ -54,3 +54,15 @@ for fruit,price in fruit_price.items():
 
     print(fruit,":",price,":",f_purchased,":",total_bill)
 print(total_bill)
+
+print()
+
+for fruit,purchase in fruit_purchased.items():
+    f_price=fruit_price[fruit]
+    fruit_bill=f_price*purchase
+    total_bill1=total_bill1+fruit_bill
+
+    print(fruit,"-",f_price,"-",purchase,"-",fruit_bill)
+
+print(fruit_bill)
+
