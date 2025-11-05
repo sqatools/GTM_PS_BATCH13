@@ -1,4 +1,8 @@
 #1.Python program to add elements to the dictionary.
+from operator import index
+
+from Rohit.Python_list.list_pratice_program import even_value, odd_value
+
 dict1 = {'name':'Rahul'}
 dict1["Surname"]= 'Chavan'
 dict1["Age"] = '18'
@@ -45,4 +49,53 @@ print(result) # {4: 16, 5: 125, 6: 36, 2: 4, 1: 1, 7: 343, 11: 1331}
 
 print("-"*50)
 ##########################################################################
-#6.
+#6.Python Dictionary program to concatenate two dictionaries.
+dict1 = {'Name': 'Harry', 'Rollno':345, 'Address': 'Jordan'}
+dict2 = {'Age' : 25, 'salary': '$25k'}
+dict1.update(dict2)
+print(dict1)
+
+print("-"*50)
+##########################################################################
+#7.Python Dictionary program to get a list of odd and even keys from the dictionary.
+
+dict6 = {1:25, 5:'abc', 8:'pqr',21:'xyz',12:'def',2:'utv'}
+
+for val in dict6:
+    print(val)
+    if val%2==0:
+        print("Even number :", val)
+    elif val%2!=0:
+        print("odd number :", val)
+
+print("-"*50)
+##################################################################
+# 8.Python Dictionary program to sort a dictionary using keys.
+dict7 = {'d' : 21, 'b' : 53,  'a': 13, 'c': 41}
+result = sorted(dict7.items())
+print("sorted by keys :", result) # [('a', 13), ('b', 53), ('c', 41), ('d', 21)]
+
+print("-"*50)
+##################################################################
+# 9.Python Dictionary program to sort a dictionary in python using values.
+dict8 = {'d':14,'b':52,'a':13,'c':41}
+result1 = (sorted(dict8.items(), key=lambda item : item[1]))
+print("Sorted by values :", result1) # [('a', 13), ('d', 14), ('c', 41), ('b', 52)]
+
+print("-"*50)
+##################################################################
+# 10.Python Dictionary program to add a key in a dictionary.
+dict10 = {1:'a', 2:'b'}
+dict10 [3] = 'C'
+print(dict10) # {1: 'a', 2: 'b', 3: 'C'}
+
+print("-"*50)
+##################################################################
+#11.Python Dictionary program to get the sum of all the items in a dictionary.
+dict11 = {'x' : 23, 'y' : 10 , 'z' : 7}
+result = {}
+for key, val in dict11:
+    result[key] = sum(val)
+print("sum of all items :", result)
+
+
