@@ -12,6 +12,7 @@ print("sorted with values:",result2)
 
 #******
  #programt to practice
+
 fruit_price={ "Apple": 50, "Mango": 30, "Banana": 10, "Watermelon":25}
 fruit_purchased={"Apple": 10, "Mango":5,"Banana":12,"Watermelon":2}
 
