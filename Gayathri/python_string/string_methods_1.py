@@ -7,6 +7,7 @@ print("upper case result :", str3.upper())
 
 print("lower case result :", str3.lower())
 #  we are learning python
+#camel case - camel case starts with a lowercase letter
 
 ######################
 # isupper() and islower() :  These methods check given string is in upper case or lower case and return boolean output (True/False)
@@ -36,6 +37,7 @@ print("strc output :", strc.capitalize()) #123 testing learn
 str9 = "we arE leArNing PytHon, itS easY to LearN"
 print("str9 output :", str9.title())
 # We Are Learning Python, Its Easy To Learn
+#this is Pascal case starts with an uppercase letter
 
 print("_"*50)
 ###########################################################################################
