@@ -96,4 +96,42 @@ print("v1 :", v1)
 7
 v1 : 21
 '''
+print("-"*50)
+###########################################################################
+# *args param accepts multiple values as param in the functions.
+# args accepts the values in form of tuple
+
+def addition_values(*args):
+    print(args)
+    for val in args:
+        print(val)
+
+addition_values(2,4.6,[3,5,7],{3,6,8},"Hello",(3,5,8))
+'''
+(2, 4.6, [3, 5, 7], {8, 3, 6}, 'Hello', (3, 5, 8))
+2
+4.6
+[3, 5, 7]
+{8, 3, 6}
+Hello
+(3, 5, 8)
+'''
+
+print("-"*50)
+############################
+# **kwargs param accepts values in key value format as dict.
+def emp_details(**kwargs):
+    print(kwargs)
+    for k, v in kwargs.items():
+        print(k, ":", v)
+
+emp_details(first_name= "Rohit", Last_Name = "Chavan",Emp_id = 4102, Phone= 9158520006,DOB={'year':2025, 'month': 5, 'day': 20})
+'''
+{'first_name': 'Rohit', 'Last_Name': 'Chavan', 'Emp_id': 4102, 'Phone': 9158520006, 'DOB': {'year': 2025, 'month': 5, 'day': 20}}
+first_name : Rohit
+Last_Name : Chavan
+Emp_id : 4102
+Phone : 9158520006
+DOB : {'year': 2025, 'month': 5, 'day': 20}
+'''
 
