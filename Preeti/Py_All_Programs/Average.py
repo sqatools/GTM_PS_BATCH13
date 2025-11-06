@@ -4,3 +4,4 @@ c=50
 result= (a+b+c)/2
 print(result)
 
+
