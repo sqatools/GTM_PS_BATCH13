@@ -105,3 +105,21 @@ print("result :", pos_list) #result : [5, 8, 2, 10, -9, -30, -60]
 #if we want to sort this list
 print("sorted result :", sorted(pos_list)) #sorted result : [-60, -30, -9, 2, 5, 8, 10]
 print("_" * 50)
+######################################
+#write a program to reverse the list without built in keyword
+list_q = [10,67,1,78,3]
+print("reversed list is :",list_q[::-1]) #reversed list is : [3, 78, 1, 67, 10]
+
+#if using for loop
+for i in range(len(list_q)):
+    print(list_q[i]) #it prints each number in a seperate row
+#since we want to reverse the number, we need to give negative indexing
+print("_" * 50)
+output=[]
+for i in range(-1,-len(list_q),-1):
+    print(list_q[i],end=" ") #this prints in reverse but in individual line, but we want in list
+    #add the end to make it in same line
+#if we want the output in list, declare a empty list and then append it
+    output.append(list_q[i])
+print("revered list is :",output), #revered list is : [3, 78, 1, 67]
+print("_" * 50)
