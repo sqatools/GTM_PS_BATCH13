@@ -1,0 +1,11 @@
+Camel case
+Definition: The first word starts with a lowercase letter, and the first letter of every subsequent word
+is capitalized. This can be called lowerCamelCase to be more specific.
+Example: myVariableName, functionName, databaseConnection
+Common use: Variables, functions, and methods
+
+Pascal case
+Definition: The first letter of every word is capitalized, including the very first word.
+This is also known as UpperCamelCase.
+Example: MyVariableName, ClassName, DatabaseConnection
+Common use: Class names, interfaces, and types in many programming languages.
