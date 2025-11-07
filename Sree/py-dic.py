@@ -39,6 +39,41 @@ for i in range(1, 21):
         continue
 
 print(dic2)
+print('-'*40)
+###########################################
+## write a python program to get desire result:
+dict1 = {'a': [1, 2, 3], 'b': [4, 5, 6], 'c': [7, 8, 9]}
+# output = {'a' : 6, 'b': 15, 'c': 24}
+output={}
+for k,v in dict1.items():
+    output[k]=sum(v)
+    print(output)
+print('-'*40)
+###########################################Get data from dictionary
+from pprint import pprint
+School={
+    'Teacher':{
+        'Math':[
+            {'Name': 'Ram','Email':'Ram@gmail.com','phone': 987654100},
+            {'Name': 'Sham','Email':'Sham@gmail.com','phone': 987654100}
+        ],
+        'English':[
+        {'Name': 'Kash','Email':'Kash@gmail.com','phone':9876541}
+        ]
+    },
+    'Students':{
+        '9th class': [
+           {'Name': 'Sita','Email':'Sita@gmail.com','phone': 9876541}
+        ],
+        '5th class':[],
+    },
+    'Admin':{
+        'Front office':[
+           {'Name': 'Clair','Email':'Clair@gmail.com','phone': 9876541}
+        ],
+    }
 
+}
+pprint(School)
 
 
