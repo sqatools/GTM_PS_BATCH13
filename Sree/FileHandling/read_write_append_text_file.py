@@ -5,13 +5,13 @@ append mode(a):
 """
 def read_file(file_path):
     # open file in read mode
-    abc = open(file_path, "r")  # file_path is a variable   : abc is object: it creates space in memory
+    Textfile = open(file_path, "r")  # file_path is a variable   : abc is object: it creates space in memory
     # read file content with read() method
-    data = abc.read()
+    data = Textfile.read()
     print(data)
-    print("File close before :", abc.closed)
-    abc.close()
-    print("File close after:", abc.closed)
+    print("File close before :", Textfile.closed)
+    Textfile.close()
+    print("File close after:", Textfile.closed)
 
     # read file from current path
 read_file("TextFile.txt")
