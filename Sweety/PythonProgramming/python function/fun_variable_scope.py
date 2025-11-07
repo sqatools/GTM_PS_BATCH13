@@ -55,6 +55,38 @@ outer_function()
 print("_"*50)
 ########################################################
 var_K = 300 #global variable
+def outer_function2():
+    var_L = 400 #non-local variable
+
+    def inner_fun1():
+        var_M = 500 #local variable
+        print("var K : global", var_K)
+        print("var L : non-local", var_L)
+        print("var M : local", var_M)
+
+    def inner_fun2():
+        global var_K
+        nonlocal var_L
+        var_N = 600 #local variable
+        var_K = 1000
+        var_L = 2000
+        print("var K : global", var_K)
+        print("var L : non-local", var_L)
+        print("var N : local", var_N)
+
+    inner_fun1()
+    print("_"*50)
+    inner_fun2()
+    print("_" * 50)
+    inner_fun1()
+
+print("_" * 50)
+outer_function2()
+
+
+
+
+
 
 
 
