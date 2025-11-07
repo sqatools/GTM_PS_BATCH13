@@ -24,9 +24,17 @@ def write_file_with_context(filepath, context):
 
 write_file_with_context("read.txt", "We are Learning File Handling")
 
-"""
+
 
 def write_file_with_context(filepath, content):
     with open(filepath, "w") as file_obj:
         file_obj.write(content)
 write_file_with_context("read1.txt", "we are learing read, write and append method")
+
+"""
+
+def append_file_with_content(filepath, content):
+    with open(filepath, 'a') as file_obj:
+        file_obj.write(content)
+
+append_file_with_content("read1.txt" , "\n Adding appending content.")
