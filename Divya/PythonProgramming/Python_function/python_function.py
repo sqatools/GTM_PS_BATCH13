@@ -34,6 +34,7 @@ print("square of number is:",a)
 print("cubed of number is:",b)
 
 
+
 ###########
 #*args paramas aceepts multiple values as param
 
