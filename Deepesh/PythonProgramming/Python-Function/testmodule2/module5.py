@@ -1,9 +1,9 @@
 # import everything from module1
-from module1 import *
+from ..module1 import *
 # import specific function or variable
-from module3 import multiply, var_A
+from ..module3 import multiply, var_A
 # import from package folder
-from testmodule.module4 import *
+from ..testmodule.module4 import *
 
 print(var_A**2)
 addition(40, 50)

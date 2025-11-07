@@ -25,3 +25,6 @@ for fruit,price in fruit_price.items():
 
 
 print("Total bill:",total_bill)
+
+
+
