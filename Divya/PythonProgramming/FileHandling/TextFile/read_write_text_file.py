@@ -33,6 +33,7 @@ write_file_with_context("write_data.txt", "We arelearning file handling")
 
 #Append content file
 
+
 def write_file_with_context(file_path, content):
     with open(file_path,'a') as file_object:
         file_object.write(content)
