@@ -40,4 +40,32 @@ for k,v in dict1.items():
 print(output)
 #{'a': 6, 'b': 15, 'c': 24}
 
+################################################################
+#4th Nov
+# program to practice"
+fruit_price = {"Apple": 50, "Mango": 30, "Banana": 10, "Watermelon": 25, "lichi": 30, "Pinapple": 60}
+fruit_purchased ={"Banana": 12,"Apple": 10, "Mango": 5,  "Watermelon": 2}
+# calculate total bill
+total_bill = 0
+for fruit, purches in fruit_purchased.items():
+    f_price = fruit_price[fruit]
+    #print("f_price:",f_price)
+    fruit_bill = f_price * purches
+    #print("fruit_bill:",fruit_bill)
+    total_bill = total_bill + fruit_bill
+    #print("*"*50)
+    print(fruit, ":", f_price, ":", purches, ":", fruit_bill)
+print("_"*20)
+print("Total bill :", total_bill)
+# Total bill : 820
+
+"""
+Banana : 10 : 12 : 120
+Apple : 50 : 10 : 500
+Mango : 30 : 5 : 150
+Watermelon : 25 : 2 : 50
+
+"""
+
+
 

@@ -100,3 +100,44 @@ dict1 = dict(zip(list1, list2))
 print(dict1)  # {'p': 100, 'q': 200, 'r': 300}
 
 print("_" * 50)
+######################################################
+#4th Nov Class
+# keys and values.
+dict6 = {12: 'Hello', 13: [5, 6, 7], 'b': 88, 'c': 99}
+
+#get the keys and values seperately from the dict
+
+print("list of keys :", dict6.keys())  # [12, 13, 'b', 'c']
+print("list of values :", dict6.values())  # ['Hello', [5, 6, 7], 88, 99]
+
+# get method: get value with the help of key
+print(dict6.get(13))  # [5, 6, 7]
+
+print("_" * 50)
+#############################################
+
+print(dir(dict  ))
+#clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values']
+
+#############################################
+#4th Nov
+ #sorted dictionary.
+dict_x = {'a': 56, 'z': 2, 'p': 123, 'g': 10}
+
+print(dict_x)
+
+#dict.items()- it returns the key and value as tuples
+print(dict_x.items())  # ([('a', 56), ('z', 2), ('p', 123), ('g', 10)])
+
+# sort the dict with keys.
+result1 = dict(sorted(dict_x.items()))
+print("sorted with keys :", result1)  # {'a': 56, 'g': 10, 'p': 123, 'z': 2}
+
+# sort with the help of values.
+#here to sort based on the value, key is index[0], value is [1]. so to do that, we use lambda and item:item[1]
+result2 = dict(sorted(dict_x.items(), key=lambda item: item[1]))
+print("sorted with values :", result2)  # {'z': 2, 'g': 10, 'a': 56, 'p': 123}
+
+result2 = dict(sorted(dict_x.items(), key=lambda item: item[0]))
+print("sort with keys :", result2) #sort with keys : {'a': 56, 'g': 10, 'p': 123, 'z': 2}
+print("_"*50)
