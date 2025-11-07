@@ -18,6 +18,15 @@ def read_file_with_context(filepath):
         print("File close after :", file_obj.closed)
 read_file_with_context("read.txt")
 
+def write_file_with_context(filepath, context):
+    with open(filepath, 'w') as file_obj:
+        file_obj.write(context)
+
+write_file_with_context("read.txt", "We are Learning File Handling")
+
 """
 
-
+def write_file_with_context(filepath, content):
+    with open(filepath, "w") as file_obj:
+        file_obj.write(content)
+write_file_with_context("read1.txt", "we are learing read, write and append method")
