@@ -1,7 +1,4 @@
 #1.Python program to add elements to the dictionary.
-from operator import index
-
-from Rohit.Python_list.list_pratice_program import even_value, odd_value
 
 dict1 = {'name':'Rahul'}
 dict1["Surname"]= 'Chavan'

@@ -1,4 +1,1 @@
-The Prothonotary is an elected official clerk of the Court of Common Pleas
-and is responsible for recording all civil procedures before the court.
-This official signs and seals all writs and processes numerous
-other documents of the Court of Common Pleas.
+we are learing read, write and append method
