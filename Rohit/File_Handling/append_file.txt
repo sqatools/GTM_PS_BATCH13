@@ -1,1 +1,5 @@
-created file for pratice pruposeAppend the content
+# readcontent.txt
+Line1 : This is India.
+Line2 : This is America.
+Line3 : This is Canada.
+Line4 : This is Australia.I am Leaving in Karad CityLine6 : This is Karad
