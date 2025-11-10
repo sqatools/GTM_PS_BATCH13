@@ -46,3 +46,17 @@ write_file_with_context("Write_file.txt", "Hello World")
 
 #created new file in given folder
 #write_file_with_context(r"D:\Read folder\Rohit_WriteFile.txt", "Hello Learning Python")
+
+############### append content file with append mode(a)#########
+def append_file_with_context(filepath, content):
+    with open(filepath, 'a') as file_obj:
+        file_obj.write(content)
+
+# write to existing file: It will overwrite existing content
+#append_file_with_context("append_file.txt", "Append the content")
+
+# write to non-existing file: It will create new file and add content to file
+append_file_with_context("New_Append_file.txt","create new file content")
+
+#created new file in given folder
+append_file_with_context(r"D:\Read folder\New_Append_file.txt","Pratice purpose")
