@@ -57,6 +57,7 @@ for val in dict_2:
     print( val,':',dict_2[val]**2)
 
 """
+"""
 print('3). Python Dictionary program to move items from dict1 to dict2.')
 
 dict3 = {'name': 'john', 'city': 'florida', 'country': 'US'}
@@ -64,25 +65,24 @@ dict4 = {}
 dict5 = dict3.copy()
 for val in dict5:
     d1 = dict3.pop(val)
-    dict4[val] =d1
-print('dict4 :',dict4)
-print('dict3 :',dict3)
+    dict4[val] = d1
+print('dict4 :', dict4)
+print('dict3 :', dict3)
 
 #######################
 print('4). Python Dictionary program to concatenate two dictionaries.')
-dict_5 = {'Name': 'Harry', 'Rollno':345, 'Address': 'Jordan'}
-dict_6 = {'Age' : 25, 'salary': '$25k'}
+dict_5 = {'Name': 'Harry', 'Rollno': 345, 'Address': 'Jordan'}
+dict_6 = {'Age': 25, 'salary': '$25k'}
 
 dict_5.update(dict_6)
 print(dict_5)
 
-
 #####################
 print('5). Python Dictionary program to get a list of odd and even keys from the dictionary.')
-dict_7= {1: 25, 5:'abc', 8:'pqr', 21:'xyz', 12:'def', 2:'utv'}
+dict_7 = {1: 25, 5: 'abc', 8: 'pqr', 21: 'xyz', 12: 'def', 2: 'utv'}
 list1 = []
 for val in dict_7:
-    if val%2==0:
-        val=dict_7[list1]
+    if val % 2 == 0:
+        val = dict_7[list1]
         print(val)
-
+"""

@@ -1,0 +1,3 @@
+The open() function is used to open a file.
+It takes the file path and the mode as arguments.
+For reading, the mode is typically 'r' (for text files) or 'rb' (for binary files).

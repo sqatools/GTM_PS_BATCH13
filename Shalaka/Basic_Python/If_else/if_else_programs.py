@@ -188,7 +188,7 @@ if num7>=0:
     print ('Number is positive')
 else:
     print('Number is negative')
-"""
+
 print('20). Python program to check whether the given number is negative or not.')
 num8 = int(input('Enter your number'))
 
@@ -196,9 +196,117 @@ if num8<0:
     print ('Number is negative ')
 else:
     print('Number is positive')
+"""
+"""
+print('21). Python program to check whether the given number is positive or negative and even or odd.')
+
+num9 = int(input('Enter your number'))
+
+if num9 % 2 == 0 and num9 > 0:
+    print('The given number is positive and even')
+else:
+    print('The given number is negative and odd')
+
+"""
+"""
+print('22). Python program to print the largest number from two numbers.')
+
+num10 = int(input('Enter your number: '))
+num11 = int(input('Enter your number: '))
+
+if num10 >num11:
+    print('largest number : ', num10 )
+else:
+    print('largest number', num11)
 
 
+"""
+"""
 
+print('23). Python program to check whether a given character is uppercase or not.')
+
+char = input('Enter character : ')
+
+if char.isupper():
+    print ('The given character is an Uppercase')
+else:
+    print('The given character is not an Uppercase')
+
+"""
+"""
+print('24). Python program to check whether the given character is lowercase or not.')
+
+char = input('Enter character : ')
+
+if char.islower():
+    print('True')
+else:
+    print('False')
+
+"""
+"""
+print('25). Python program to check whether the given number is an integer or not.')
+num13 = input('Enter your number :')
+
+if type(num13) == int:
+    print('True')
+else:
+    print('False')
+
+"""
+"""
+
+print('26). Python program to check whether the given number is float or not.')
+num14 = 12.8
+
+if type(num14) == float:
+    print('True')
+else:
+    print('False')
+
+"""
+"""
+print('27). Python program to check whether the given input is a string or not.')
+str1 = 'sqatools'
+
+if type(str1) == str:
+    print('True')
+else:
+    print('False')
+
+"""
+"""
+
+print('28). Python program to print all the numbers from 10-15 except 13')
+
+for i in range (10,16):
+     if i!= 13:
+         print(i)
+"""
+'''29). Python program to find the electricity bill. According to the following conditions:
+Up to 50 units rs 0.50/unit
+Up to 100 units rs 0.75/unit
+Up to 250 units rs 1.25/unit
+above 250 rs 1.50/unit
+an additional surcharge of 17% is added to the bill'''
+unit = int (input('Enter your unit'))
+bill =0
+if unit > 0 and unit <= 50:
+    bill = bill*0.50
+    print(bill)
+elif unit > 50 and unit <=100:
+    bill = bill*0.75
+    print(bill)
+elif unit >100 and unit <= 250:
+    bill = bill*1.25
+    print(bill)
+elif unit <= 250:
+    bill = bill* 1.50
+    print(bill)
+
+
+total_bill = bill *(17/100)
+print(total_bill)  # output is not right.
 
 
 
