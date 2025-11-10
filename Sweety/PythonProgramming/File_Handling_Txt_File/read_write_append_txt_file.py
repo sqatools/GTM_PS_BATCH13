@@ -36,4 +36,29 @@ def read_file_with_context(filepath):
 read_file_with_context("readfile_with_context.txt")
 
 print("_"*50)
+############### write content file with write mode(w)#########
+def write_file_with_context(filepath, content):
+    with open(filepath, "w") as file_obj:
+         file_obj.write(content)
+
+
+# write to non-existing file: It will create new file and add content to file
+write_file_with_context("write_data.txt", "I am writing to the new file")
+
+# write to existing file: It will overwrite existing content
+write_file_with_context("write_data.txt", "I am overwriting existing data")
+
+############### append content file with append mode(a)#########
+
+def append_file_with_context(filepath, content):
+    with open(filepath, "a") as file_obj:
+        file_obj.write(content)
+# append to existing file :  it will append at the end existing file content.
+append_file_with_context("append_data.txt", "Appending content to the file")
+
+# append to non-existing file :  it will create new and add content to the file.
+append_file_with_context("append_data_new.txt", "Appending content to the file")
+
+
+
 
