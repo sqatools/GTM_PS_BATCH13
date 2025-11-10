@@ -18,14 +18,17 @@ def write_file(filepath,content):
     with open(filepath, "w") as file_obj:
       file_obj.write(content)
 
-write_file("Rohit.txt", "overwrite the File content")
+#write_file("Rohit.txt", "overwrite the File content")
 
 print("-"*50)
 #################################################################
 #3.Python file program to append data to an existing file
 
-def append_file(filepath,content):
-    with open(filepath, "a") as file_obj:
-        file_obj.write(content)
+#def append_file(filepath,content):
+ #   with open(filepath, "a") as file_obj:
+  #      file_obj.write(content)
 
-append_file("append_file.txt", "Line6 : This is Karad")
+#append_file("append_file.txt", "Line7 : This is Karad city")
+
+print("-"*50)
+#################################################################
