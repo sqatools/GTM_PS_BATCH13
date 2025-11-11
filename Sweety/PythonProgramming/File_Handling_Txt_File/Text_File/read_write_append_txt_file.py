@@ -60,5 +60,48 @@ append_file_with_context("append_data.txt", "Appending content to the file")
 append_file_with_context("append_data_new.txt", "Appending content to the file")
 
 
+##################### Different read methods ###############
+# 1. read number of bytes.
+# 2. read a single line
+# 3. read list of lines.
+
+def read_file_no_bytes(filepath, number_of_bytes):
+    with open(filepath, "r") as file:
+        data = file.read(number_of_bytes)
+        print(data)
+
+
+read_file_no_bytes("read_data.txt", 15) #Python is a hig
+print("_"*50)
+read_file_no_bytes("read_data.txt", 100)
+#Python is a high-level, general-purpose programming language.
+#Its design philosophy emphasizes code
+
+
+print("_"*50)
+# read one line at time.
+
+def read_file_no_lines(filepath, no_of_lines):
+    with open(filepath, "r") as file:
+        for _ in range(no_of_lines):
+            data = file.readline()
+        print(data)
+
+
+read_file_no_lines("read_data.txt", 3)
+
+
+print("_"*50)
+# read specific line.
+
+def read_file_specific_line(filepath, line_no):
+    with open(filepath, "r") as file:
+        lines_list = file.readlines()
+        print(lines_list)
+        print(lines_list[line_no - 1])
+
+
+
+read_file_specific_line("read_data.txt", 2)
 
 
