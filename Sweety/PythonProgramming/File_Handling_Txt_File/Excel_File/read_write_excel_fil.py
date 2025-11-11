@@ -14,13 +14,20 @@ def read_excel_file(file_path, sheet_name, cell_name):
     print(cell.value)
 
 
-read_excel_file("user_data.xlsx", "Sheet1", "A1") # Pune
+#read_excel_file("user_data.xlsx", "Sheet1", "A1") # Pune
 #read_excel_file("user_data.xlsx", "Sheet1", "E1") # India
-
-#read_excel_file("userdata.xlsx", "Batch13", f"A1") # Rose
+read_excel_file("C:\\Users\\Swity\\Downloads\\user_data.xls\\user_data.xlsx", "Batch13", f"A1") # Rose
 
 for i in range(1, 6):
-    read_excel_file("user_data.xlsx", "Sheet1", f"A{i}")
+    read_excel_file("C:\\Users\\Swity\\Downloads\\user_data.xls\\user_data.xlsx", "Sheet1", f"A{i}")
+
+"""
+Pune
+Mumbai
+Kolkata
+Delhi
+Chennai
+"""
 
 
 def write_excel_file(file_path, sheet_name, cell_name, cell_value):
@@ -35,4 +42,4 @@ def write_excel_file(file_path, sheet_name, cell_name, cell_value):
     wb.save(file_path)
 
 
-write_excel_file("user_data.xlsx", "Sheet1", "B1", "2025")
+write_excel_file("C:\\Users\\Swity\\Downloads\\user_data.xls\\user_data.xlsx", "Sheet1", "B1", "2025")

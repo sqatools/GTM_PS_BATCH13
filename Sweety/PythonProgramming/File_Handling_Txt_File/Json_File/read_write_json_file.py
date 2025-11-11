@@ -1,6 +1,5 @@
 import json
 
-
 def read_json_data(file_path):
     with open(file_path, "r") as file:
         data = file.read()
@@ -11,8 +10,7 @@ def read_json_data(file_path):
         return json_data
 
 
-output = read_json_data("user_data.json")
-
+output = read_json_data("users_data.json")
 print(output['username'])
 print(output['email'])
 
@@ -26,7 +24,7 @@ def write_json_file(filepath, json_data):
         # convert dict data to string with the help of json.dumps() method.
         json_values = json.dumps(json_data)
         file.write(json_values)
-        file.write(json_data)
-write_json_file("user_data.json", output)
+        #file.write(json_data)
 
 
+write_json_file("users_data.json", output)
