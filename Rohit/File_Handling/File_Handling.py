@@ -56,7 +56,60 @@ def append_file_with_context(filepath, content):
 #append_file_with_context("append_file.txt", "Append the content")
 
 # write to non-existing file: It will create new file and add content to file
-append_file_with_context("New_Append_file.txt","create new file content")
+#append_file_with_context("New_Append_file.txt","create new file content")
 
 #created new file in given folder
-append_file_with_context(r"D:\Read folder\New_Append_file.txt","Pratice purpose")
+#append_file_with_context(r"D:\Read folder\New_Append_file.txt","Pratice purpose")
+
+print("-"*50)
+#########################Different read methods#####################################################
+# 1. read number of bytes.
+# 2. read a single line
+# 3. read list of lines.
+
+#1. read number of bytes:
+
+def read_file_no_bytes(filepath,no_bytes):
+    with open(filepath, "r") as file:
+        data = file.read(no_bytes)
+        print(data)
+
+#read_file_no_bytes("Rohit.txt",20) # 1.Following the comp
+
+#read_file_no_bytes("Rohit.txt",100)
+'''
+1.Following the comprehensive win,
+2.India have now put themselves in a
+3.position where they cannot
+'''
+
+print("-"*50)
+
+# 2. read a single line
+def read_file_no_lines(filepath, no_lines):
+    with open(filepath, "r") as file:
+        for _ in range(no_lines):
+            data = file.readline()
+            print(data)
+
+
+read_file_no_lines("Rohit.txt", 4)
+'''
+1.Following the comprehensive win,
+
+2.India have now put themselves in a
+
+3.position where they cannot lose the series
+
+4.Diageo, the owner of the RCB IPL, WPL teams,
+'''
+
+# 3. read list of lines.
+def read_file_specific_line(filepath,line_no):
+    with open(filepath, 'r') as file:
+        specific_line = file.readlines()
+        #print(specific_line)
+        print(specific_line[line_no-1])
+
+read_file_specific_line("Rohit.txt",3)
+#3.position where they cannot lose the series

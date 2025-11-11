@@ -53,3 +53,35 @@ def append(filepath, content):
 
 # append to non-existing file :  it will create new and add content to the file.
 append_file_with_context("append_data_new.txt", "Appending content to the file")
+
+######Different read meathods
+
+def read(filepath, bytes):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

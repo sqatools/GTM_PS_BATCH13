@@ -145,3 +145,49 @@ v1 = get_addition_value(30)
 print("v1 :", v1)
 # v2 = get_addition_value(40)
 # print("v2 :", v2)
+
+#############################################################################
+#6th Nov Class
+# *args param accepts multiple values as param in the functions.
+# args accepts the values in form of tuple
+
+def accept_multiple_values(*args):
+    print(args)
+    for val in args:
+        print(val)
+
+print("_"*50)
+accept_multiple_values(3, 4.5, 'Hello', [5, 7, 8], (3, 5, 7), {'a': 345})
+"""
+(3, 4.5, 'Hello', [5, 7, 8], (3, 5, 7), {'a': 345})
+
+3
+4.5
+Hello
+[5, 7, 8]
+(3, 5, 7)
+{'a': 345}
+
+"""
+print("_"*50)
+############################
+# **kwargs param accepts values in key value format as dict.
+
+def users_details(**kwargs):
+    print(kwargs)
+    for k, v in kwargs.items():
+        print(k ,":", v)
+
+
+users_details(firstname='Mohit', lastname='Sharma', email='mohit@gmail.com', phone=654565464, DOB={'year':2025, 'month': 5, 'day': 20})
+#users_details(firstname='Mohit', lastname='Sharma', email='mohit@gmail.com', DOB={'year':2025, 'month': 5, 'day': 20})
+
+"""
+{'firstname': 'Mohit', 'lastname': 'Sharma', 'email': 'mohit@gmail.com', 'phone': 654565464, 'DOB': {'year': 2025, 'month': 5, 'day': 20}}
+firstname : Mohit
+lastname : Sharma
+email : mohit@gmail.com
+phone : 654565464
+DOB : {'year': 2025, 'month': 5, 'day': 20}
+"""
+
