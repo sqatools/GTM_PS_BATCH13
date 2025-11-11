@@ -46,8 +46,9 @@ read_fun("C:\Sree\FileHandling\FullCsv.csv")
 print('-'*45)
 def red_fun(filepath):
     with open(filepath,"r") as x:
-        y=x.read()
-        print("file type",y)
+        print("with open_read fun:",x.read())
+      #  y=x.read()
+       # print(y)
         print("File close before :", x.closed)
 
     print("File close after:", x.closed)  # To close the space in memory, should be outside of "with block"
@@ -67,3 +68,14 @@ def appe_fun(filepath,content):
         x.write(content)
 appe_fun("write_data.txt","add append content")
 appe_fun("append_data_new.txt","newly added append content")
+print('-'*45)
+def readlins(filepath):
+    with open(filepath,"r") as y:
+       x=y.readlines()
+       print(x)
+## Print first three lines
+    for i in x[:3]:
+      print("first 3 line:",i)
+    for i in x[-3:]:
+        print('last 3 lines:',i)
+readlins("read_data.txt")

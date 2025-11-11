@@ -1,0 +1,1 @@
+{"user_id": "u12345", "firstName": "John", "lastName": "Doe", "email": "john.doe@example.com", "phone": "+1-202-555-0123", "address": {"street": "123 Main Street", "city": "New York", "state": "NY", "postal_code": "10001", "country": "USA"}, "occupation": "software engineer", "country": "India"}
