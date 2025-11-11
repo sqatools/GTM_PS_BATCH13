@@ -1,0 +1,3 @@
+Trying the write method in file handling
+ Reading from a file in Python means accessing and retrieving contents of a file,
+ whether it be text, binary data or formats like CSV and JSON. ...
