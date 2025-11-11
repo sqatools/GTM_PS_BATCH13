@@ -14,10 +14,10 @@ output['occupation'] = "software engineer"
 output['country'] = "India"
 print(output)
 print('-'*50)
-def write_j(filepath,data):
-    with open(filepath,"w") as x:
-        # convert dict data to string with the help of json.dumps() method.
-        json_values = json.dumps(data)
-        x.write(json_values)
+def write_j(filepath, data):
+    with open(filepath, "w") as x:
+        json.dump(data, x, indent=4)   # indent=4 tells Python to format the JSON with 4 spaces per indentation level so it looks structured and readable.
 
-write_j("users_data.json",output)
+write_j("users_data.json", output)
+
+
