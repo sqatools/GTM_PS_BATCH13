@@ -62,4 +62,51 @@ def append_file_with_context(filepath, content):
 #append_file_with_context("append_data.txt", "Appending content to the file")
 
 # append to non-existing file :  it will create new and add content to the file.
-append_file_with_context("append_data_new.txt", "Appending content to the file")
+#append_file_with_context("append_data_new.txt", "Appending content to the file")
+
+
+##################### Different read methods ###############
+# 1. read number of bytes.
+# 2. read a single line
+# 3. read list of lines.
+
+def read_file_no_bytes(filepath, no_bytes):
+    with open(filepath, "r") as file:
+        data = file.read(no_bytes)
+        print(data)
+
+
+# read_file_no_bytes("read_data.txt", 20)
+ # Following the compre
+
+# read_file_no_bytes("read_data.txt", 100)
+"""
+Following the compre
+Following the comprehensive win,
+India have now put themselves in a
+position where they cannot los
+"""
+
+
+# read one line at time.
+def read_file_no_lines(filepath, no_lines):
+    with open(filepath, "r") as file:
+        for _ in range(no_lines):
+            data = file.readline()
+            print(data)
+
+
+#read_file_no_lines("read_data.txt", 3)
+
+
+# read specific line.
+def read_file_specific_line(filepath, line_no):
+    with open(filepath, "r") as file:
+        lines_list = file.readlines()
+        #print(lines_list)
+        print(lines_list[line_no-1])
+
+
+
+read_file_specific_line("read_data.txt", 5)
+# 5.informed Bombay Stock Exchange of its intention
