@@ -39,7 +39,7 @@ def create_users_data_in_excel(file_path):
         wb.save(file_path)
         cell_no += 1
 
-create_users_data_in_excel("users_details.xlsx")
+#create_users_data_in_excel("users_details.xlsx")
 
 print(dir(fk))
 """
