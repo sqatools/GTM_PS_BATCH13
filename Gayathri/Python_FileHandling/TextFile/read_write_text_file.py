@@ -27,7 +27,7 @@ print("*"*50)
 
 # read file from other path
 #read_file("C:\\Users\\Sriram\\Test Automation\\Selenium Python\\TestData\\")
-#read_file(r"C:\Users\Sriram\PycharmProjects\testdata.txt")
+read_file(r"C:\Users\Sriram\PycharmProjects\TestData\testdata.txt.txt")
 
 ################# Context Manager ######################
 # read with context manager :  context manager has it own enter and exit method,
