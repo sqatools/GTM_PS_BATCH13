@@ -1,1 +1,19 @@
-{"user_id": "u12345", "firstName": "John", "lastName": "Doe", "email": "john.doe@example.com", "phone": "+1-202-555-0123", "address": {"street": "123 Main Street", "city": "New York", "state": "NY", "postal_code": "10001", "country": "USA"}, "occupation": "software engineer", "country": "India"}
+{
+    "user_id": "U12345",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "password": "hashed_password_here",
+    "phone": "+1-555-123-4567",
+    "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "postalCode": "10001",
+        "country": "USA"
+    },
+    "date_of_birth": "1995-07-20",
+    "occupation": "software engineer",
+    "country": "India",
+    "created_at": "2025-01-01T10:30:00Z"
+}
