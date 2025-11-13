@@ -8,6 +8,7 @@ print("first name :", fk.first_name())
 print("last name :", fk.last_name())
 print("email :", fk.email())
 print("phone :", fk.phone_number())
+print("Address :", fk.address())
 
 def create_user_data_in_text():
     for i in range(1, 50):
@@ -39,7 +40,7 @@ def create_users_data_in_excel(file_path):
         wb.save(file_path)
         cell_no += 1
 
-create_users_data_in_excel("users_details.xlsx")
+#create_users_data_in_excel("users_details.xlsx")
 
 print(dir(fk))
 """
