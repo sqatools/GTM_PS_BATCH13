@@ -8,6 +8,7 @@ print("first name :", fk.first_name())
 print("last name :", fk.last_name())
 print("email :", fk.email())
 print("phone :", fk.phone_number())
+print("Address :", fk.address())
 
 def create_user_data_in_text():
     for i in range(1, 50):
