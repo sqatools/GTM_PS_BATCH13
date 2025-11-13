@@ -157,11 +157,12 @@ Division with zero is not allowed
 """
 
 ##################  Handle multiple Exception ###############
-def handle_multiple_execption(a, b, c, d):
+def handle_multiple_exception(a, b, c, d, e=10):
     try:
         print("Addition:", a+b)
         print("Division :", a//c)
         assert c == d, "values are not equal"
+        multiplication = d*e
     except TypeError:
         print("All input values should be number")
     except ZeroDivisionError:
@@ -172,15 +173,20 @@ def handle_multiple_execption(a, b, c, d):
         print(e)
         print("Program failed with error")
 
-# handle_multiple_execption(10, 'A', 20, 30)
+# handle_multiple_exception(10, 'A', 20, 30)
 # All input values should be number
 
 
-#handle_multiple_execption(10, 30, 0, 30)
+#handle_multiple_exception(10, 30, 0, 30)
 """
 Addition: 40
 Can not divide number with zero
 """
+#handle_multiple_exception(10, 30, 2,5)
+"""
+Addition: 40
+Division : 5
+Both values are not equal: 2 5
+"""
 
-#handle_multiple_execption(10, 30, 2,5)
-# Both values are not equal: 2 5
+handle_multiple_exception(10, 30, 2, 2, {'a': 123})
