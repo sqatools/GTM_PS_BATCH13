@@ -146,8 +146,8 @@ def handle_multiple_exception(a,b,c,d,e=5):
         print("division :", b/c)
         assert c == d, "values are not equal"
         print("Multiplication :", d*e)
-    except TypeError:
-        print("All input values should be numbers")
+   # except TypeError:
+      #  print("All input values should be numbers")
     except ZeroDivisionError:
         print("can not be divided by zero")
     except AssertionError:
@@ -164,7 +164,7 @@ addition : 30
 can not be divided by zero
 '''
 
-handle_multiple_exception(10.,20,5,40)
+#handle_multiple_exception(10.,20,5,40)
 '''
 addition : 30.0
 division : 4.0
