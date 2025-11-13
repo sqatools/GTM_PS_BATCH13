@@ -298,6 +298,11 @@ for i in range(4,-1,-1):
        print(j,end="")
     print()
 
+list1=[1,2,3,4,5,6]
+list2=[1,2,3,4,5,6]
+print(list1==list2)  #True
+
+print(sorted(list1) == sorted(list2)) #True
 
 
 
