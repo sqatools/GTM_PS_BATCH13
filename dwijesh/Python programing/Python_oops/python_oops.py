@@ -39,3 +39,5 @@ class dwijesh: #creating class
 obj=dwijesh()
 
 """
+
+#constructor changes
