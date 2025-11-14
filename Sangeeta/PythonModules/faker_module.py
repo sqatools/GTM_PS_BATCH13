@@ -9,7 +9,7 @@ print("email :", fk.email())
 print("phone # :", fk.phone_number())
 print("Address :", fk.address())
 
-def create_fake_data_in_text():
+def create_fake_data_in_text(filepath):
     for i in range(1, 20):
         print("count :", i)
         print("first name :", fk.first_name())
@@ -18,10 +18,10 @@ def create_fake_data_in_text():
         print("phone # :", fk.phone_number())
         print("Address :", fk.address())
         fake_data = f"{fk.first_name()},{fk.last_name()}, {fk.phone_number()}, {fk.email()}, {fk.address()}\n"
-        with open(fake_data) as file:
+        with open(filepath, "a") as file:
             file.write(fake_data)
 
-    create_fake_data_in_text(fake_data.txt)
+create_fake_data_in_text("fake_data.txt")
 
 def create_fake_Data_in_excel(filepath):
     cell_no = 1
@@ -41,7 +41,7 @@ def create_fake_Data_in_excel(filepath):
         wb.save(filepath)
         cell_no += 1
 
-create_fake_Data_in_excel(r"C:\Users\salia\OneDrive\Desktop\SangsPythonfiles\fake_data.xlsx")
+#create_fake_Data_in_excel(r"C:\Users\salia\OneDrive\Desktop\SangsPythonfiles\fake_data.xlsx")
 
 
 
