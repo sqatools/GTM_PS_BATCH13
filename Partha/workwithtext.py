@@ -32,4 +32,4 @@ def write_file(filename, data):
     open_file.write(data)
 
 write_file("D:\\123.txt", "Hello World5")
-##print(read_file_with_cxt("D:\\123.txt"))
+read_file_with_cxt("D:\\123.txt")
