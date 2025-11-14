@@ -7,13 +7,11 @@ constructor: constructor initialize the memory for the object, when ever we crea
 """
 # class
 class Car:
-
     # constructor
     def __init__(self):
         print("-----Welcome to car class -----")
         # calling method inside the constructor
         self.car_price()
-
     # Method
     def car_name(self):
         print("TATA Harrier")
@@ -21,7 +19,6 @@ class Car:
     # Method
     def car_price(self):
         print("20 Lac")
-
 
 # create object
 obj = Car()
