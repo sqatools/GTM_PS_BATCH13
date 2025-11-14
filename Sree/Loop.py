@@ -304,5 +304,10 @@ print(list1==list2)  #True
 
 print(sorted(list1) == sorted(list2)) #True
 
+def multab(a):
+    for i in range(1,11):
+        print(i,"*", a, "=", i*a)
+multab()
+
 
 
