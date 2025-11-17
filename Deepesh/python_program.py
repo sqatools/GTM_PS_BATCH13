@@ -25,3 +25,10 @@ elif marks>90 and marks<=100:
 else:
     # marks is greater than 100 than consider as invalid number..
     print("Invalid marks")
+    
+# Define a list
+my_list = ['apple', 'banana', 'cherry']
+
+# Use enumerate to get index and element
+for index, element in enumerate(my_list):
+    print(f"Index: {index}, Element: {element}")
