@@ -15,7 +15,6 @@ class GrandFather:
 
 
 
-
 class father(GrandFather):
     def __init__(self, f_name, f_business, f_car,gf_name,gf_property):
         super().__init__(gf_name,gf_property)
