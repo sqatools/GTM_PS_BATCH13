@@ -9,6 +9,7 @@ Inheritance: when one class aquire the property of another class, then it is cal
 """
 
 # single inheritance
+# parent/super class
 
 class father:
     def __init__(self,f_name, f_business, f_car):
@@ -30,7 +31,13 @@ class father:
         self.show_father_business()
         self.show_father_car()
 
+# child/base class
 class Son(father):
+    """
+       When we set inheritance between 2 classes, then parent class constructor has to initialiaze in child class constructor
+       with the help of super keyword.
+
+       """
     def __init__(self,s_name,f_name, f_business, f_car):
         super().__init__(f_name, f_business, f_car)
         self.son_name = s_name
