@@ -22,36 +22,40 @@ There are 2 types of constructor
 
 """
 
-# class
-class car:
+class mobile:
+    mobile_brand = "Motorola"
 
-    # parametrize constructor
-    def __init__(self,car_name,car_price):
-        # calling method inside the constructor
-        self.car_name = car_name  # instance variable
-        self.car_price = car_price  # instance variable
+
+    def __init__(self, mobile_name, mobile_price):
+        print("-----Welcome to mobile class -----")
+
+        self.mobile_name = mobile_name
+        self.mobile_price = mobile_price
+
+
+    def show_mobile_name(self):
+        print("mobile name:", self.mobile_name)
 
     # Method
-    def show_car_name(self):
-            print("car name:",self.car_name)
+    def show_mobile_price(self):
+        print("mobile price:", self.mobile_price)
 
-    # Method
-    def show_car_price(self):
-        print("car price :",self.car_price)
 
-# create object
-obj = car('Swift Dzire','10 Lac')
-# calling method with object
-obj.show_car_name()
-obj.show_car_price()
+obj = mobile('Edge 50', '15 tho')
 
-#car name: Swift Dzire
-#car price : 10 Lac
+obj.show_mobile_name()
+obj.show_mobile_price()
 
-print("-"*50)
-obj1 = car('TATA','25 Lac')
-obj1.show_car_name()
-obj1.show_car_price()
 
-#car name: TATA
-#car price : 25 Lac
+print("_"*50)
+obj2 = mobile('Pro 60', '20 tho')
+obj2.show_mobile_name()
+obj2.show_mobile_price()
+
+
+print(obj2.mobile_brand)
+
+
+
+
+

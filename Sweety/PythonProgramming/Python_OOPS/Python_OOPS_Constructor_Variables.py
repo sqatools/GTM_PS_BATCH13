@@ -21,37 +21,37 @@ There are 2 types of constructor
 2). class variable:  when we define any variable on class level, then it is called class variable
 
 """
-
 # class
-class car:
+class Tea:
+    tea_brand = "Brooke Bond"
 
-    # parametrize constructor
-    def __init__(self,car_name,car_price):
+    #parameterized constructor
+    def __init__(self, tea_name, tea_price):
+        print("-------Welcome to tea class________")
         # calling method inside the constructor
-        self.car_name = car_name  # instance variable
-        self.car_price = car_price  # instance variable
+        self.tea_name = tea_name
+        self.tea_price = tea_price
 
     # Method
-    def show_car_name(self):
-            print("car name:",self.car_name)
+    def show_tea_name(self):
+        print("Tea Name:", self.tea_name)
 
     # Method
-    def show_car_price(self):
-        print("car price :",self.car_price)
+    def show_tea_price(self):
+        print("Tea Price:", self.tea_price)
+
 
 # create object
-obj = car('Swift Dzire','10 Lac')
+obj1 = Tea('Red Label', '50')
 # calling method with object
-obj.show_car_name()
-obj.show_car_price()
+obj1.show_tea_name()
+obj1.show_tea_price()
 
-#car name: Swift Dzire
-#car price : 10 Lac
+print(obj1.tea_brand)
 
-print("-"*50)
-obj1 = car('TATA','25 Lac')
-obj1.show_car_name()
-obj1.show_car_price()
+print("_"*50)
+obj2 = Tea('Tata Tea gold', '50')
+obj2.show_tea_name()
+obj2.show_tea_price()
 
-#car name: TATA
-#car price : 25 Lac
+

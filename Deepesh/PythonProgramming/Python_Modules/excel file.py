@@ -1,21 +1,32 @@
 from faker import Faker
 import openpyxl
-import os
-def create_user_data_in_excel(file_path):
+
+def create_user_details_in_excel(file_path):
     fk = Faker()
     cell_no = 1
+    wb = openpyxl.load_workbook(file_path)
+    sheet = wb['Sheet1']
     for i in range(1,50):
-        wb = openpyxl.load_workbook(file_path)
-        sheet = wb["Sheet"]
-        cell1 = sheet[f"A{cell_no}"]
-        cell2 = sheet[f"B{cell_no}"]
-        cell3 = sheet[f"C{cell_no}"]
-        cell4 = sheet[f"D{cell_no}"]
-        cell1.value = fk.first_name()
-        cell2.value = fk.last_name()
-        cell3.value = fk.email()
-        cell4.value = fk.phone_number()
-        wb.save(file_path)
-        cell_no += 1
+        print("Count :",i)
 
-create_user_data_in_excel("users_details1.xlsx")
+        first_name = fk.first_name()
+        last_name = fk.last_name()
+        email = fk.email()
+        phone = fk.phone_number()
+
+        print("first_name :", first_name)
+        print("last_name :", last_name)
+        print("email :", email)
+        print("phone number :", phone)
+
+
+        sheet[f"A{cell_no}"] = first_name
+        sheet[f"B{cell_no}"] = last_name
+        sheet[f"C{cell_no}"] = email
+        sheet[f"D{cell_no}"] = phone
+
+        cell_no +=1
+    wb.save(file_path)
+    print("Data successfully inserted :",file_path)
+
+create_user_details_in_excel("user_details_1.xlsx")

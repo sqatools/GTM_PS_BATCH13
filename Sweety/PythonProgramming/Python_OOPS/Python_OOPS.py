@@ -8,6 +8,7 @@ constructor: constructor initialize the memory for the object, when ever we crea
 # class
 
 class Car:
+
     #Method
     def car_name(self):
         print("Car name:", "TATA Harrier")

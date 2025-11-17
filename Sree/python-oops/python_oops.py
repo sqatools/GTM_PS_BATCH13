@@ -13,3 +13,4 @@ class car:
 obj=car()
 obj.carname()
 obj.carprice()
+
