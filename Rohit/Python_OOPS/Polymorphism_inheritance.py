@@ -117,3 +117,10 @@ String Join : HelloGood Morning
 String Join : HelloGood Morning
 
 '''
+
+print(dir(int))
+#['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__',
+# '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__g
+
+print("substraction :", n1-n2)
+print("Division :", n1.__sub__(n2))
