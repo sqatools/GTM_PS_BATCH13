@@ -25,9 +25,23 @@ class Car(Vehical):
 
     def acc_year(self):
         print("Year is", self.year)
-class EV(Car):
-    def __init__(self, battery_life, price, availability, make, model, year, vtype):
+
+class Green_Tech():
+    def __init__(self, device_type, power_type):
+        ##super().__init__(device_type, power_type)
+        self.device_type = device_type
+        self.power_type = power_type
+
+    def acc_device_type(self):
+        print("Device type is", self.device_type)
+    def acc_power_type(self):
+        print("Power type is", self.power_type)
+
+class EV(Car, Green_Tech):
+    def __init__(self, battery_life, price, availability, make, model, year, vtype, device_type, power_type):
         super().__init__(make, model, year, vtype)
+        self.device_type = device_type
+        self.power_type = power_type
         self.battery_life = battery_life
         self.price = price
         self.availability = availability
@@ -38,12 +52,15 @@ class EV(Car):
     def acc_availability(self):
         print("Availability is", self.availability)
 
-obj2 = EV('90000 Hrs','72000 USD','2026 Q2','TESLA','Y3A','2026','Automobile')
+obj2 = EV('90000 Hrs','72000 USD','2026 Q2','TESLA','Y3A','2026','Automobile','Car', 'Battery')
 obj2.acc_battery_life()
 obj2.acc_price()
 obj2.acc_availability()
 obj2.acc_make()
 obj2.acc_model()
+obj2.acc_year()
 obj2.acc_vtype()
 obj2.acc_wheels_ct()
 obj2.acc_origin()
+obj2.acc_power_type()
+obj2.acc_device_type()
