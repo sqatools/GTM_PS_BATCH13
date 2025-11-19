@@ -29,7 +29,7 @@ class Dad(GrandDad):
 
 
 class Kid(Dad):
-    def __init__(self, kid_name, dad_name, dad_job_title, first_name,last_name, business, age):
+    def __init__(self, kid_name, dad_name, dad_job_title, first_name, last_name, business, age):
         super().__init__(dad_name, dad_job_title, first_name, last_name, business, age)
         self.kid_name = kid_name
 
@@ -42,5 +42,5 @@ class Kid(Dad):
         print("Grand Family Details :", self.show_grand_dad_details())
 
 
-kd = Kid('Archie', 'Henry', 'HR Manager', 'Dave','Abby' 'Recruitment' '70')
+kd = Kid('Archie', 'Henry', 'HR Manager', 'Dave','Abby', 'Recruitment', '70')
 kd.grand_family_details()
