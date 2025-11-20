@@ -520,3 +520,20 @@ Student Name : James
 Student in which standard : 8th
 Student Age : 13
 '''
+
+print("-"*50)
+#################################################################################
+#14.
+
+class myproperty:
+    def __init__(self,name):
+        self.name = name
+
+@myproperty
+
+def property(self):
+    return self.property
+
+obj = myproperty("20 CRS")
+print(obj.name) # 20 CRS
+

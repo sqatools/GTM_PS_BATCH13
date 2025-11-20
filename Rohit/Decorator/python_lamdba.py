@@ -1,6 +1,5 @@
 # Lambda :  This anonymous function that does not have body
-from Deepesh.PythonProgramming.Python_Decorator.python_generator import sqaure, output
-from Rohit.Firstpython_Program import result
+
 
 func = lambda x, y: x+y
 # x,y : parameter
