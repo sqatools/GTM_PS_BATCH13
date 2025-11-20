@@ -1,3 +1,6 @@
+from operator import concat
+
+
 class Vehical():
     def __init__(self, vtype, wheels_ct=4, origin='USA'):
         self.vtype = vtype
