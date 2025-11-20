@@ -428,3 +428,95 @@ A City is : City
 
 '''
 
+print("-"*50)
+#############################################################
+#12.Write a Python Class Program with an Abstract method
+
+class family():
+    def Name(self):
+        pass
+
+    def address(self):
+        pass
+
+    def phone(self):
+        pass
+
+class Chavan(family):
+     def show_name(self):
+         print("Family Name is: Kulkari")
+
+     def show_address(self):
+         print("Family Address is: Pune")
+
+     def show_phone(self):
+         print("Phone number is : 6863773736")
+
+     def chavan_family(self):
+         self.show_name()
+         self.show_address()
+         self.show_phone()
+
+class Pawar(family):
+     def show_name(self):
+         print("Family Name is : Yadhav")
+
+     def show_address(self):
+         print("Family address is : Mumbai")
+
+     def show_phone(self):
+         print("phone number is : 76376736673")
+
+     def Pawar_family(self):
+         self.show_name()
+         self.show_address()
+         self.show_phone()
+
+obj = Chavan()
+obj.chavan_family()
+
+print("-"*20)
+
+obj = Pawar()
+obj.Pawar_family()
+
+'''
+Family Name is: Kulkari
+Family Address is: Pune
+Phone number is : 6863773736
+--------------------
+Family Name is : Yadhav
+Family address is : Mumbai
+phone number is : 76376736673
+
+'''
+
+print("-"*50)
+############################################################
+#13. Write a Python Class program to create a class with data hiding
+
+class Student():
+    def __init__(self,st_name,st_standard,st_age):
+        self.student_name = st_name
+        self._student_standard = st_standard
+        self.__student_age = st_age
+
+    def show_student_name(self):
+        print("Student Name :", self.student_name)
+
+    def _show_student_standard(self):
+        print("Student in which standard :", self._student_standard)
+
+    def __show_student_age(self):
+        print("Student Age :", self.__student_age)
+
+obj = Student('James','8th','13')
+obj.show_student_name()
+obj._show_student_standard()
+obj._Student__show_student_age()
+
+'''
+Student Name : James
+Student in which standard : 8th
+Student Age : 13
+'''
