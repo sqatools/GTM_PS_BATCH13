@@ -16,7 +16,6 @@ def square(n):
     print("square of n :", n**2)
 
 greeting("Good Morning")
-print("*")
 square(5)
 
 # This value decorator can apply on any function, then it will print the value
