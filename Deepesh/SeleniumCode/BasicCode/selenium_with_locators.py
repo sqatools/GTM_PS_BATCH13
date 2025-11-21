@@ -56,3 +56,4 @@ facebook_website()
 
 # Homework to automate the login website
 # https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+# https://sqatools.in/python-selenium-installation/
