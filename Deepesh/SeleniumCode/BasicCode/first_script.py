@@ -1,5 +1,5 @@
 """
-# Command to install selenium
+# Command to install selenium, run this command in terminal.
 pip install selenium
 """
 import time
@@ -22,7 +22,6 @@ driver.find_element(By.ID, "email").send_keys("user1@gmail.com")
 driver.find_element(By.ID, "pass").send_keys("user@1234")
 # get login button with name="login"
 driver.find_element(By.NAME, "login").click()
-
 
 time.sleep(10)
 # close the browser
