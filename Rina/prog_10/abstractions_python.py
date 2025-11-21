@@ -23,6 +23,8 @@ class Dog(animal):
     def breed(self):
         print("German")
 
+
+
 obj = Dog()
 obj.name()
 obj.breed()
