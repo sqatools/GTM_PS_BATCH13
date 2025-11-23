@@ -84,3 +84,9 @@ print('3',l17[::-1])
 print('4',l17[5:9:1])
 print('5',l17[8:-1])
 print('6',l17[-1:-10:-1])
+
+
+D1 = {'a': 19, 'b': 20, 'c': 21, 'd': 20}
+l1 = list(D1.items())  # use list(), not l1()
+
+print(l1)
