@@ -1,0 +1,43 @@
+Types of Xpath:
+1.  Absolute XPath: These xpath follows complete DOM structure the find the element.
+     e.g. /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+
+
+2.  Relative XPath: These xpath find the element with help of element attributes.
+     e.g.   //tagname[@attribute='value']
+         -> //input[@placeholder='Username']
+         -> //input[@name='password']
+         -> //button[@type='submit']
+         -> //button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']
+
+     e.g.   //*[@attribute='value']
+        ->  //*[@placeholder='Username']
+
+
+
+# XPath Methods:
+1. Text Method :
+       e.g. //taganame[text()='value']
+       -> //button[text()='Log in']
+       -> //button[text()='Log in']
+       -> //a[text()='Forgotten password?']
+       -> //a[text()='Create new account']
+       -> //a[text()='Create a Page']
+
+
+2. contains method: contains method help to indetify element with the help of partial value of text or attribute.
+       i) contains with attribute : //tagname[contains(@attribute, 'partial value')]
+                                   -> //input[contains(@data-testid,"email")]
+                                   -> //input[contains(@data-testid,"pass")]
+                                   -> //input[contains(@data-testid,"royal-e")]
+                                   -> //button[contains(@data-testid, "login-button")]
+
+       ii) contains with text : //tagname[contains(text(), 'partial value')]
+                                -> //h2[contains(text(), 'Facebook helps')]
+                                -> //button[contains(text(), 'Log')]
+                                -> //a[contains(text(), 'Forgotten')]
+
+
+3. starts-with
+4. and\or condition
+
