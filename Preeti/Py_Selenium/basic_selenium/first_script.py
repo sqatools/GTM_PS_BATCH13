@@ -1,5 +1,5 @@
 """
-# Command to install selenium, run this command in terminal.
+# Command to install selenium
 pip install selenium
 """
 import time
@@ -26,4 +26,3 @@ driver.find_element(By.NAME, "login").click()
 time.sleep(10)
 # close the browser
 driver.close()
-
