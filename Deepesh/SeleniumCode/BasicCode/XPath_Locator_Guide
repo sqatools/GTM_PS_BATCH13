@@ -1,6 +1,6 @@
 Types of Xpath:
 1.  Absolute XPath: These xpath follows complete DOM structure the find the element.
-/html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+     e.g. /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
 
 
 2.  Relative XPath: These xpath find the element with help of element attributes.
