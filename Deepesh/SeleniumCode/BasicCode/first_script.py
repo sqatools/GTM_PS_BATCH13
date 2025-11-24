@@ -17,9 +17,9 @@ driver.implicitly_wait(10)
 driver.get("https://www.facebook.com")
 
 # get username field with id="email"
-driver.find_element(By.ID, "email").send_keys("user1@gmail.com")
+driver.find_element(By.ID, "email").send_keys("username@gmail.com")
 # get password field with id="pass"
-driver.find_element(By.ID, "pass").send_keys("user@1234")
+driver.find_element(By.ID, "pass").send_keys("username")
 # get login button with name="login"
 driver.find_element(By.NAME, "login").click()
 
