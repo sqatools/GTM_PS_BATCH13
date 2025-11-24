@@ -23,6 +23,7 @@ Types of Xpath:
        -> //a[text()='Forgotten password?']
        -> //a[text()='Create new account']
        -> //a[text()='Create a Page']
+          //a[test()=
 
 
 2. contains method: contains method help to indetify element with the help of partial value of text or attribute.
@@ -36,7 +37,6 @@ Types of Xpath:
                                 -> //h2[contains(text(), 'Facebook helps')]
                                 -> //button[contains(text(), 'Log')]
                                 -> //a[contains(text(), 'Forgotten')]
-
 
 
 3. starts-with
