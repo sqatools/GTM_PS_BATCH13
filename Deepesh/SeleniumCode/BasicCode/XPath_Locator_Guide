@@ -38,6 +38,7 @@ Types of Xpath:
                                 -> //a[contains(text(), 'Forgotten')]
 
 
+
 3. starts-with
 4. and\or condition
 
