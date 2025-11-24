@@ -75,8 +75,11 @@ print("Total: ",total)
 num = int(input("Enter a number: "))
 print(f"Binary form of {num} is: ","{0:b}".format(int(num)))
 
-"""
+import datetime
+dt = datetime.datetime.now()
+print("Current date: ", dt)
 
+"""
 
 
 
