@@ -1,0 +1,46 @@
+Taking example of Facebook website
+
+Types of XPath :
+1. Absolute Xpath: These xpath follows complete DOM structure the find the element.
+/html/body/div[3]/div[2]/div/form/div/div[1]/div/div/div[1]/div/div/input  (May be change by developer)
+
+2.Relative Xpath: These xpath find the element with help of element attributes.
+        e.g. //tagname[@attribute = 'value']
+        --> //input[@placeholder = 'Where are you going?']
+        -->//input[@data-testid="royal-pass"]
+        -->//button[@name="login"]
+        -->//*[@autocomplete="username webauthn"]
+
+
+# XPath Methods:
+1.Text method:
+      e.g. //tagname[text()= 'value']
+      --> //button[text()='Log in']
+     --> //a[text()='Forgotten password?']
+     --> //a[text()='Create new account']
+     --> //a[text()='Create a Page']
+
+
+2.contains method : contains method help to indentify element with the help of partial value of text or attribute.
+      i.Contains with attribute:
+          e.g. //tagname[contains(@attribute,'partial value')]
+          --> //input[contains(@data-testid, 'email')]
+          --> //a[contains(@data-testid,'open-registration')]
+          --> //input[contains(@id, 'pass')]
+          --> //button[contains(@data-testid, login-button)]
+
+
+
+      ii.Contains with text :
+         e.g.//tagname[contains(text(),'parytila value')]
+      -->//button[contains(text(), log)]
+      --> //h2[contains(text(), 'Facebook helps')]
+      --> //a[contains(text(),'Create a Page')]
+
+
+
+
+
+3.starts-with
+4.and\ or condition
+
