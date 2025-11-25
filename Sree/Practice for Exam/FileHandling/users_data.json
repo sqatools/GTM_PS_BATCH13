@@ -1,0 +1,10 @@
+{
+    "role": "Manager",
+    "department": "Sales",
+    "employee_id": 1023,
+    "status": "Active",
+    "username": "john_doe",
+    "password": "mypassword123",
+    "device_id": "A1B2C3D4",
+    "device_type": "Android"
+}
