@@ -6,7 +6,7 @@ print(os.getcwd())
 
 # create a directory in the current path
 # os.mkdir("folder1")
-# os.mkdir(r"E:\Filesdata\Batch13\test_os")
+#os.mkdir(r"E:\Filesdata\Batch13\test_os")
 
 # for i in range(1, 6):
 #    os.mkdir(fr"E:\Filesdata\Batch13\Test_os{i}")
