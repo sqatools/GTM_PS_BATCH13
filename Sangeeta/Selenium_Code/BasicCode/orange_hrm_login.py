@@ -14,5 +14,10 @@ time.sleep(2)
 #driver.find_element(By.CSS_SELECTOR, ".oxd-button oxd-button--medium oxd-button--main orangehrm-login-button").click()
 driver.find_element(By.CLASS_NAME, "orangehrm-login-button").click()
 time.sleep(5)
-
+driver.find_element(By.XPATH, "//span[text() = 'Admin']").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//span[@class = 'oxd-topbar-body-nav-tab-item' and contains(text(), 'Job')]").click()
+time.sleep(2)
+driver.find_element(By.XPATH, "//div[text()='Anhdksss']//parent::div//following-sibling::div//i[@class='oxd-icon bi-pencil-fill']//parent::button").click()
+time.sleep(5)
 
