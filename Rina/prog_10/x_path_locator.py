@@ -4,4 +4,6 @@ with tagname:
     1. //span[text()= 'Stays']
     2. //span[text()= 'Stays']
     3. //a/span[contains(text(), 'List your property')]
-    4. 
+
+    identify parent element with refrence of child reference://h3[text()='Homestays']//parent::div
+ Ancestor:  identify the grand parent element with the help of grand child reference.:  //h3[text()='Homestays']//ancestor::a
