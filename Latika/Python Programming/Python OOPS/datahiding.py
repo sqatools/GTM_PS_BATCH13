@@ -1,25 +1,45 @@
-class Teacher:
-        def __init__(self,t_name,t_sub,t_phone_no):
-            self.teacher_name=t_name
-            self._teacher_subject=t_sub
-            self.__teacher_phone_no=t_phone_no
+"""
+to achieve the data hiding, we have to define the variable and method name with single or double under score as prefix.
+"""
 
-        def show_teacher_name(self):
-            print("Teacher name is :",self.teacher_name)
-
-        def _show_teacher_subject(self):
-            print("Teacher subject is :",self._teacher_subject)
-
-        def __show_teacher_phone_no(self):
-            print("Teacher phone no is :",self.__teacher_phone_no)
-        """
-        def show_phone_no(self):
-            self.__show_teacher_phone_no()
-        """
+class school:
+    def __init__(self, name, address, board):
+        self.name = name
+        self._address = address
+        self.__board = board
 
 
-objteacher=Teacher("Rane","English",1234567890)
-objteacher.show_teacher_name()
-objteacher._show_teacher_subject()
-#objteacher.show_teacher_phone_no()
-objteacher._Teacher__show_teacher_phone_no()
+    def show_name(self):
+        print("School name :", self.name)
+
+
+    def _show_school_address(self):
+        print("School Address :", self._address)
+
+    def __show_board_name(self):
+        print("School board name :", self.__board)
+
+
+obj = school("MGM convent", "Mumbai Kurla", "MH Board")
+
+# when we define any variable/method with single/double underscore as prefix, then
+# those variable/method will not show in suggest list.
+obj.show_name()
+
+
+# access variable/method with single underscore as prefix: user can access directly.
+obj._show_school_address()
+
+
+# access variable/method with double underscore as prefix: user has to follow a pattern to access method or variable
+# obj._class__variable/method
+
+obj._school__show_board_name()
+
+"""
+
+School name : MGM convent
+School Address : Mumbai Kurla
+School board name : MH Board
+
+"""
