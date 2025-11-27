@@ -54,9 +54,12 @@ def click_Leave():
     # Enable the Pas Empoyees radio button
 
     pastemp=driver.find_element(By.XPATH,"//span[@class='oxd-switch-input oxd-switch-input--active --label-right']")
-    print("Verify past emp radio button is selected before :",pastemp.is_enabled())
+    radiobtn=driver.find_element(By.XPATH,"(//input[@type='checkbox'])[1]")
+    print("Verify past emp radio button is selected before :",radiobtn.is_selected())
+    print("Is enabled :",radiobtn.is_enabled())
     pastemp.click()
-    print("Verify past emp radio button is selected after :",pastemp.is_enabled())
+    print("Verify past emp radio button is selected after :",radiobtn.is_selected())
+    print("Is enabled :", radiobtn.is_enabled())
     time.sleep(5)
 
 
