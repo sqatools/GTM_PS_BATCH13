@@ -89,10 +89,22 @@ print(dict10) # {1: 'a', 2: 'b', 3: 'C'}
 print("-"*50)
 ##################################################################
 #11.Python Dictionary program to get the sum of all the items in a dictionary.
-dict11 = {'x' : 23, 'y' : 10 , 'z' : 7}
-result = {}
-for key, val in dict11:
-    result[key] = sum(val)
-print("sum of all items :", result)
+#dict11 = {'x' : 23, 'y' : 10 , 'z' : 7}
+#result = {}
+#for key, val in dict11:
+ #   result[key] = sum(val)
+#print("sum of all items :", result)
 
+#print("-"*50)
+##############################################################
+name = input("Enter student name")
+m1 = int(input("Enter english subject marks :"))
+m2 = int(input("Enter Maths subject marks :"))
+m3 = int(input("Enter Hindi subject marks "))
+
+dic1 = {'name': name, 'marks':(m1,m2,m3)}
+avg = (m1 + m2 + m3) /3
+
+print("Average marks :", avg)
+print(dic1)
 
