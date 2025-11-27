@@ -64,6 +64,13 @@ Types of Xpath:
                       -> //div/a/span/span[contains(text(), 'Car r')]
 
 
+ 6.  Normalize space: This method ignore any trailing spaces from text value or attribute value.
+     -> //button[normalize-space()='Log in']
+     -> //button[normalize-space()='Create new account']
+     -> //button[normalize-space(@id)='create-account']
+
+
+
 ####### Advance XPath : ##########
 1.  Parent:  identify the parent element with the help of child reference.
              e.g. //ref_tagname[@attribute='value']//parent:tar_tagname[@attribute='value']
