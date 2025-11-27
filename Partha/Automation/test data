@@ -1,0 +1,3 @@
+//div[@role='navigation']//following::button[@class='plR5qb']
+
+//div[@role='navigation']//following::(a[@class='pHiOh'])[2]

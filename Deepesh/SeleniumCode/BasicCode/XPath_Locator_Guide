@@ -61,7 +61,15 @@ Types of Xpath:
 
     ii). Family help :  //parent_element//tagname[@attribute='value']
                       -> //div/*[contains(text(), 'Car')]
-                      -> //div/a/span/span[contains(text(), 'Car r')]
+                      -> //a/span/div/span[contains(text(), 'Car rental')]
+                      -->//a/span/div/span[contains(text(), 'Car r')]
+
+
+ 6.  Normalize space: This method ignore any trailing spaces from text value or attribute value.
+     -> //button[normalize-space()='Log in']
+     -> //button[normalize-space()='Create new account']
+     -> //button[normalize-space(@id)='create-account']
+
 
 
 ####### Advance XPath : ##########

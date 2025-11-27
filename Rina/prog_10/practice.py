@@ -79,7 +79,82 @@ import datetime
 dt = datetime.datetime.now()
 print("Current date: ", dt)
 
+from _datetime import date
+date_1 = date(2025, 1, 21)
+date_2 = date(2024, 11, 12)
+result = (date_1 - date_2).days
+print("Calculate the days between days : ", result, "days")
+
+class Myclass:
+    def __init__(self, name):
+        self.name = name
+    def display_name(self):
+        print("Name: ", self.name)
+
+obj = Myclass("Rina")
+obj.display_name()
+
+
+
+class MyClass:
+    def __init__(self):
+        self.instance_var = 80
+obj = MyClass()
+print(obj.instance_var)
+
+
+class MyClass:
+    def __init__(self, name):
+        self.name = name
+    def display_name(self):
+        print("Name: ", self.name)
+
+    def updated_name(self, new_name):
+        self.name = new_name
+
+obj = MyClass("Rina")
+obj.display_name()
+
+obj.updated_name("RinaR")
+obj.display_name()
+
+class MyClass:
+    class_var = "Hello"
+print(MyClass.class_var)
+
+
+class MyClass:
+    @staticmethod
+    def static_method():
+        print("New Static Method")
+
+MyClass.static_method()
+
+class MyClass:
+    calss_var = "Hello"
+    @classmethod
+    def class_method(cls):
+        print("Class Var: ", cls.calss_var)
+
+MyClass.class_method()
+
+class MyClass:
+    pass
+obj = MyClass()
+print("Class name: ", obj.__class__.__name__)
+print("Module name: ", obj.__module__ )
 """
 
-
-
+class ParentCalss1:
+    def parent_method1(self):
+        print("Parent Mathod1: ")
+class ParentClass2:
+    def parent_method2(self):
+        print("Parent Method2: ")
+class ChildClass(ParentCalss1, ParentClass2):
+    def child_method(self):
+        print("Child mehod: ")
+obj = ChildClass()
+obj.parent_method1()
+obj.parent_method2()
+obj.child_method()

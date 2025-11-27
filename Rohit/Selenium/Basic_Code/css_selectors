@@ -1,0 +1,22 @@
+Methods on CSS Selectors:
+
+1).  class name :    we can user class attribute of the element to indentify the element.
+            e.g : .text-input
+            -->   .inputtext._55r1._6luy --> Facebook weebite see in class attribute
+
+2).  id : we can indentify element with id attribute using css selectors :
+               -> #pass
+               -> #email
+               -> #u_0_5_Rr   -- For login button in facebook
+
+3).  attribute : get element with attribute in css selector
+               e.g : tagname[attribute='value']
+               ->input[placeholder='Email address or phone number']
+               ->input[placeholder='Password']
+               ->[placeholder='Password']
+               ->button[data-testid='royal-login-button']
+               -> [data-testid='royal-login-button']
+
+4).  start value : e.g : tagname[attribute^='start value']
+                    -> input[placeholder^='Email']
+                    -> input[placeholder^='Pass']
