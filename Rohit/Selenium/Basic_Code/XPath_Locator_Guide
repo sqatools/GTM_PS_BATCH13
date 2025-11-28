@@ -56,6 +56,22 @@ Types of XPath :
                -->//a[@data-testid='open-registration-form-button' or  text()='Create new account3address2']
               --> //input[@id='pass' or  @placeholder='Password2']
 
+
+5.  Deal with multiple matching element
+
+     i). Indexing in the xpath : e.g (//tagname[@attribute='value'])[1]
+                              --> (//*[contains(text(), 'Car')])[1]
+
+     ii). Family help : //parent_element//tagname[@attribute='value']
+                   -->//div/*[contains(text(), 'Car')]
+
+6.  Normalize space: This method ignore any trailing spaces from text value or attribute value.
+                --> //button[normalize-space()='Log in']
+                --> //button[normalize-space()='Create new account']
+                --> //button[normalize-space(@id)='create-account']
+
+
+
 ####### Advance XPath : ##########
 1.  Parent:  identify the parent element with the help of child reference.
      e.g.ref_tagname[@attribute='value']//parent:tar_tagname[@attribute='value']
