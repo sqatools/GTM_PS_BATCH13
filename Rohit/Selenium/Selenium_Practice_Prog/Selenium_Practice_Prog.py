@@ -1,6 +1,5 @@
 import time
 
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
@@ -24,8 +23,8 @@ def Test_login():
     driver.find_element(By.ID,"wpforms-161-field_1").send_keys("dheeraj0006@gmail.com")
     driver.find_element(By.NAME,"wpforms[fields][2]").send_keys("Learning Python Program")
     #driver.find_element(By.CSS_SELECTOR, "[class='recaptcha-checkbox-checkmark']")checkbox.click()
-    #checkbox = driver.find_element(By.CSS_SELECTOR, "[class='recaptcha-checkbox-checkmark']")
-    #checkbox.click()
+    checkbox = driver.find_element(By.ID, "recaptcha-anchor")
+    checkbox.click()
     driver.find_element(By.ID,"wpforms-submit-161").click()
     time.sleep(10)
     driver.close()
@@ -33,11 +32,12 @@ def Test_login():
 Test_login()
 
 '''
+######################################################################################
 
 driver.get("https://automationexercise.com/login")
 time.sleep(5)
 driver.find_element(By.NAME,"name").send_keys("Rohit Chavan")
-driver.find_element(By.XPATH, "//input[@data-qa='signup-email']").send_keys("rohitrchavan08@gmail.com")
+driver.find_element(By.XPATH, "//input[@data-qa='signup-email']").send_keys("rohitrchavan09@gmail.com")
 driver.find_element(By.XPATH,"//button[@data-qa='signup-button']").click()
 driver.find_element(By.ID,'id_gender1').click()
 driver.find_element(By.XPATH, "//input[@id='password']").send_keys("Karad@123")
