@@ -399,6 +399,7 @@ if (a == b != c) or (a != b == c):
 else:
     print("triangle is not isosceles")
 """
+"""
 print ("38). Python program that reads month and returns season for that month.")
 month = input("Enter your month")
 if month in ("February", "March", "April", "May"):
@@ -408,5 +409,14 @@ elif month in ("June", "July", "August", "September"):
 elif month in ("October", "November", "December", "January"):
     print("Winter")
 else:
-    pass
-
+     pass
+"""
+list1 = [4, 5, 90, 34, 23, 30, 78]
+even = []
+for val in list1:
+    if val % 2 == 0:
+        even.append(val)
+    else:
+        pass
+print(list1)
+print(even)

@@ -1,3 +1,6 @@
+from Deepesh.PythonProgramming.PythonString.string_prog_practice import vowels
+from Shalaka.Basic_Python.String.String_Programs import count
+
 print("Hello World this is my first python program")
 print("I have started my python class from 9th of Oct")
 
@@ -42,3 +45,77 @@ print(list2)
 
 print("-"*50)
 #########################################
+a = 10
+b = 20
+
+a,b = b,a
+
+print(a,b)
+
+print("-"*50)
+#############################################
+nums = [1,2,3,4]
+
+print(len(nums))
+
+print("-"*50)
+###############################################
+
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i, end=" ")
+
+print("-"*50)
+
+############################################
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+opt = input("Enter the operation (+, -, *, /) : ")
+
+if opt == "+":
+    print(num1 + num2)
+elif opt == "-":
+    print(num1 - num2)
+elif opt == "*":
+    print(num1 * num2)
+elif opt == "/":
+    print(num1 / num2)
+else:
+    print("Invalid operator")
+
+print("-"*50)
+######################################
+num3 = int(input("Enter the number :"))
+
+for i in range(1,num3):
+    if i <=1 and num3 % i == 0:
+        print("Prime number")
+    else:
+        print("Not prime number")
+
+print("-"*50)
+#####################################
+#•	Takes n integers as input from the user and stores them in a list.
+#	From this list, creates another list containing only the even numbers.
+#	Prints both the original list and the even-number list.
+
+n = int(input("Enter the number :"))
+even = []
+for i in range(n):
+    if i % 2 == 0:
+     even.append(i)
+
+print("Even number :", even)
+print("original list :", i)
+
+print("-"*50)
+#############################
+vowels = ('a', 'e', 'i', 'o', 'u')
+count = 0
+a = input("Enter the vowels :")
+
+for i in a:
+    if i in vowels:
+        count +=1
+    print("Total vowels :", count)
