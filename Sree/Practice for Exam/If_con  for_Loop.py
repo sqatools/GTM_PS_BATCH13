@@ -23,6 +23,21 @@ elif marks >=50 and marks <=60:
 else:
     print("invalid marks")
 print('2.','_'*30)
+d mathematical operations from users and perform mathematical operations
+num1 = int(input("Enter 1st number: "))
+num2 = int(input("Enter 2nd number: "))
+operation = input("Enter operation of your choice")
+
+if operation == "+":
+    print(num1+num2)
+elif operation == "-":
+    print(num1-num2)
+elif operation == "/":
+    print(num1/num2)
+elif operation == "*":
+    print(num1*num2)
+else:
+    print("Invalid operation")
 """
 """
 Python program to check the given number divided by 3 and 5.

@@ -1,0 +1,57 @@
+Types of Xpath:
+1.  Absolute XPath: These xpath follows complete DOM structure the find the element.
+     e.g. /html/body/div/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input
+2.  Relative XPath: These xpath find the element with help of element attributes.
+                                            //tagname[@attribute='value']
+
+    ex: 1. facebook: email or phonenumber: //input[@placeholder='Email or phone number']
+        2. facebook: password: //input[@placeholder='Password']
+        3.           login: //button[@data-testid='royal-login-button']
+
+########## # XPath Methods:###########################
+
+1. Text Method :
+                                   //taganame[text()='value']
+
+     ex: 1.facebook: forgot password: //a[text()='Forgot password?']
+        2.facebook:create new account //a[text()='Create new account']
+     3.for a celebrity, brand or business  //a[text()=' for a celebrity, brand or business.']
+     4.sqatools: loginpage link: //a[text()='Login Page']
+
+
+2.Contains method: contains method help to indetify element with the help of "partial" value of text or attribute.
+
+ i) contains with attribute : //tagname[contains(@attribute, 'partial value')]
+      ex: 1. facebook: email:partialvalue: //input[contains(@data-testid,'royal-e')]
+      2. password: //input[contains(@data-testid,'royal-p')]
+      3.login: //button[contains(@data-testid,'royal-l')]
+ ii) contains with text : //tagname[contains(text(), 'partial value')]
+                  Facebook:
+         ex: //a[contains(text(),'Fo')]
+             //a[contains(text(),'Create n')]
+                       Grotechminds:  Remember me:
+                //span[contains(text(),'Rem')]
+3. starts-with:  //tagname[starts-with(@attribute, 'start-value')]
+                         Facebook:
+               ex: //input[starts-with(@data-testid,'royal-e')]
+                  //a[starts-with(@id,'u_0_6_p')]
+                        grotechminds:
+                  //input[starts-with(@placeholder,'Enter em')]
+4. and\or condition:
+                  # AND Condition
+            //tagname[@attribute='value1' and @attrinute2='value2']
+                             Facebook:
+            //input[@id='email'and @aria-label='Email or phone number']
+            //button[@type='submit' and @id='u_0_5_kn']
+                     Facebook: birthday:
+            //select[@id='month' and @title='Month']
+
+                    # or Condition
+
+                        Facebook: new password
+            //input[@name='reg_passwd__' or id='password_step_input']
+            //a[@data-testid='open-registration-form-button' or text()='Create new account']
+
+5.  Deal with multiple matching element
+              i). Indexing in the xpath :   e.g. (//tagname[@attribute='value'])[1]
+

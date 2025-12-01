@@ -78,7 +78,7 @@ elif operator == '/':
         result = num1 / num2
         print("division val:", result)
     else:
-        print("Invalid.")
+        print("valid")
 else:
     print("Invalid operator")
 """""
