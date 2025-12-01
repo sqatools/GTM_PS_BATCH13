@@ -283,6 +283,7 @@ for i in range (10,16):
      if i!= 13:
          print(i)
 """
+"""
 '''29). Python program to find the electricity bill. According to the following conditions:
 Up to 50 units rs 0.50/unit
 Up to 100 units rs 0.75/unit
@@ -304,12 +305,118 @@ elif unit <= 250:
     bill = bill* 1.50
     print(bill)
 
-
 total_bill = bill *(17/100)
 print(total_bill)  # output is not right.
+"""
+"""
+print("30). Python program to check whether a given year is a leap or not.")
+year =int(input("Enter your year"))
 
+if (year%4==0) or (year%4==0 and year%100!=0):
+    print("Year is leap year")
+else:
+    print("Year is not leap year")
 
+"""
+"""
+print("31).Python program to check whether the input number if a multiple of two print “Fizz” instead of the number and for the multiples of three print “Buzz”. For numbers that are multiples of both two and three print “FizzBuzz”.")
 
+num31 = int(input("Enter your number"))
 
+if num31%2==0 and (num31%3!=0):
+    print("Fizz")
+elif num31%3==0 and (num31%2!=0):
+    print("Buzz")
+elif (num31%2==0)and(num31%2==0):
+    print("FizzBuzz")
+else:
+    print("Number is not multiply of 2 & 3 or both")
+"""
+"""
+print("32). Python program to check whether an alphabet is a vowel.")
 
+char = input("Enter character")
+vowel = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
 
+if char in vowel:
+    print("Alphabet is vowel")
+else:
+    print("Alphabet is not vowel")
+"""
+"""
+print("33). Python program to check whether an alphabet is a consonant.")
+char = input("Enter character")
+vowel = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"]
+
+if char not in vowel:
+    print("Alphabet is consonant")
+else:
+    print("Alphabet is not consonant")
+"""
+"""
+print("34). Python program to convert the month name to the number of days.")
+month = input("Enter month name: ")
+
+if month in ("january", "march", "may", "july", "august", "october", "december"):
+    print("31 days")
+elif month in ("april", "june", "september", "november"):
+    print("30 days")
+elif month == "february":
+    print("28 or 29 days")
+else:
+    print("Invalid month name")
+"""
+"""
+print("35). Python program to check whether a triangle is equilateral or not. An equilateral triangle is a triangle in which all three sides are equal.")
+a = int(input("first side"))
+b = int(input("second side"))
+c = int(input("third side"))
+
+if a == b == c:
+    print("triangle is equilateral")
+else:
+    print("triangle is not equilateral")
+"""
+"""
+print("36). Python program to check whether a triangle is scalene or not. A scalene triangle is a triangle that has three unequal sides.")
+a = int(input("first side"))
+b = int(input("second side"))
+c = int(input("third side"))
+
+if a != b != c:
+    print("triangle is scalene")
+else:
+    print("triangle is not scalene")
+"""
+"""
+print("37). Python program to check whether a triangle is isosceles or not. An isosceles triangle is a triangle with (at least) two equal sides.")
+a = int(input("first side"))
+b = int(input("second side"))
+c = int(input("third side"))
+
+if (a == b != c) or (a != b == c):
+    print("triangle is isosceles")
+else:
+    print("triangle is not isosceles")
+"""
+"""
+print ("38). Python program that reads month and returns season for that month.")
+month = input("Enter your month")
+if month in ("February", "March", "April", "May"):
+    print("Summer")
+elif month in ("June", "July", "August", "September"):
+    print("Rainy")
+elif month in ("October", "November", "December", "January"):
+    print("Winter")
+else:
+     pass
+"""
+list1 = [4, 5, 90, 34, 23, 30, 78]
+even = []
+for val in list1:
+    if val % 2 == 0:
+        even.append(val)
+    else:
+        pass
+print(list1)
+print(even)

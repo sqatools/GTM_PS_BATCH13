@@ -23,6 +23,21 @@ elif marks >=50 and marks <=60:
 else:
     print("invalid marks")
 print('2.','_'*30)
+d mathematical operations from users and perform mathematical operations
+num1 = int(input("Enter 1st number: "))
+num2 = int(input("Enter 2nd number: "))
+operation = input("Enter operation of your choice")
+
+if operation == "+":
+    print(num1+num2)
+elif operation == "-":
+    print(num1-num2)
+elif operation == "/":
+    print(num1/num2)
+elif operation == "*":
+    print(num1*num2)
+else:
+    print("Invalid operation")
 """
 """
 Python program to check the given number divided by 3 and 5.
@@ -400,3 +415,38 @@ days='monday','tuesday',"wed",'thur','fri','sat','sun'
 for i in days:
     if i!='sun':
         print(i)
+
+# write a python program with nested if condition and provide solution for interview process.
+
+round1 = "pass"
+round2 = "pass"
+round3 = "pass"
+
+if round1 == "pass":
+    print("congrats first round is cleared")
+    if round2 == "pass":
+        print("congrats second round is cleared")
+        if round3 == "pass":
+            print("Congrats you are selected")
+        else:
+            print("Failed in 3rd round, try next time.")
+    else:
+        print("Failed iun 2nd, round try next time")
+else:
+    print("sorry failed in first round, try next time")
+
+#############################################
+# write a python program to check given number is divisible 3, 5, 7
+
+x = 15
+
+if x%3 == 0:
+    print("This is divisible by 3:", x)
+elif x%5 == 0:
+    print("This is divisible by 5:", x)
+elif x%7 == 0:
+    print("This is divisible by 7:", x)
+else:
+    print("This is not divisible by any number:", x)
+
+
