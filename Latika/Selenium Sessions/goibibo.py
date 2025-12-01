@@ -1,17 +1,3 @@
-"""
-Implicit wait:  implicit wait is maximum timeout to locate any element,
-                -> it applies on all the elements of the webpage.
-Explicit wait:  ->  Explicit wait applies on specific element with condition.
-                ->  It is maximum to locate the element on the webpage.
-
-Fluent wait: ->  Fluent wait is the polling frequency to locate any element with explicit
-                 wait condition.
-             ->  Default polling frequency is 0.5 sec.
-
-static wait : ->  it is hard coded sleep time between any specific step. driver has to wait
-                  without any condition.
-                  e.g. time.sleep(10)
-"""
 import time
 from logging import exception
 from selenium import webdriver
@@ -33,7 +19,7 @@ driver.implicitly_wait(5)
 driver.get("https://www.goibibo.com/")
 time.sleep(5)
 
-def catch_flight():
+def book_flight():
     # Cancel the login-sign up pop up
     wait = WebDriverWait(driver, 10)
     try:
@@ -108,4 +94,4 @@ def catch_flight():
 
 
 
-catch_flight()
+book_flight()
