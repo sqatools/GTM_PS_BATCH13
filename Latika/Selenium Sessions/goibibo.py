@@ -5,23 +5,26 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
-browser = "Chrome"
-driver=None
-if browser.lower() == 'chrome':
-    driver=webdriver.Chrome()
-elif browser.lower() == 'firefox':
-    driver=webdriver.firefox()
-elif browser.lower() == 'edge':
-    driver=webdriver.edge()
+def launch_the_goibibo_site(browser = "Chrome"):
+    driver=None
+    if browser.lower() == 'chrome':
+        driver=webdriver.Chrome()
+    elif browser.lower() == 'firefox':
+        driver=webdriver.firefox()
+    elif browser.lower() == 'edge':
+        driver=webdriver.edge()
 
-driver.maximize_window()
-driver.implicitly_wait(5)
-driver.get("https://www.goibibo.com/")
-time.sleep(5)
+    driver.maximize_window()
+    driver.implicitly_wait(5)
+    driver.get("https://www.goibibo.com/")
+    return driver
+    time.sleep(5)
 
-def book_flight():
-    # Cancel the login-sign up pop up
+def book_flight(driver):
+
     wait = WebDriverWait(driver, 10)
+
+    # Cancel the login-sign up pop-up
     try:
         close_popup= driver.find_element(By.XPATH,"//span[@class='logSprite icClose']")
         close_popup.click()
@@ -94,4 +97,5 @@ def book_flight():
 
 
 
-book_flight()
+driver = launch_the_goibibo_site()
+book_flight(driver)
