@@ -2,6 +2,8 @@ import time
 from selenium import webdriver
 from selenium .webdriver.common.by import By
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.support import expected_conditions as ec
+
 
 #open browser
 
@@ -29,7 +31,9 @@ to_city.click()
 time.sleep(3)
 city_name.send_keys("Delhi")
 going_city = driver.find_element(By.XPATH, "//input[@id='toCity']")
-going_city.find_element(By.XPATH, "//*[text()='New Delhi, India']")
+
+
+going_city = wait.until(ec.element_to_be_clickable((By.XPATH, "//*[text()='PNQ']"))))
 going_city.click()
 
 #city = Select(going_city)
