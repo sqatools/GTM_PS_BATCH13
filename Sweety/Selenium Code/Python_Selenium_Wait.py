@@ -29,7 +29,7 @@ def implicit_wait_practice():
     try:
         driver.find_element(By.ID, "email1").send_keys("user1@gmail.com")
     except Exception as e:
-     print(e)
+        print(e)
     t2 = time.time()
     print("total time taken :", t2-t1)
 
@@ -53,13 +53,3 @@ def explicit_wait():
 
 
 explicit_wait()
-
-
-
-
-
-
-
-
-
-
