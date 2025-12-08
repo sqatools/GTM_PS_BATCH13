@@ -67,7 +67,7 @@ pip install pyautogui
 """
 import pyautogui
 
-def Context_click_or_right_click():
+def Context_click_or_right_click():  # Right click on website how we are doing inspect
     driver.get("https://automationexercise.com/")
     button_list = driver.find_elements(By.XPATH, "//button[text()='Test Cases']")
     for elem in button_list:
