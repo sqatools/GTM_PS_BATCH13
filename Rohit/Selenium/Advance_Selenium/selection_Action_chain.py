@@ -60,4 +60,25 @@ def Scroll_to_with_amount():
     action.scroll_by_amount(1300,1300).perform()
     time.sleep(5)
 
-Scroll_to_with_amount()
+#Scroll_to_with_amount()
+
+"""
+pip install pyautogui
+"""
+import pyautogui
+
+def Context_click_or_right_click():
+    driver.get("https://automationexercise.com/")
+    button_list = driver.find_elements(By.XPATH, "//button[text()='Test Cases']")
+    for elem in button_list:
+        try:
+            action.context_click(elem).perform()
+            time.sleep(5)
+            pyautogui.press("up")
+            time.sleep(5)
+            pyautogui.press("enter")
+            time.sleep(5)
+        except Exception as e:
+            print(e)
+
+Context_click_or_right_click()

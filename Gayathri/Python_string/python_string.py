@@ -38,6 +38,8 @@ result3 = f"My name is {name} and age is {age}, I live in {city}"
 print(result3)
 #this is the most popular method of formatting strings. no need of converion of data type - it auto converts
 
+
+
 ######################################################
 # String indexing and slicing
 
