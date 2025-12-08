@@ -12,3 +12,8 @@
     ->  -m :  python path to consider as root directory
     ->  -v :  verbose of test execution to provide detailed information.
     e.g. python -m pytest -v .\test_math_operation.py
+
+
+->  Execute specific group of test cases with command
+    -> python -m pytest -v -m "smoke" test_<file_path>
+
