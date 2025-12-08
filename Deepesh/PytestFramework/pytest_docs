@@ -17,3 +17,10 @@
 ->  Execute specific group of test cases with command
     -> python -m pytest -v -m "smoke" test_<file_path>
 
+
+->  Execute test cases with multiple marker using or condition.
+    ->  python -m pytest -v -m "smoke or sanity" .\Basics\
+
+
+-> Execute test cases with multiple marker using and condition.
+    ->  python -m pytest -v -m "smoke and sanity" .\Basics\
