@@ -11,3 +11,4 @@
     ->  python -m pytest -v <test_file_path/name>
     ->  -m :  python path to consider as root directory
     ->  -v :  verbose of test execution to provide detailed information.
+    e.g. python -m pytest -v .\test_math_operation.pypip install pytest
