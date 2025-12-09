@@ -24,3 +24,8 @@
 
 -> Execute test cases with multiple marker using and condition.
     ->  python -m pytest -v -m "smoke and sanity" .\Basics\
+
+
+->  There are 2 skip markers in pytest
+    ->  @pytest.mark.skip : un conditional skip, it will skip test case in any condition.
+    ->  @pytest.mark.skipif(env=='PROD') , it will skip test cases in production environment
