@@ -1,26 +1,27 @@
 import pytest
 
+ENV ='PROD'
+
 def test_addition():
     n1 = 20
     n2 = 30
     assert n1+n2 == 50
-@pytest.mark.skip #(Unconditional skip)
+
 def test_multiplication():
     x = 3
     y = 20
     assert x*y == 60
 
-@pytest.mark.skipif(ENV == 'PROD', Reason = 'Cannot execute in PROD')
+@pytest.mark.Xfail(ENV == 'test', reason = 'Cannot execute in PROD')
 def test_division():
-    v1 = 30
+    v1 = 32
     v2 = 4
-    assert v1//v2 == 8
+    assert v1//v2 == 9
 
 def test_subtraction():
     m = 500
     n = 200
     assert m -n == 300
 
-
-def greeting():
+def test_greeting():
     print("Good Morning")
