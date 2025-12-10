@@ -20,7 +20,7 @@ def function_setup():
 
 
 class TestMathOperation:
-    def test_addition(self,):
+    def test_addition(self):
         n1 = 20
         n2 = 30
         assert n1+n2 == 50
