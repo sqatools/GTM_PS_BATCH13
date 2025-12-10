@@ -1,16 +1,19 @@
 import pytest
 
+ENV = "PROD"
+#ENV = "TEST"
+
 def test_addition():
     n1 = 20
     n2 = 30
     assert n1+n2 == 50
-@pytest.mark.skip #(Unconditional skip)
+
+@pytest.mark.skip        # unconditional skip
 def test_multiplication():
     x = 3
     y = 20
     assert x*y == 60
 
-@pytest.mark.skipif(ENV == 'PROD', Reason = 'Cannot execute in PROD')
 def test_division():
     v1 = 30
     v2 = 4
@@ -21,6 +24,13 @@ def test_subtraction():
     n = 200
     assert m -n == 300
 
-
-def greeting():
+@pytest.mark.skipif(ENV=="PROD", reason="This test cases can't execute in production environment")
+def test_greeting():
     print("Good Morning")
+
+
+
+#  python -m pytest -v .\test_skip_marker.py
+
+
+
