@@ -35,7 +35,7 @@ def test_greeting():
 def test_addition_f1():
     n1 = 20
     n2 = 30
-    assert n1+n2 == 50
+    assert n1+n2 == 40
 
 def test_multiplication_f2():
     x = 3
