@@ -1,0 +1,22 @@
+
+Methods on CSS Selectors:
+
+1).  class name :    we can user class attribute of the element to indentify the element.
+                     e.g.  .text-input
+                     ->    .inputtext._55r1._6luy
+
+2).  id : we can indentify element with id attribute using css selectors :
+                     -> #loginbutton
+                     -> #pass
+                     -> #create-account
+
+3).  attribute : get element with attribute in css selector
+                    e.g. tagname[attribute='value']
+                    -> input[placeholder="Email address or phone number"]
+                    -> [placeholder="Email address or phone number"]
+                    -> [placeholder="Password"]
+
+4).  start value :  e.g. tagname[attribute^='starting value']
+                         -> input[placeholder^="Pass"]
+                         -> input[placeholder^="Email"]
+           ###### Xmethod: starts-with:  //tagname[starts-with(@attribute, 'start-value')]#############

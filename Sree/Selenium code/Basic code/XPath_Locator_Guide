@@ -25,6 +25,7 @@ Types of Xpath:
       ex: 1. facebook: email:partialvalue: //input[contains(@data-testid,'royal-e')]
       2. password: //input[contains(@data-testid,'royal-p')]
       3.login: //button[contains(@data-testid,'royal-l')]
+
  ii) contains with text : //tagname[contains(text(), 'partial value')]
                   Facebook:
          ex: //a[contains(text(),'Fo')]
@@ -53,5 +54,8 @@ Types of Xpath:
             //a[@data-testid='open-registration-form-button' or text()='Create new account']
 
 5.  Deal with multiple matching element
-              i). Indexing in the xpath :   e.g. (//tagname[@attribute='value'])[1]
+              i). Indexing in the xpath :   (//tagname[@attribute='value'])[1]
+                                         ex: (//a[contains(text(),'Create')])[1]
+                                             (//*[contains(text(), 'Car')])[1]
+## * star can use in case of- don't know tagname;
 
