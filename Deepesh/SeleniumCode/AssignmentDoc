@@ -1,0 +1,24 @@
+# Assignment 1 : Automation Flight Search Flow from given website
+https://www.goibibo.com/
+
+# Assignment 2: Search the bus from bus booking section.
+-> select source location
+-> select destination
+-> select travel date
+-> click on search button
+
+# Assignment 3: Select seat and complete the flow seat booking
+# ->  seat selection
+# ->  select boarding
+# ->  select drop point
+# ->  provide user details
+# ->  provide payment method
+
+# Assignment 4: Automate e-commerce website:
+https://automationexercise.com/
+# SELECT ITEM
+# GET PRICE
+# ADD TO TO CART
+# VERIFY ITEMS IN THE CART
+# CHECKOUT FROM CART
+

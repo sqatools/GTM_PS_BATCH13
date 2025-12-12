@@ -1,0 +1,23 @@
+def test_addition():
+    n1 = 20
+    n2 = 30
+    assert n1+n2 == 50
+
+def test_multiplication():
+    x = 3
+    y = 20
+    assert x*y == 60
+
+def test_division():
+    v1 = 30
+    v2 = 4
+    assert v1//v2 == 8
+
+def test_subtraction():
+    m = 500
+    n = 200
+    assert m -n == 300
+
+
+def greeting():
+    print("Good Morning")

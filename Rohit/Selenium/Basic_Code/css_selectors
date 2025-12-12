@@ -2,7 +2,7 @@ Methods on CSS Selectors:
 
 1).  class name :    we can user class attribute of the element to indentify the element.
             e.g : .text-input
-            -->   .inputtext._55r1._6luy --> Facebook weebite see in class attribute
+            -->   .inputtext._55r1._6luy --> Facebook website see in class attribute
 
 2).  id : we can indentify element with id attribute using css selectors :
                -> #pass
