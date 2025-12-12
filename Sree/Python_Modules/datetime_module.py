@@ -71,4 +71,4 @@ print('8,',Today.strftime("%m/%d/%Y/%H/%M/%S"))
 print('9.',Today-timedelta(days=2))
 print('9.',(Today-timedelta(days=2)).date())  # will get only Date
 print('10.',Today+timedelta(days=2))
-print('10.',(Today+timedelta(days=2)).date())
+print('10.',(Today+timedelta(days=26)).date())
