@@ -1,0 +1,5 @@
+->  Generate html report, we will install pytest-html package.
+    ->  pip install pytest-html
+
+    # execution command
+    -> python -m pytest -v .\tests\ --html=logs/report.html
