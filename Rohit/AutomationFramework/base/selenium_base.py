@@ -2,6 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 
+
 class SeleniumBase:
     def __init__(self, driver, timeout=30):
         self.driver = driver
