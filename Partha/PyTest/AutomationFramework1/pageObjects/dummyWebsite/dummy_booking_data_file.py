@@ -1,0 +1,7 @@
+website_url = "https://sqatools.in/dummy-booking-website/"
+from_city_name = "Mumbai"
+dest_city_name = "Pune"
+billing_name = "Radha"
+billing_phone = "7048587868"
+user_dob = "12/07/1996"
+traveller_details = "Add 2 more passenger (200%)"
