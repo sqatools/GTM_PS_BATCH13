@@ -1,0 +1,13 @@
+2025-12-15 16:10:45 [INFO] (dummy_booking_page.py:14) Launch website url:,{url}
+2025-12-15 16:10:46 [INFO] (dummy_booking_page.py:18) Entering from city name:,Mumbai
+2025-12-15 16:10:46 [INFO] (selenium_base.py:14) getting element with locator: ('name', 'fromcity')
+2025-12-15 16:10:46 [INFO] (dummy_booking_page.py:22) Entering destination city name:,Pune
+2025-12-15 16:10:46 [INFO] (selenium_base.py:14) getting element with locator: ('name', 'destcity')
+2025-12-15 16:10:46 [INFO] (dummy_booking_page.py:26) enter billing name: Rohit
+2025-12-15 16:10:46 [INFO] (selenium_base.py:14) getting element with locator: ('id', 'billing_name')
+2025-12-15 16:10:56 [INFO] (dummy_booking_page.py:30) select date of birth: 12/12/1999
+2025-12-15 16:10:56 [INFO] (selenium_base.py:14) getting element with locator: ('id', 'birthday')
+2025-12-15 16:10:56 [INFO] (dummy_booking_page.py:38) select number of travellers
+2025-12-15 16:10:56 [INFO] (selenium_base.py:14) getting element with locator: ('id', 'admorepass')
+2025-12-15 16:10:56 [INFO] (dummy_booking_page.py:34) select male radio button
+2025-12-15 16:10:56 [INFO] (selenium_base.py:14) getting element with locator: ('id', 'male')

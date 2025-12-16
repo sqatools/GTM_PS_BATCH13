@@ -1,0 +1,14 @@
+->  install pytest with command
+    ->  pip install pytest
+
+
+-> create a test file with test_<filename> as prefix
+
+-> create test function with test_<function_name> as prefix
+
+
+->  command to run the test file from command prompt.
+    ->  python -m pytest -v <test_file_path/name>
+    ->  -m :  python path to consider as root directory
+    ->  -v :  verbose of test execution to provide detailed information.
+    e.g. python -m pytest -v .\test_math_operation.pypip install pytest
