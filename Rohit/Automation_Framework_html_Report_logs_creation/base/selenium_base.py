@@ -1,14 +1,17 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
+import logging
 
 
 class SeleniumBase:
     def __init__(self, driver, timeout=30):
         self.driver = driver
         self.wait = WebDriverWait(driver, timeout=timeout)
+        self.log = logging.getLogger(__name__)
 
     def get_element(self, locator):
+        self.log.info(f"getting element with locator: {locator}")
         return self.wait.until(EC.presence_of_element_located(locator))
 
     def click_element(self, locator):

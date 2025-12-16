@@ -12,6 +12,7 @@ def get_driver(request):
     yield
     driver.close()
 
+
 def pytest_configure(config):
     # create a logs folder if is not there
     logs_path = os.path.join(os.getcwd(), "logs")

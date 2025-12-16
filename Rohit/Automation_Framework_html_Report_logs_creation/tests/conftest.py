@@ -1,7 +1,7 @@
 import pytest
+from selenium import webdriver
 import os
 from datetime import datetime
-from selenium import webdriver
 
 
 @pytest.fixture(scope='class')
@@ -11,6 +11,7 @@ def get_driver(request):
     request.cls.driver = driver
     yield
     driver.close()
+
 
 def pytest_configure(config):
     # create a logs folder if is not there
@@ -31,3 +32,5 @@ def pytest_configure(config):
 
     # update log file path in config
     config.option.log_file = log_file_path
+
+

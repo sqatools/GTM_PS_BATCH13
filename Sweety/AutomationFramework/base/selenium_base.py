@@ -3,6 +3,7 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.select import Select
 import logging
 
+
 class SeleniumBase:
     def __init__(self, driver, timeout=30):
         self.driver = driver
