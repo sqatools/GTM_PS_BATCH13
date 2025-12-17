@@ -1,0 +1,9 @@
+{
+  "login_url" :"https://practicetestautomation.com/practice-test-login/",
+  "Username" : "student",
+  "Password" : "Password123",
+  "First_name" : "Rohit",
+  "Last_name" : "Chavan",
+  "Email" : "dheerajc@gmail.com",
+  "Message" : "Learning Python Language"
+}

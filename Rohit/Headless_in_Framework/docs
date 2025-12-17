@@ -1,0 +1,5 @@
+# command to provide values from commandline
+   -> python -m pytest -v --browser=chrome --headless=True .\tests\login_test\test_login_headless.py
+
+# -->python -m pytest -v --browser_name=chrome --headless=False  .\Tests\test_login\
+# -->python -m pytest -v --browser_name=chrome --headless=True  .\Tests\test_login\
