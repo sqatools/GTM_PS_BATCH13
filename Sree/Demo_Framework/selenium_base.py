@@ -1,3 +1,8 @@
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options as chrome_option
+from selenium.webdriver.firefox.options import Options as firefox_option
+from selenium.webdriver.edge.options import Options as edge_option
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
 
@@ -15,3 +20,26 @@ class Seleniumbase:
         return self.get_element(locator).text
     def get_attribute_value(self,locator,attrib):
         return self.get_element(locator).get_attribute(attrib)
+class WebdriverFactory:
+    def __init__(self,browser,headles=False):
+        self.browser=browser
+        self.headless=headles
+    def get_driver_instance(self):
+        driver=None
+        if self.browser.lower()=='chrome':
+            opt=chrome_option()
+            if self.headless:
+                opt.add_argument("--headless")
+            driver= webdriver.Chrome(options=opt)
+        elif self.browser.lower()=='firefox':
+            opt=firefox_option()
+            if self.headless:
+                opt.add_argument("--headless")
+            driver=webdriver.Firefox(options=opt)
+        elif self.browser.lower()=='edge':
+            opt=edge_option()
+            if self.headless:
+                opt.add_argument("--headless")
+            driver =webdriver.Edge(options=opt)
+        driver.maximize_window()
+        return driver
