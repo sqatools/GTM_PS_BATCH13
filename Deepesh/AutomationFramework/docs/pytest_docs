@@ -57,3 +57,5 @@
     # execution command
     -> python -m pytest -v .\tests\ --html=logs/report.html
 
+# command to provide values from commandline
+   -> python -m pytest -v --browser=chrome --headless=True .\tests\login_test\test_login_headless.py

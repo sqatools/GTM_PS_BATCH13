@@ -16,7 +16,7 @@ def test_multiplication():
     y = 20
     assert x*y == 60
 
-@pytest.mark.skipif(ENV == 'PROD', reason="can not execute on prod environment")
+@pytest.mark.skipif(ENV == 'prod', reason="can not execute on prod environment")
 def test_division():
     v1 = 30
     v2 = 4

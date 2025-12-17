@@ -28,7 +28,7 @@
 
 ->  There are 2 skip markers in pytest
     ->  @pytest.mark.skip : un conditional skip, it will skip test case in any condition.
-    ->  @pytest.mark.skipif(env=='PROD') , it will skip test cases in production environment
+    ->  @pytest.mark.skipif(env=='prod') , it will skip test cases in production environment
 
 
 ->  Xfail Marker
@@ -37,7 +37,7 @@
 
     ->  If expected failure condition is fixed, the xfail marker test will show as xpassed in the result
     ->  we can mention reason and condition as well in xfail marker.
-    ->  @pytest.mark.xfail(ENV=="PROD", reason="feature is not available in PROD environment")
+    ->  @pytest.mark.xfail(ENV=="prod", reason="feature is not available in prod environment")
 
 
 -> Parametrize marker

@@ -1,6 +1,6 @@
 import pytest
 
-ENV = "PROD"
+ENV = "prod"
 #ENV = "TEST"
 
 def test_addition():
@@ -24,7 +24,7 @@ def test_subtraction():
     n = 200
     assert m -n == 300
 
-@pytest.mark.skipif(ENV=="PROD", reason="This test cases can't execute in production environment")
+@pytest.mark.skipif(ENV=="prod", reason="This test cases can't execute in production environment")
 def test_greeting():
     print("Good Morning")
 
