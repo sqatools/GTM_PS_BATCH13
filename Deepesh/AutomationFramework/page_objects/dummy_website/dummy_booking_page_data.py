@@ -1,5 +1,5 @@
 from ...session_data import ENV
-if ENV == 'PROD':
+if ENV == 'prod':
     website_url = "https://sqatools.in/dummy-booking-website/"
 elif ENV == 'TEST':
     website_url = "https://test.sqatools.in/dummy-booking-website/"
