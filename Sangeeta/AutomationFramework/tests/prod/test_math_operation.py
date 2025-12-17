@@ -1,22 +1,17 @@
 """
 pip install pytest
 """
-import pytest
-
-ENV = "TEST"
 
 def test_addition():
     n1 = 20
     n2 = 30
     assert n1+n2 == 50
 
-@pytest.mark.skip  # unconditional skip
 def test_multiplication():
     x = 3
     y = 20
     assert x*y == 60
 
-@pytest.mark.skipif(ENV == 'prod', reason="can not execute on prod environment")
 def test_division():
     v1 = 30
     v2 = 4
@@ -28,5 +23,5 @@ def test_subtraction():
     assert m -n == 300
 
 
-def test_greeting():
+def greeting():
     print("Good Morning")

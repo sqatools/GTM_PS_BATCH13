@@ -21,3 +21,8 @@ class SeleniumBase:
 
     def get_attribute_value(self, locator, attrib):
         return self.get_element(locator).get_attribute(attrib)
+
+    def select_dropdown_value(self, locator, value):
+        element = self.get_element(locator)
+        select = Select(element)
+        select.select_by_visible_text(value)

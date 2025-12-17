@@ -3,10 +3,10 @@ pip install pytest
 """
 import pytest
 
-ENV = "PROD"
+ENV = "prod"
 
 @pytest.mark.xfail(
-    ENV == "PROD",
+    ENV == "prod",
     reason="Test cases failed due environment #JIRA-345"
 )
 def test_addition():

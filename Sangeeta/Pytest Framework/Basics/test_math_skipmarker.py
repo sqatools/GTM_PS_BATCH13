@@ -1,6 +1,6 @@
 import pytest
 
-ENV = 'PROD'
+ENV = 'prod'
 def test_addition():
     n1 = 20
     n2 = 30
@@ -11,7 +11,7 @@ def test_multiplication():
     y = 20
     assert x*y == 60
 
-@pytest.mark.skipif(ENV == 'PROD', reason = 'Cannot execute in PROD')
+@pytest.mark.skipif(ENV == 'prod', reason = 'Cannot execute in prod')
 def test_division():
     v1 = 30
     v2 = 4
