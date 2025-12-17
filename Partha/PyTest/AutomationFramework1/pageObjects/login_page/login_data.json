@@ -1,0 +1,7 @@
+{
+    "login_url": "https://sqatools.in/login-page/",
+    "username" : "user1@gmail.com",
+    "password" : "user@1234",
+     "users_list" : [ ["user2", "pass2"], ["user3", "password3"], ["user4", "password4"]
+  ]
+}
