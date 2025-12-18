@@ -1,8 +1,8 @@
 import time
 import pytest
-from ..page_objects.dummy_sqawebsite.dummy_sqabooking_data import *
-from ..page_objects.dummy_sqawebsite.dummysqa_locator import *
-from ..page_objects.dummy_sqawebsite.dummy_sqabooking_page import DummySQABookingPage
+from ...page_objects.dummy_sqawebsite.dummy_sqabooking_data import *
+from ...page_objects.dummy_sqawebsite.dummysqa_locator import *
+from ...page_objects.dummy_sqawebsite.dummy_sqabooking_page import DummySQABookingPage
 
 @pytest.mark.usefixtures("get_driver")
 class TestSqaDummybooking:
