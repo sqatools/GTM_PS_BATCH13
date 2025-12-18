@@ -10,9 +10,13 @@ class SeleniumBase:
         self.wait = WebDriverWait(driver, timeout=timeout)
         self.log = logging.getLogger(__name__)
 
-    def get_element(self, locator):
+    def get_element(self, locator, cond=ec.presence_of_element_located):
         self.log.info(f"getting element with locator: {locator}")
-        return self.wait.until(ec.presence_of_element_located(locator))
+        return self.wait.until(cond(locator))
+
+    def get_elements_list(self, locator, cond=ec.visibility_of_all_elements_located):
+        self.log.info(f"getting elements with locator: {locator}")
+        return self.wait.until(cond(locator))
 
     def click_element(self, locator):
         self.log.info(f"clicking on element with locator: {locator}")
