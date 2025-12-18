@@ -2,7 +2,7 @@ import time
 
 import  pytest
 
-from ..confltest import get_driver
+from ..conftest import get_driver
 from ...Page_objects.website.website_page import WebsitePage
 from ...Page_objects.website.data_file import *
 
