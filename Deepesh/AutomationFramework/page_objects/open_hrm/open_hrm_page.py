@@ -26,7 +26,10 @@ class AdminPage(SeleniumBase):
         self.click_element(admin_page_locator.admin_side_menu)
 
     def add_user(self):
-        pass
+        self.click_element(admin_page_locator.add_user_button)
+        self.click_element(admin_page_locator.user_role_dropdown)
+
+
 
 
 
