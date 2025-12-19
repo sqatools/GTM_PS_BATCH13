@@ -1,0 +1,51 @@
+# sample website for API: https://restful-api.dev/
+
+API (Application Programming Interface):
+
+HTTP Methods:
+1. GET
+2. POST
+3. PUT
+4. PATCH
+5. DELETE
+
+Response Code:
+
+100-199: Information response code
+200-299 : Success response
+300-399 : Re-directional response
+400-499 : Client error response
+500-599 : Server Error Response
+
+# https://restfulapi.net/http-status-codes/
+
+# API based on Architecture:
+
+Rest (Representational State Transfer) API: This type API are stateless API, this faster in term of speed
+
+SOAP (Simple Object Access Protocol) API:This is called xml based messaging protocol where it maintain
+the state of API.
+
+XML Structure:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<api_request_root_element>
+    <authentication>
+        <username>your_username</username>
+        <api_key>your_api_key</api_key>
+    </authentication>
+    <request_details>
+        <method_name>createItem</method_name>
+        <parameters>
+            <item>
+                <field_id>123</field_id>
+                <value>New Item Name</value>
+            </item>
+            <!-- More parameters can be nested here -->
+        </parameters>
+    </request_details>
+</api_request_root_element>
+
+
+
+
