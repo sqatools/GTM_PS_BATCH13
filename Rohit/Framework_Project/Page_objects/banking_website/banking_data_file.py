@@ -14,8 +14,8 @@ Password = "Sajur@123"
 Confirm = "Sajur@123"
 
 #Customer_login_data
-Customer_login_Username = "Mahesh89"
-Customer_login_Password = "Karad@123"
+Customer_login_Username = "Rohit0006"
+Customer_login_Password = "Sajur@123"
 
 #customer_forgot_login
 forgot_login_FirstName = "Mahesh"
