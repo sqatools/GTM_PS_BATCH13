@@ -49,3 +49,23 @@
       test_mark_parametrization.py::test_login[user2-pass@123] PASSED        [ 50%]
       test_mark_parametrization.py::test_login[user3-user@1234] PASSED       [ 75%]
       test_mark_parametrization.py::test_login[user4-admin@123] PASSED
+
+
+->  Generate html report, we will install pytest-html package.
+    ->  pip install pytest-html
+
+    # execution command
+    -> python -m pytest -v .\tests\ --html=logs/report.html
+
+# command to provide values from commandline
+   -> python -m pytest -v --browser=chrome --headless=True .\tests\login_test\test_login_headless.py
+
+
+->  For parallel execution of the test we have to install this module:
+    -> pip install pytest-xdist
+
+   # we can specify number test case to execute parallel.
+   -> python -m pytest -v -n 3 .\tests\prod\
+
+    # it will pick number CPU available your system to execute parallel test cases.
+    -> python -m pytest -v -n auto .\tests\prod\
