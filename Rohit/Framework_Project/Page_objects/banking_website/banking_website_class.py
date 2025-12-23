@@ -15,13 +15,13 @@ class Banking_Website(SeleniumBase):
     def click_customer_Register(self):
         self.click_element(RegistrationLoc.Customer_Register)
 
-    #def enter_First_name(self,first_name):
-     #   self.enter_text(RegistrationLoc.field_First_Name, first_name)
+    def enter_First_name(self, first_name):
+       self.enter_text(RegistrationLoc.field_First_Name, first_name)
 
-    def enter_First_name(self, locator, value):
-        element = self.driver.find_element(*locator)
-        element.clear()
-        element.send_keys(value)
+    # def enter_First_name(self, locator, value):
+    #     element = self.driver.find_element(*locator)
+    #     element.clear()
+    #     element.send_keys(value)
 
     #def enter_Last_name(self,last_name):
      #   self.enter_text(RegistrationLoc.Last_Name_field, last_name)

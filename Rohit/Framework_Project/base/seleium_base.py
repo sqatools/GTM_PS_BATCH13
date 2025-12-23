@@ -9,14 +9,16 @@ class SeleniumBase:
         self.wait = WebDriverWait(self.driver, timeout)
 
 
-    def get_element(self,locator):
-        return self.wait.until(EC.presence_of_element_located(locator))
+    def get_element(self,locator, cond=EC.presence_of_element_located):
+        return self.wait.until(cond(locator))
 
-    def click_element(self, locator):
-        self.get_element(locator).click()
+    def click_element(self, locator, **kwargs):
+        self.get_element(locator, **kwargs).click()
 
     def enter_text(self, locator, values):
-        self.get_element(locator).send_keys(values)
+        elem = self.get_element(locator)
+        elem.clear()
+        elem.send_keys(values)
 
     def get_elements(self, locator):
         return self.get_elements(locator).text
@@ -25,7 +27,8 @@ class SeleniumBase:
         return self.get_element(locator).get_attribute(attrib)
 
     def click_Registration_button(self,locator):
-        self.wait.until(EC.element_to_be_clickable(locator)).click()
+        self.click_element(locator, cond=EC.element_to_be_clickable)
+        #self.wait.until(EC.element_to_be_clickable(locator)).click()
 
     def click_customer_Login_button(self,locator):
        # element = self.wait.until(EC.visibility_of_element_located(locator))

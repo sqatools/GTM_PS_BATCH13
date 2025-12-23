@@ -14,7 +14,7 @@ class TestBankingWebsite:
     def test_Customer_Register_functionality(self):
         self.bw = Banking_Website(self.driver)
         self.bw.launch_banking_website(url=website_url)
-        self.bw.enter_First_name(RegistrationLoc.field_First_Name,"Rohit")
+        self.bw.enter_First_name(first_name="Rohit")
         self.bw.enter_Last_name(RegistrationLoc.Last_Name_field,"More")
         self.bw.enter_Address(RegistrationLoc.Address_field,"490B,Mohan Apartment, Shaniwar Peth, Satara")
         self.bw.enter_City(RegistrationLoc.City_field,"Karad")
