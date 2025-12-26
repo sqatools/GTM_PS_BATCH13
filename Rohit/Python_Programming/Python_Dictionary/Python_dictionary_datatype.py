@@ -23,7 +23,6 @@ Properties:
 
 -> Dict follow LIFO (LAST IN FIRST OUT) concept
 """
-from Deepesh.PythonProgramming.Python_Dict.python_dict_datatype import result, first_char, output
 
 dict1 = {'a': 13,'b':34,'c':22}
 print(dict1,type(dict1)) # {'a': 13, 'b': 34, 'c': 22} <class 'dict'>

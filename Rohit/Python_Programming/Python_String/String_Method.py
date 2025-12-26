@@ -1,6 +1,4 @@
 ##Reverse Entire String
-from Deepesh.PythonProgramming.PythonString.Python_string import len_string
-
 str1 = "Good Morning"
 print(str1[::-1]) ## gninroM dooG
 print(str1[-1:-len(str1)-1:-1]) ## elaborate how its work -ve (Interview questions)

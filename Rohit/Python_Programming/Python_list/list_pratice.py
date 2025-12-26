@@ -1,5 +1,4 @@
 # 1.  write a python program to get max value from list without using inbuilt function.
-from Deepesh.PythonProgramming.Python_list.python_list_datatype import output
 
 list1 = [22,67,45,89,77,23]
 max_val = 0
