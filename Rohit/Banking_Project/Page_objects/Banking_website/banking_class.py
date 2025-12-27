@@ -59,5 +59,44 @@ class Banking_website(SeleniumBase):
         assert expected_text in alert.text
         alert.accept()
 
+    # Add New Employee
+    def click_Employee_menu(self):
+        self.click_element(Employee_Menu)
 
+    def click_Add_Employee_sub_menu(self):
+        self.click_element(Add_Employee_Submenu)
 
+    def select_branch(self, drop_down_branch):
+        self.select_dropdown_by_visible_text(Drop_Down_Branch, drop_down_branch)
+
+    #def enter_Employee_ID(self, employee_id):
+     #   self.enter_text(Employee_id, employee_id)
+
+    def enter_employee_first_name(self, E_firstname):
+        self.enter_text(Employee_FirstName, E_firstname)
+
+    def enter_employee_last_name(self, E_lastname):
+        self.enter_text(Employee_LastName, E_lastname)
+
+    def enter_Employee_email(self, E_email):
+        self.enter_text(Employee_Email, E_email)
+
+    def enter_Employee_phone(self, E_phone):
+        self.enter_text(Employee_Phone, E_phone)
+
+    def enter_Employee_position(self, E_position):
+        self.enter_text(Employee_Position, E_position)
+
+    def select_Employee_hire_date(self, E_hire_date):
+        self.enter_text(Employee_HireDate, E_hire_date)
+
+    def enter_Employee_password(self, E_password):
+        self.enter_text(Employee_Password, E_password)
+
+    def click_add_employee_button(self):
+        self.click_element(Add_Employee_btn)
+
+    def verify_Employee_Add_sucess_alert(self, expected_text):
+        alert = self.driver.switch_to.alert
+        assert expected_text in alert.text
+        alert.accept()

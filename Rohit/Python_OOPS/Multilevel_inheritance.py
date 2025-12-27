@@ -7,8 +7,6 @@ Inheritance: when one class aquire the property of another class, then it is cal
 
 4.  Hierarchical inheritance : class A (Father) -> class B (Son1), class A(Father) -> class C (Son2)
 """
-from Sweety.PythonProgramming.Python_Modules.os_module import file_name
-
 
 # multilevel inheritance
 class GrandFather():

@@ -37,3 +37,25 @@ class Test_Banking_Website:
         time.sleep(5)
         self.bank.verify_sucess_alert("Branch added successfully !!")
         DBUtils.insert_branch(ADD_BRANCH_DATA)
+
+       # Add New Employee
+    def test_Add_Employee_functionality(self):
+        self.bank = Banking_website(self.driver)
+        self.bank.click_Employee_menu()
+        self.bank.click_Add_Employee_sub_menu()
+        self.bank.select_branch("Yewatmal Branch, 4106")
+        time.sleep(3)
+       # self.bank.enter_Employee_ID(Employee_id)
+        self.bank.enter_employee_first_name(Employee_FirstName)
+        self.bank.enter_employee_last_name(Employee_LastName)
+        self.bank.enter_Employee_email(Employee_Email)
+        self.bank.enter_Employee_phone(Employee_Phone)
+        self.bank.enter_Employee_position(Employee_Position)
+        self.bank.select_Employee_hire_date(Employee_HireDate)
+        self.bank.enter_Employee_password(Employee_Password)
+        time.sleep(3)
+        self.bank.click_add_employee_button()
+        time.sleep(5)
+        self.bank.verify_Employee_Add_sucess_alert("New Employee added successfully..!")
+        DBUtils.insert_employee(EMPLOYEE_DB_DATA)
+

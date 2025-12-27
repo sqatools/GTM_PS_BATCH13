@@ -26,3 +26,7 @@ class SeleniumBase:
         element = self.get_element(locator)
         select = Select(element)
         select.select_by_visible_text(value)
+
+    def select_dropdown_by_visible_text(self, locator, text):
+        element = self.wait.until(EC.visibility_of_element_located(locator))
+        Select(element).select_by_visible_text(text)

@@ -1,32 +1,5 @@
-import sqlite3
+
 from ..Page_objects.Banking_website.banking_datafile import *
-'''
-class DBUtils:
-
-    def create_database_connection(self,db_name="Bank.db"):
-        self.conn = sqlite3.connect(db_name)
-        return self.conn
-
-
-    def create_Add_branch_table(self, query):
-        cursor = self.conn.cursor()
-        cursor.execute(query)
-        self.conn.commit()
-        cursor.close()
-
-
-    def insert_branch(self,data):
-        conn = DBUtils.create_database_connection(db_name="Bank.db")
-        cursor = conn.cursor()
-
-        cursor.execute("""
-        INSERT INTO branch 
-        VALUES (?, ?, ?, ?, ?, ?, ?)
-        """, data)
-
-        conn.commit()
-        conn.close()
-'''
 
 import sqlite3
 
@@ -58,13 +31,23 @@ class DBUtils:
         conn.commit()
         conn.close()
 
+
     @staticmethod
     def insert_branch(branch_data):
+        required_keys = [
+            "branch_id", "branch_name", "branch_address",
+            "branch_city", "branch_state", "branch_zip", "branch_phone"
+        ]
+
+        for key in required_keys:
+            if key not in branch_data:
+                raise KeyError(f"Missing key in branch_data: {key}")
+
         conn = DBUtils.get_connection()
         cursor = conn.cursor()
 
         cursor.execute("""
-        INSERT INTO add_branch 
+        INSERT INTO add_branch
         (branch_id, branch_name, branch_address, branch_city, branch_state, branch_zip, branch_phone)
         VALUES (?, ?, ?, ?, ?, ?, ?)
         """, (
@@ -91,5 +74,66 @@ class DBUtils:
         )
         data = cursor.fetchone()
 
+        conn.close()
+        return data
+
+    @staticmethod
+    def create_employee_table():
+        conn = DBUtils.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute("""
+        CREATE TABLE IF NOT EXISTS employee (
+            employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
+            branch_id INTEGER,
+            first_name TEXT,
+            last_name TEXT,
+            email TEXT,
+            phone TEXT,
+            position TEXT,
+            hire_date TEXT,
+            password TEXT,
+            FOREIGN KEY (branch_id) REFERENCES add_branch(branch_id)
+        )
+        """)
+
+        conn.commit()
+        conn.close()
+
+    @staticmethod
+    def insert_employee(employee_data):
+        DBUtils.create_employee_table()
+        conn = DBUtils.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute("""
+        INSERT INTO employee
+        (branch_id, first_name, last_name, email, phone, position, hire_date, password)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            employee_data["branch_id"],
+            employee_data["E_firstname"],
+            employee_data["E_lastname"],
+            employee_data["E_email"],
+            employee_data["E_phone"],
+            employee_data["E_position"],
+            employee_data["E_hire_date"],
+            employee_data["E_password"]
+        ))
+
+        conn.commit()
+        conn.close()
+
+    @staticmethod
+    def get_employee_by_id(employee_id):
+        conn = DBUtils.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute(
+            "SELECT * FROM employee WHERE employee_id=?",
+            (employee_id,)
+        )
+
+        data = cursor.fetchone()
         conn.close()
         return data
