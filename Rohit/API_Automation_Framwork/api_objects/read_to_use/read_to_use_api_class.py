@@ -17,3 +17,9 @@ class ReadToUseAPI(APIBase):
         response, status_code = self.get_method(url=new_server_url)
         return response, status_code
 
+    def get_single_object(self, object_id):
+        self.log.info("initiated method : get_single_object")
+        new_server_url = f"{server_url}/{object_id}"
+        response, status_code = self.get_method(url=new_server_url)
+        return response, status_code
+
