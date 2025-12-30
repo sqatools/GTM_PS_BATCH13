@@ -69,8 +69,9 @@ class Banking_website(SeleniumBase):
     def select_branch(self, drop_down_branch):
         self.select_dropdown_by_visible_text(Drop_Down_Branch, drop_down_branch)
 
-    #def enter_Employee_ID(self, employee_id):
-     #   self.enter_text(Employee_id, employee_id)
+    def enter_Employee_ID(self, employee_id):
+        self.get_element(Employee_id).clear()
+        self.enter_text(Employee_id, employee_id)
 
     def enter_employee_first_name(self, E_firstname):
         self.enter_text(Employee_FirstName, E_firstname)
@@ -97,6 +98,30 @@ class Banking_website(SeleniumBase):
         self.click_element(Add_Employee_btn)
 
     def verify_Employee_Add_sucess_alert(self, expected_text):
+        alert = self.driver.switch_to.alert
+        assert expected_text in alert.text
+        alert.accept()
+
+    # Delete Employees
+
+    def click_delete_employee(self):
+        self.click_element(Delete_Employees_btn)
+
+    def select_delete_employee_drop_down(self, drop_down):
+        self.select_dropdown_by_visible_text(Delete_Employee_drop_down, drop_down)
+
+    def click_view_button(self):
+        self.click_element(view_btn)
+
+    def click_on_delete_employee_Details_btn(self):
+        self.click_element(Delete_Employee_details_btn)
+
+    def verify_make_sure_to_delete_employee_alert(self, expected_text):
+        alert = self.driver.switch_to.alert
+        assert expected_text in alert.text
+        alert.accept()
+
+    def verify_employee_delete_successfully_alert(self,expected_text):
         alert = self.driver.switch_to.alert
         assert expected_text in alert.text
         alert.accept()

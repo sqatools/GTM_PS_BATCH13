@@ -45,7 +45,7 @@ class Test_Banking_Website:
         self.bank.click_Add_Employee_sub_menu()
         self.bank.select_branch("Yewatmal Branch, 4106")
         time.sleep(3)
-       # self.bank.enter_Employee_ID(Employee_id)
+        self.bank.enter_Employee_ID(Employee_ID)
         self.bank.enter_employee_first_name(Employee_FirstName)
         self.bank.enter_employee_last_name(Employee_LastName)
         self.bank.enter_Employee_email(Employee_Email)
@@ -58,4 +58,21 @@ class Test_Banking_Website:
         time.sleep(5)
         self.bank.verify_Employee_Add_sucess_alert("New Employee added successfully..!")
         DBUtils.insert_employee(EMPLOYEE_DB_DATA)
+
+
+    # Delete Employees
+    def test_delete_employee_details_functionality(self):
+        self.bank = Banking_website(self.driver)
+        self.bank.click_Employee_menu()
+        self.bank.click_delete_employee()
+        self.bank.select_delete_employee_drop_down(Delete_Employee_from_drop_down)
+        time.sleep(5)
+        self.bank.click_view_button()
+        self.bank.click_on_delete_employee_Details_btn()
+        time.sleep(3)
+        self.bank.verify_make_sure_to_delete_employee_alert("Are you sure you want to delete this employee?")
+        time.sleep(3)
+        self.bank.verify_employee_delete_successfully_alert(" Employee deleted successfully..!")
+        DBUtils.delete_employee_by_id(5516)
+        DBUtils.update_employee(5519, UPDATE_EMPLOYEE_DATA)
 

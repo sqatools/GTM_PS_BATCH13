@@ -1,4 +1,4 @@
-# decorator the enhance the functionality of existing code with out changing it, then it is called decorator.
+# decorator the enhance the functionality of existing code without changing it, then it is called decorator.
 
 def decorator(func):
     def inner(param):

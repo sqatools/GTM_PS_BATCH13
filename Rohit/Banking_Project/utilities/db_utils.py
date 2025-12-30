@@ -86,6 +86,7 @@ class DBUtils:
         CREATE TABLE IF NOT EXISTS employee (
             employee_id INTEGER PRIMARY KEY AUTOINCREMENT,
             branch_id INTEGER,
+            employee_id INTEGER,
             first_name TEXT,
             last_name TEXT,
             email TEXT,
@@ -108,10 +109,11 @@ class DBUtils:
 
         cursor.execute("""
         INSERT INTO employee
-        (branch_id, first_name, last_name, email, phone, position, hire_date, password)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        (branch_id,employee_id, first_name, last_name, email, phone, position, hire_date, password)
+        VALUES (?,?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             employee_data["branch_id"],
+            employee_data["employee_id"],
             employee_data["E_firstname"],
             employee_data["E_lastname"],
             employee_data["E_email"],
@@ -137,3 +139,48 @@ class DBUtils:
         data = cursor.fetchone()
         conn.close()
         return data
+
+    @staticmethod
+    def delete_employee_by_id(employee_id):
+        conn = DBUtils.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute(
+            "DELETE FROM employee WHERE employee_id = ?",
+            (employee_id,)
+        )
+
+        conn.commit()
+        conn.close()
+
+    @staticmethod
+    def update_employee(employee_id, employee_data):
+        conn = DBUtils.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute("""
+        UPDATE employee
+        SET
+            branch_id = ?,
+            first_name = ?,
+            last_name = ?,
+            email = ?,
+            phone = ?,
+            position = ?,
+            hire_date = ?,
+            password = ?
+        WHERE employee_id = ?
+        """, (
+            employee_data["branch_id"],
+            employee_data["E_firstname"],
+            employee_data["E_lastname"],
+            employee_data["E_email"],
+            employee_data["E_phone"],
+            employee_data["E_position"],
+            employee_data["E_hire_date"],
+            employee_data["E_password"],
+            employee_id
+        ))
+
+        conn.commit()
+        conn.close()

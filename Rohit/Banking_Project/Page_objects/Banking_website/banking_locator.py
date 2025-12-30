@@ -33,3 +33,9 @@ Employee_Position = (By.NAME,"Position")
 Employee_HireDate = (By.NAME,"HireDate")
 Employee_Password = (By.NAME,"Password")
 Add_Employee_btn = (By.XPATH,"//input[@value='Add Employee']")
+
+# Delete Employees
+Delete_Employees_btn = (By.XPATH,"//a[@href='view_del_employee.php']")
+Delete_Employee_drop_down = (By.ID,"BranchID")
+view_btn = (By.XPATH,"//input[@value='View']")
+Delete_Employee_details_btn = (By.XPATH,"//tr[td[text()='5516']]//input[@value='Delete']")
