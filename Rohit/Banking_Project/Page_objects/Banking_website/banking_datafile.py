@@ -7,7 +7,7 @@ Admin_username = "admin"
 Admin_Password = "admin"
 
 # Add Branches
-Branch_id = "5191"
+Branch_id = "5193"
 Branch_Name = "Kolhapur Branch"
 Branch_Address = "A/P Shivaji Peth"
 Branch_City = "Kolhpaur"
@@ -36,7 +36,7 @@ update_Branch_Phone = '6789054021'
 
 # Add New Employee
 drop_down_branch = "Yewatmal Branch, 4106"
-Employee_ID = "5591"
+Employee_ID = "5593"
 Employee_FirstName = "Rajkumar"
 Employee_LastName = "Sharma"
 Employee_Email = "rajkumarsharma@gmail.com"

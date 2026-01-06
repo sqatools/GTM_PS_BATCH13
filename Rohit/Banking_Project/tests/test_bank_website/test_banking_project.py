@@ -116,8 +116,8 @@ class Test_Banking_Website:
         self.bank.verify_make_sure_to_delete_employee_alert("Are you sure you want to delete this employee?")
         time.sleep(3)
         self.bank.verify_employee_delete_successfully_alert(" Employee deleted successfully..!")
-        DBUtils.delete_employee_by_id(5580)
-        DBUtils.update_employee(5591, UPDATE_EMPLOYEE_DATA)
+        DBUtils.delete_employee_by_id(5591)
+        DBUtils.update_employee(5592, UPDATE_EMPLOYEE_DATA)
 
      # update Employee
     def test_update_Employee_Branch_functionality(self):
