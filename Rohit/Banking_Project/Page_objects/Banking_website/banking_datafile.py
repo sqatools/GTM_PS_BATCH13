@@ -7,13 +7,13 @@ Admin_username = "admin"
 Admin_Password = "admin"
 
 # Add Branches
-Branch_id = "5193"
-Branch_Name = "Kolhapur Branch"
-Branch_Address = "A/P Shivaji Peth"
-Branch_City = "Kolhpaur"
+Branch_id = "5194"
+Branch_Name = "Sajur Branch"
+Branch_Address = "A/P Bhavani Peth"
+Branch_City = "Thambve"
 Branch_State = "Maharastra"
-Branch_Zipcode = "415125"
-Branch_Phone = "9876523678"
+Branch_Zipcode = "415126"
+Branch_Phone = "9346523678"
 
 ADD_BRANCH_DATA = {
     "branch_id": Branch_id,
@@ -27,22 +27,22 @@ ADD_BRANCH_DATA = {
 
 
 # update Branch
-update_Branch_Name = "Belapur"
-update_Branch_Address = "39A CBD Belapur"
-update_Branch_City = "Belapur"
+update_Branch_Name = "Thambve"
+update_Branch_Address = "345S, Koparkarne"
+update_Branch_City = "Thambve"
 update_Branch_State = 'Maharastra'
-update_Branch_Zipcode = '415110'
-update_Branch_Phone = '6789054021'
+update_Branch_Zipcode = '415113'
+update_Branch_Phone = '6789054001'
 
 # Add New Employee
 drop_down_branch = "Yewatmal Branch, 4106"
-Employee_ID = "5593"
-Employee_FirstName = "Rajkumar"
-Employee_LastName = "Sharma"
-Employee_Email = "rajkumarsharma@gmail.com"
-Employee_Phone = "7389812092"
-Employee_Position = "Model Lead"
-Employee_HireDate = "05/01/2026"
+Employee_ID = "5594"
+Employee_FirstName = "Sambhaji"
+Employee_LastName = "Chavan"
+Employee_Email = "sambhajichavan23@gmail.com"
+Employee_Phone = "7389812762"
+Employee_Position = "Automation Engineer"
+Employee_HireDate = "06/01/2026"
 Employee_Password = "yuio@456"
 
 
@@ -60,12 +60,12 @@ EMPLOYEE_DB_DATA = {
 
 UPDATE_EMPLOYEE_DATA = {
     "branch_id": 4106,
-    "E_firstname": "Mahadev",
-    "E_lastname": "Patil",
-    "E_email": "mahadevdewkar@gmail.com",
-    "E_phone": "5678906542",
-    "E_position": "Teacher",
-    "E_hire_date": "04/01/2026",
+    "E_firstname": "Suraj",
+    "E_lastname": "Chavan",
+    "E_email": "surajchavan34@gmail.com",
+    "E_phone": "5678978542",
+    "E_position": "Medical officer",
+    "E_hire_date": "06/01/2026",
     "E_password": "DFGH@345"
 }
 
@@ -77,13 +77,13 @@ Delete_Employee_from_drop_down = 'Yewatmal Branch, 4106'
 
 #update Employee
 update_employee_branch = 'Yewatmal Branch, 4106'
-update_employee_FirstName = 'Sachin'
-update_employee_LastName = "Mahadik"
-update_employee_Email = "sachinmahadik@gmail.com"
-update_employee_Phone = "9097633568"
-update_employee_Position = "VP"
-update_employee_Hire_date = '05/01/2026'
+update_employee_FirstName = 'Dheeraj'
+update_employee_LastName = "Chavan"
+update_employee_Email = "dheerajchavan23@gmail.com"
+update_employee_Phone = "9097630068"
+update_employee_Position = "Project Manager"
+update_employee_Hire_date = '06/01/2026'
 
 # Account type
-Account_type = 'Demat16 Account'
+Account_type = 'Demat20 Account'
 
