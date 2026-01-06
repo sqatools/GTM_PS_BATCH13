@@ -78,6 +78,47 @@ class DBUtils:
         return data
 
     @staticmethod
+    def delete_branch_by_id(branch_id):
+        conn = DBUtils.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute(
+            "DELETE FROM employee WHERE branch_id = ?",
+            (branch_id,)
+        )
+
+        conn.commit()
+        conn.close()
+
+    @staticmethod
+    def branch(branch_id, branch_data):
+        conn = DBUtils.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute("""
+            UPDATE branch
+            SET
+                branch_name = ?,
+                branch_address = ?,
+                branch_city = ?,
+                branch_state = ?,
+                branch_zip = ?,
+                branch_phone = ?
+            WHERE branch_id = ?
+        """, (
+            branch_data["branch_name"],
+            branch_data["branch_address"],
+            branch_data["branch_city"],
+            branch_data["branch_state"],
+            branch_data["branch_zip"],
+            branch_data["branch_phone"],
+            branch_id
+        ))
+
+        conn.commit()
+        conn.close()
+
+    @staticmethod
     def create_employee_table():
         conn = DBUtils.get_connection()
         cursor = conn.cursor()
