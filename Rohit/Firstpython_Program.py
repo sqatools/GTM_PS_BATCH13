@@ -1,6 +1,3 @@
-from Deepesh.PythonProgramming.PythonString.string_prog_practice import vowels
-from Shalaka.Basic_Python.String.String_Programs import count
-
 print("Hello World this is my first python program")
 print("I have started my python class from 9th of Oct")
 

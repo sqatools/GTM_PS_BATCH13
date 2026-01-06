@@ -1,8 +1,5 @@
 import json
 
-from Sree.python_List import output
-
-
 def read_json_file(file_path):
     with open(file_path,'r') as file:
         data = file.read()

@@ -76,7 +76,7 @@ def update_existing_object(id):
     print(response.text)
     print(response.status_code)
 
-#update_existing_object("ff8081819782e69e019b4929eac65cb0")
+#update_existing_object("ff8081819782e69e019b687b0edb0c22")
 
 def partial_update_object(id):
     url = f"https://api.restful-api.dev/objects/{id}"
@@ -94,7 +94,7 @@ def partial_update_object(id):
     print(response.text)
     print(response.status_code)
 
-#partial_update_object("ff8081819782e69e019b4929eac65cb0")
+#partial_update_object("ff8081819782e69e019b687b0edb0c22")
 
 
 def delete_object(id):
@@ -109,4 +109,4 @@ def delete_object(id):
     print(response.text)
     print(response.status_code)
 
-delete_object("ff8081819782e69e019b493454f25cbf")
+delete_object("ff8081819782e69e019b687b0edb0c22")
