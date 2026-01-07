@@ -31,4 +31,10 @@ jobs:
         run: |
           cd Deepesh/AutomationFramework
           pip install -r requirements.txt
-          python -m pytest -v --headless=True --browser="chrome" ./tests/ --html=report.html --self-contained-html 
+          python -m pytest -v --headless=True --browser="chrome" ./tests/ --html=report.html --self-contained-html
+          
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v3
+        with:
+            name: Test Report
+            path: Deepesh/AutomationFramework/report.html

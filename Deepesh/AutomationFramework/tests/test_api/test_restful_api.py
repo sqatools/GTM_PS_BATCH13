@@ -9,11 +9,13 @@ class TestRestfulAPI:
     def setup(self):
         self.r_api = RestfulAPI()
 
+    @pytest.mark.smoke
     def test_get_all_objects(self):
         response, st_code = self.r_api.get_list_of_all_objects()
         assert isinstance(response, list)
         assert st_code == 200
 
+    @pytest.mark.sanity
     def test_get_specific_object(self):
         # Assuming object with id 1 exists
         response, st_code = self.r_api.get_specific_object(1)
@@ -21,12 +23,14 @@ class TestRestfulAPI:
         assert st_code == 200
         assert 'id' in response
 
+    @pytest.mark.regression
     def test_create_object(self):
         response, st_code = self.r_api.create_object(sample_object_data)
         assert isinstance(response, dict)
         assert st_code == 200 or st_code == 201
         assert 'id' in response
 
+    @pytest.mark.regression
     def test_update_object(self):
         # First create an object to update
         create_response, create_code = self.r_api.create_object(sample_object_data)
@@ -38,6 +42,7 @@ class TestRestfulAPI:
         assert update_code == 200
         assert update_response['name'] == sample_object_data['name']
 
+    @pytest.mark.regression
     def test_partial_update_object(self):
         # First create an object
         create_response, create_code = self.r_api.create_object(sample_object_data)
