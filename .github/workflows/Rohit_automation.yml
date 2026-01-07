@@ -30,4 +30,4 @@ jobs:
         run: |
           cd Rohit/API_Framework_Practice
           pip install -r requirements.txt
-          python -m pyest -v ./tests/  
+          python -m pytest -v ./tests/  
