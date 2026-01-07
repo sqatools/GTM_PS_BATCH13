@@ -30,4 +30,4 @@ jobs:
         run: |
           cd Rohit/Headless_in_Framework
           pip install -r requirements.txt
-          python -m pytest -v --headless=False --browser="chrome" ./Tests/ --html=report.html --self-contained-html  
+          python -m pytest -v --headless=True --browser="chrome" ./Tests/ --html=report.html --self-contained-html  
