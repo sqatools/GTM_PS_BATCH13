@@ -27,14 +27,8 @@ jobs:
             sudo apt-get install -y google-chrome-stable
           
 
-      - name: Run Automation Script Non-browser
+      - name: Run Automation Script
         run: |
           cd Deepesh/AutomationFramework
           pip install -r requirements.txt
-          python -m pytest -v tests/prod/
-
-      - name: Run Automation Script with-browser and api
-        run: |
-          cd Deepesh/AutomationFramework
-          pip install -r requirements.txt
-          python -m pytest -v ./tests/
+          python -m pytest -v ./tests/ --html=report.html --self-contained-html
