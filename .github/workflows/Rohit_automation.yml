@@ -30,4 +30,4 @@ jobs:
         run: |
           cd Rohit\Pytest_Framework
           pip install -r requirements.txt
-          python -m pytest -v --headless=True --browser="chrome" ./Basic/ --html=report.html --self-contained-html   
+          python -m pytest -v --headless=false --browser="chrome" ./Basic/ --html=report.html --self-contained-html   
