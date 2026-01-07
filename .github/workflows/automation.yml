@@ -31,4 +31,4 @@ jobs:
         run: |
           cd Deepesh/AutomationFramework
           pip install -r requirements.txt
-          python -m pytest -v --headless=True Browser="chrome" ./tests/ --html=report.html --self-contained-html 
+          python -m pytest -v --headless=True --browser="chrome" ./tests/ --html=report.html --self-contained-html 
