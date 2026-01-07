@@ -1,5 +1,3 @@
-from Deepesh.PythonProgramming.PythonString.Python_string import str_a
-
 str1 = "Hello Python"
 str2 = ''' 
 My python programming

@@ -32,8 +32,8 @@ class APIBase:
     def put_method(self, url, headers=None, payload=None):
         headers = headers if headers else {}
         payload = payload if payload else {}
-        response = requests.request("POST", url, headers=headers, data=payload)
-        self.log.info(f"method name: post method")
+        response = requests.request("PUT", url, headers=headers, data=payload)
+        self.log.info(f"method name: put method")
         self.log.info(f"url: {url}")
         self.log.info(f"headers: {headers}")
         self.log.info(f"payload: {payload}")

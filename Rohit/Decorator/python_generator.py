@@ -1,4 +1,4 @@
-# Generator helps to manager the system memory and proces huge data one bye obe without over loading the system
+# Generator helps to manager the system memory and proces huge data one bye one without over loading the system
 # memory.
 
 # normal function

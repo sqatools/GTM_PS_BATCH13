@@ -15,8 +15,8 @@ def test_multiplication():
 @pytest.mark.smoke
 def test_division():
     v1 = 30
-    v2 = 4
-    assert v1//v2 == 8
+    v2 = 6
+    assert v1//v2 == 5
 
 @pytest.mark.smoke
 @pytest.mark.sanity
