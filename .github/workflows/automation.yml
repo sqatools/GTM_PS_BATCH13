@@ -28,13 +28,14 @@ jobs:
           
 
       - name: Run Automation Script
+        continue-on-error: true
         run: |
           cd Deepesh/AutomationFramework
           pip install -r requirements.txt
           python -m pytest -v --headless=True --browser="chrome" ./tests/ --html=report.html --self-contained-html
           
       - name: Upload Test Report
-        continue-on-error: true
+        if: always()
         uses: actions/upload-artifact@v4
         with:
             name: Test Report
