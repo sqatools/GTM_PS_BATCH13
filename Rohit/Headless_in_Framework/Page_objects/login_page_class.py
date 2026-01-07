@@ -2,6 +2,7 @@ from ..base.selenium_base import SeleniumBase
 from ..Page_objects.login_locator import *
 
 
+
 class login_Page(SeleniumBase):
     def __init__(self,driver):
         super().__init__(driver)
