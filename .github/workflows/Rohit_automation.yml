@@ -1,4 +1,4 @@
-name: Automation Workflow
+name : Rohit Workflow
 on:
   push:
     branches: ['main']
@@ -6,7 +6,7 @@ on:
     branches: ['main']
 
 jobs:
-  automate-tasks:
+  rohit-tasks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -25,18 +25,9 @@ jobs:
         run: |
             sudo apt-get update
             sudo apt-get install -y google-chrome-stable
-          
 
-      - name: Run Automation Script
-        continue-on-error: true
+      - name: Run Rohit Script
         run: |
-          cd Deepesh/AutomationFramework
+          cd Rohit/Pytest_Framework
           pip install -r requirements.txt
-          python -m pytest -v --headless=True --browser="chrome" ./tests/ --html=report.html --self-contained-html
-          
-      - name: Upload Test Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-            name: Test Report
-            path: Deepesh/AutomationFramework/report.html
+          python -m pytest -v --headless=True --browser="chrome" ./Basic/ --html=report.html --self-contained-html   
