@@ -20,7 +20,7 @@ class Test_login:
         self.lp.user_password(self.json_data["Password"])
         time.sleep(3)
         self.lp.click_submit()
-        self.lp.click_contact()
+        self.lp.click_contact_tab()
         time.sleep(3)
         self.lp.enter_First_name(self.json_data["First_name"])
         self.lp.enter_Last_name(self.json_data["Last_name"])
