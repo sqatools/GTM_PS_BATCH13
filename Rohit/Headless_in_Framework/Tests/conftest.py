@@ -14,7 +14,7 @@ def get_driver(request):
 
 def pytest_addoption(parser):
     parser.addoption("--browser_name", action="store", default="chrome", help="browser to execute the automation")
-    parser.addoption("--headless", action="store", default=False, help="browser to execute the automation")
+    parser.addoption("--headless", action="store", default=True, help="browser to execute the automation")
 
 @pytest.fixture(scope="class")
 def get_driver_with_headless(request, pytestconfig):

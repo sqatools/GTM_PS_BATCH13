@@ -1,0 +1,35 @@
+name : Sangeeta Automation Workflow
+on:
+  push:
+    branches = ['main']:
+  pull_request:
+    branches = ["main"]:
+
+jobs:
+  name : automate tasks:
+           runs on: ubuntu-latest
+           steps:
+             - name: checkout repository
+               uses: actions/checkout@v3
+
+             - name: Set up Python
+               uses: actions/setup-python@v4
+               with:
+                 python-version: '3.10'
+
+             - name: Install Dependencies
+               run: |
+                 python - m -pin install --upgrade pip
+
+             - name: Install chrome browser
+               run: |
+                 sudo apt-get update
+                 sudo apt-get install -y google-chrome-stable
+
+             - name: Run Automation Script
+               run: |
+                 cd Sangeeta_automation.yml
+                 pip install -r requirements.txt
+                 python -m pytest -v --headless=true --browser="chrome" ./tests/ --html=report.html --self.contained-html  
+
+
