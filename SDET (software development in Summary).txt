@@ -1,0 +1,54 @@
+- SDET (software development in Testing)
+- Programming : Python
+- Automation :  Selenium
+- Framework :  Pytest Framework Library
+- Design Pattern : POM (Page Object Model)
+- API Testing :  Postman
+
+              : Request library automation
+              : Integration of API with Framework
+
+- Jenkins : Installation, creating job, setup pipeline between multiples jobs.
+
+- GitHub :  - Create repository.
+            - clone repository.
+            - set cred
+            - add, status, commit, push
+            - multi branching 
+            - raise pull and review pull request.
+
+- GitHub Action :  - pipeline design to run automation
+                   - take input from users.
+                   - trigger workflows with pipeline
+                   - Get html report for users and download with zip.
+
+
+_________________________________________________________
+- Roles and Responsibility (SDET )
+
+  - Maintaining Existing code (fix locator issue, workflow changes, flaky test cases)
+  - Write new automation code for new feature with existing framework.
+     - add locator file
+     - add page file
+     - add data file
+     - add test file with all possible scenarios.
+
+  - Analyze the automation code execution and report issue, if any product bug is there.
+    - find automation issue then fix it.
+    - find product issue then raise a defect in defect management (JIRA)
+
+  - Maintaining Automation Pipeline and its run.
+
+  - Design new automation framework for any new project is introduced.
+    - create automation folder structure
+    - make sure framework follows the standard (POM)
+    - framework should have proper logging then user can debug easily.
+    - Make sure create maintainable pages for each feature.
+
+
+   
+
+
+  
+     
+

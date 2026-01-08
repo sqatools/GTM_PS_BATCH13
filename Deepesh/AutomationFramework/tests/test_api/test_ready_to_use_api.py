@@ -19,4 +19,4 @@ class TestReadyToUseAPI:
     def test_get_specific_object_and_verify(self):
         response, st_code = self.r_api.get_specific_numbers_of_objects(ids_list=object_ids_list)
         assert len(response) == len(object_ids_list)
-        assert st_code == 200 and assert response[0]['id'] in object_ids_list
+        assert st_code == 200 and response[0]['id'] in object_ids_list
