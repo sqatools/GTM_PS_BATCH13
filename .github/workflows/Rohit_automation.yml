@@ -1,7 +1,5 @@
 name : Rohit Workflow
 on:
-  push:
-    branches: ['main']
   pull_request:
     branches: ['main']
 
@@ -28,6 +26,13 @@ jobs:
 
       - name: Run Rohit Script
         run: |
-          cd Rohit/Pytest_Framework
+          cd Rohit/Headless_in_Framework
           pip install -r requirements.txt
-          python -m pytest -v --headless=True --browser="chrome" ./Basic/ --html=report.html --self-contained-html   
+          python -m pytest -v --headless=True --browser_name="chrome" ./Tests/ --html=report.html --self-contained-html
+
+      - name : Upload Rohit Test Report    
+        if : always()
+        uses : actions/upload-artifact@v4
+        with:
+            name : Rohit Test Report
+            path : Rohit/Headless_in_Framework/report.html
