@@ -40,7 +40,7 @@ jobs:
       run: |
         cd Deepesh/AutomationFramework
         pip install -r requirements.txt
-        python -v pytest -m "${{ github.event.inputs.tag }}" ./tests/ --html=report.html --self-contained-html
+        python -m pytest -v -m "${{ github.event.inputs.tag }}" ./tests/ --html=report.html --self-contained-html
       continue-on-error: true
 
     - name: Upload HTML Report
