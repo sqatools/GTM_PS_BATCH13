@@ -1,6 +1,8 @@
 from ..base.selenium_base import SeleniumBase
 from ..Page_objects.login_locator import *
 
+
+
 class login_Page(SeleniumBase):
     def __init__(self,driver):
         super().__init__(driver)
@@ -17,8 +19,8 @@ class login_Page(SeleniumBase):
     def click_submit(self):
         self.click_element(login_Submit)
 
-    def click_contact(self):
-        self.click_element(Contact_tab)
+    def click_contact_tab(self):
+        self.click_element(contact_tab)
 
     def enter_First_name(self,first_name):
         self.enter_text(First_name, first_name)
