@@ -1,0 +1,25 @@
+- SDET (software development in Testing)
+- Programming : Python
+- Automation :  Selenium
+- Framework :  Pytest Framework Library
+- Design Pattern : POM (Page Object Model)
+- API Testing :  Postman
+
+              : Request library automation
+              : Integration of API with Framework
+
+- Jenkins : Installation, creating job, setup pipeline between multiples jobs.
+
+- GitHub :  - Create repository.
+            - clone repository.
+            - set cred
+            - add, status, commit, push
+            - multi branching 
+            - raise pull and review pull request.
+
+- GitHub Action :  - pipeline design to run automation
+                   - take input from users.
+                   - trigger workflows with pipeline
+                   - Get html report for users and download with zip.
+     
+
