@@ -16,7 +16,7 @@ print("\n Q16. Which of the following is used to handle exceptions in Python? \n
 print("-*-" * 50)
 print(' ')
 
-print( '''Q1 - Write a Python program that:
+print('''Q1 - Write a Python program that:
  Takes two numbers and an operator (+, -, *, /) as input from the user.
  Performs the corresponding operation.
  Prints the result.
