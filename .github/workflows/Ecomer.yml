@@ -1,4 +1,4 @@
-name : Rohit Workflow
+name : Rohit Ecomerance
 on:
   pull_request:
     branches: ['main']
