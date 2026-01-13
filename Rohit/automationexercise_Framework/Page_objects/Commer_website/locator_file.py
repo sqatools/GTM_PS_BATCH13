@@ -23,7 +23,7 @@ State = (By.XPATH,"//input[@data-qa='state']")
 City = (By.XPATH,"//input[@data-qa='city']")
 Zipcode = (By.XPATH,"//input[@data-qa='zipcode']")
 Mobile_number = (By.XPATH,"//input[@data-qa='mobile_number']")
-Create_Account_btn = (By.XPATH,"//button[@data-qa='create-account']")
+Create_Account_btn = (By.XPATH,"//button[normalize-space()='Create Account']")
 continue_btn = (By.XPATH,"//a[@data-qa='continue-button']")
 
 
