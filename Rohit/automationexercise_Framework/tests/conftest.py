@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="class")
-def setup(request):
+def get_driver(request):
     driver = webdriver.Chrome()
     driver.maximize_window()
     request.cls.driver = driver
