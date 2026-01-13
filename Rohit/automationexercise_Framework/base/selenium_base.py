@@ -10,7 +10,7 @@ class Selenium_base:
 
 
     def get_element(self, locator):
-        return self.wait.until(EC.presence_of_element_located(locator))
+        return self.wait.until(EC.element_to_be_clickable(locator))
 
     def click_element(self, locator):
         self.get_element(locator).click()
