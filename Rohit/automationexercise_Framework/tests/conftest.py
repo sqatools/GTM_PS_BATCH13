@@ -11,25 +11,41 @@ def get_driver(request):
     yield
     driver.quit()
 
+import pytest
+
 def pytest_addoption(parser):
     parser.addoption(
-        "--headless",
+        "--browser_name",
         action="store",
-        default="True",  # string
+        default="chrome",
+        help="Browser to execute the automation"
+    )
+    parser.addoption(
+        "--headless",
+        action="store_true",   # just a flag
+        default=False,
         help="Run browser in headless mode"
     )
 
 
-@pytest.fixture(scope="class")
-def get_driver(request):
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--window-size=1920,1080")
 
-    driver = webdriver.Chrome(options=options)
+import pytest
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+@pytest.fixture(scope="class")
+def get_driver(request, pytestconfig):
+    browser_name = pytestconfig.getoption("browser_name")
+    headless = pytestconfig.getoption("headless")
+
+    if browser_name.lower() == "chrome":
+        options = Options()
+        if headless:
+            options.add_argument("--headless")
+        driver = webdriver.Chrome(options=options)
+    else:
+        raise Exception(f"Browser {browser_name} not supported")
+
     request.cls.driver = driver
     yield
     driver.quit()
