@@ -12,8 +12,8 @@ def get_driver(request):
     driver.quit()
 
 def pytest_addoption(parser):
-    parser.addoption("--headless", action="store_true", help="Run headless")
-    
+    parser.addoption("--headless", action="store_true")
+
 @pytest.fixture(scope="class")
 def get_driver(request):
     options = Options()
