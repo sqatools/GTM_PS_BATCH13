@@ -2,12 +2,16 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.chrome.options import Options as chrome_option
+from selenium.webdriver.firefox.options import Options as firefox_option
+from selenium.webdriver.edge.options import Options as edge_option
 
 class Selenium_base:
-    def __init__(self, driver):
-        self.driver= driver
-        self.wait = WebDriverWait(self.driver,10)
-
+    def __init__(self, browser, headless=False):
+        self.browser = browser
+        self.headless = headless
+        self.driver = None
+        self.wait = None
 
     def get_element(self, locator):
         return self.wait.until(EC.element_to_be_clickable(locator))
@@ -43,5 +47,30 @@ class Selenium_base:
         element = self.get_element(locator)
         select = Select(element)
         select.select_by_visible_text(values)
+
+    def get_driver_instance(self):
+        driver = None
+        if self.browser.lower() == 'chrome':
+            opt = chrome_option()
+            if self.headless:
+                opt.add_argument("--headless")
+            driver = webdriver.Chrome(options=opt)
+
+        elif self.browser.lower() == 'firefox':
+            opt = firefox_option()
+            if self.headless:
+                opt.add_argument("--headless")
+            driver = webdriver.Firefox(options=opt)
+
+
+        elif self.browser.lower() == 'edge':
+            opt = edge_option()
+            if self.headless:
+                opt.add_argument("--headless")
+            driver = webdriver.Edge(options=opt)
+
+
+        driver.maximize_window()
+        return driver
 
 
