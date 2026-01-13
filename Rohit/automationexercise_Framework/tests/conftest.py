@@ -1,5 +1,6 @@
 import pytest
 from selenium import webdriver
+from ..base.selenium_base import Selenium_base
 
 @pytest.fixture(scope="class")
 def get_driver(request):
@@ -8,3 +9,20 @@ def get_driver(request):
     request.cls.driver = driver
     yield
     driver.quit()
+
+def pytest_addoption(parser):
+    parser.addoption("--browser_name", action="store", default="chrome", help="browser to execute the automation")
+    parser.addoption("--headless", action="store", default=True, help="browser to execute the automation")
+
+@pytest.fixture(scope="class")
+def get_driver_with_headless(request, pytestconfig):
+    browser_name = pytestconfig.getoption("browser_name")
+    headless_value = pytestconfig.getoption("headless")
+    if headless_value == "True":
+        EC = (browser_name, headless_value)
+    else:
+        EC = Selenium_base(browser_name, headless=False)
+    driver = EC.get_driver_instance()
+    request.cls.driver = driver
+    yield
+    driver.close()
