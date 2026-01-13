@@ -12,8 +12,25 @@ class Selenium_base:
     def get_element(self, locator):
         return self.wait.until(EC.element_to_be_clickable(locator))
 
+    #def click_element(self, locator):
+     #   self.get_element(locator).click()
+
     def click_element(self, locator):
-        self.get_element(locator).click()
+        element = self.wait.until(EC.element_to_be_clickable(locator))
+
+        # Scroll element into view (critical for headless/Jenkins)
+        self.driver.execute_script(
+            "arguments[0].scrollIntoView({block:'center'});", element
+        )
+
+        # Wait until element is truly visible
+        self.wait.until(EC.visibility_of(element))
+
+        try:
+            element.click()
+        except Exception:
+            # Fallback for intercepted clicks (Jenkins-safe)
+            self.driver.execute_script("arguments[0].click();", element)
 
     def enter_text(self, locator, values):
         clear_element = self.get_element(locator)
