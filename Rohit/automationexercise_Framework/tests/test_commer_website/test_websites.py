@@ -15,8 +15,6 @@ class Test_Commer_Website:
           self.comm.enter_User_Name(User_Name)
           self.comm.enter_User_Email_address(User_Email_address)
           self.comm.click_signup_button()
-          time.sleep(10)
-
 
       def test_account_information_functionality(self):
           self.comm = CommerWebsite(self.driver)
@@ -31,11 +29,9 @@ class Test_Commer_Website:
           self.comm.enter_company_name(Company)
           self.comm.enter_address(Address)
          # self.comm.select_country(Country)
-          time.sleep(5)
           self.comm.enter_state(State)
           self.comm.enter_city(City)
           self.comm.enter_zipocde(Zipcode)
           self.comm.enter_mobile(Mobile_number)
           self.comm.click_Create_Account_button()
-          time.sleep(5)
           self.comm.click_continue_button()
