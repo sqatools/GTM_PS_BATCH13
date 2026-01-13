@@ -17,7 +17,6 @@ class Test_Commer_Website:
           self.comm.click_signup_button()
 
       def test_account_information_functionality(self):
-          self.comm = CommerWebsite(self.driver)
           self.comm.click_select_MR()
           self.comm.enter_password(Password)
           self.comm.select_date(Date)
