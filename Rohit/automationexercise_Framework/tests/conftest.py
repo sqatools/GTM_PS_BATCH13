@@ -1,6 +1,5 @@
 import pytest
 from selenium import webdriver
-from ..base.selenium_base import Selenium_base
 from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="class")
@@ -26,12 +25,6 @@ def pytest_addoption(parser):
         default=False,
         help="Run browser in headless mode"
     )
-
-
-
-import pytest
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 
 @pytest.fixture(scope="class")
 def get_driver(request, pytestconfig):
