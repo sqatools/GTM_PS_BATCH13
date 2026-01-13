@@ -15,6 +15,7 @@ class Test_Commer_Website:
           self.comm.enter_User_Name(User_Name)
           self.comm.enter_User_Email_address(User_Email_address)
           self.comm.click_signup_button()
+          time.sleep(10)
           self.comm.click_select_MR()
           self.comm.enter_password(Password)
           self.comm.select_date(Date)
