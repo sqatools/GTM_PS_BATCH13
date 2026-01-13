@@ -11,7 +11,7 @@ class Test_Commer_Website:
 
       def test_Signup_functionality(self):
           self.comm = CommerWebsite(self.driver)
-          self.comm.launch_url(url=website_url)
+          self.comm.launch_url(url="https://automationexercise.com/login")
           self.comm.enter_User_Name(User_Name)
           self.comm.enter_User_Email_address(User_Email_address)
           self.comm.click_signup_button()
