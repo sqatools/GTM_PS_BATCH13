@@ -5,7 +5,7 @@ from ...Page_objects.Commer_website.locator_file import *
 from ...Page_objects.Commer_website.data_file import *
 from ...Page_objects.Commer_website.class_file import CommerWebsite
 
-@pytest.mark.usefixtures("get_driver")
+@pytest.mark.usefixtures("setup")
 
 class Test_Commer_Website:
 
