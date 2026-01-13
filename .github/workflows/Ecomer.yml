@@ -1,4 +1,5 @@
-name : Rohit Ecomerance
+name: Rohit Ecomerance
+
 on:
   push:
     branches: ['main']
@@ -8,26 +9,30 @@ on:
 jobs:
   rohit-tasks:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Install Dependencies
+      - name: Upgrade pip
         run: |
           python -m pip install --upgrade pip
 
-      - name: Install chrome browser
-        run: |
-            sudo apt-get update
-            sudo apt-get install -y google-chrome-stable
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v1
 
-      - name: Run Rohit Script
+      - name: Install Project Dependencies
         run: |
           cd Rohit/automationexercise_Framework
           pip install -r requirements.txt
+
+      - name: Run Pytest
+        run: |
+          cd Rohit/automationexercise_Framework
           python -m pytest -v ./tests/
+
