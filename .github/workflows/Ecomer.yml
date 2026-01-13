@@ -31,7 +31,7 @@ jobs:
         run: |
           cd Rohit/automationexercise_Framework
           pip install -r requirements.txt
-          python -m pytest -v ./tests/ --headless=False --browser_name="chrome" ./tests/ --html=report.html --self-contained-html
+          python -m pytest -v ./tests/ --headless=True --browser_name="chrome" ./tests/ --html=report.html --self-contained-html
 
       - name : Upload Rohit Test Report    
         if : always()
