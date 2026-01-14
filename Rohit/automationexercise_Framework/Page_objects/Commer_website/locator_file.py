@@ -25,5 +25,20 @@ Zipcode = (By.XPATH,"//input[@data-qa='zipcode']")
 Mobile_number = (By.XPATH,"//input[@data-qa='mobile_number']")
 Create_Account_btn = (By.XPATH,"//button[normalize-space()='Create Account']")
 continue_btn = (By.XPATH,"//a[@data-qa='continue-button']")
+Logout_btn = (By.XPATH,"//a[@href='/logout']")
+
+#Login to your account
+Login_Email_address= (By.XPATH,"//input[@data-qa='login-email']")
+Login_Password = (By.XPATH,"//input[@data-qa='login-password']")
+Login_button = (By.XPATH,"//button[@data-qa='login-button']")
+
+#Categary
+Men = (By.XPATH,"//a[@href='#Men']")
+Tshirt = (By.XPATH,"//a[normalize-space()='Tshirts']")
+view_product = (By.XPATH,"//a[@href='/product_details/29']")
+Quantity = (By.XPATH,"quantity")
+Add_card_button = (By.XPATH,"//button[@class='btn btn-default cart']")
+view_cart_button = (By.XPATH,"//a[normalize-space()='View Cart']")
+
 
 

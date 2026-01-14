@@ -34,3 +34,20 @@ class Test_Commer_Website:
         self.comm.enter_mobile(Mobile_number)
         self.comm.click_Create_Account_button()
         self.comm.click_continue_button()
+        self.comm.click_logout_button()
+
+    def test_login_functionality(self):
+        self.comm = CommerWebsite(self.driver)
+        self.comm.enter_Login_email_address(Login_Email_address)
+        self.comm.enter_Login_Password(Login_Password)
+        self.comm.click_login_button()
+        time.sleep(10)
+
+    def test_category_functionality(self):
+        self.comm=CommerWebsite(self.driver)
+        self.comm.click_Men()
+        self.comm.click_Tshirt()
+        self.comm.click_view_product()
+        #self.comm.enter_quantity(Quantity)
+        self.comm.click_Add_card_btn()
+        self.comm.click_view_cart_btn()

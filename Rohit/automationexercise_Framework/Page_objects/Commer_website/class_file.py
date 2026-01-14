@@ -81,3 +81,35 @@ class CommerWebsite(Selenium_base):
 
     def click_continue_button(self):
         self.click_element(continue_btn)
+
+    def click_logout_button(self):
+        self.click_element(Logout_btn)
+
+    # Login to your account
+    def enter_Login_email_address(self,email_Add):
+        self.enter_text(Login_Email_address,email_Add)
+
+    def enter_Login_Password(self,password):
+        self.enter_text(Login_Password,password)
+
+    def click_login_button(self):
+        self.click_element(Login_button)
+
+    #Categary
+    def click_Men(self):
+        self.click_element(Men)
+
+    def click_Tshirt(self):
+        self.click_element(Tshirt)
+
+    def click_view_product(self):
+        self.click_element(view_product)
+
+    def enter_quantity(self,quantity):
+        self.enter_text(Quantity,quantity)
+
+    def click_Add_card_btn(self):
+        self.click_element(Add_card_button)
+
+    def click_view_cart_btn(self):
+        self.click_element(view_cart_button)

@@ -1,10 +1,6 @@
-from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
-from selenium.webdriver.chrome.options import Options as chrome_option
-from selenium.webdriver.firefox.options import Options as firefox_option
-from selenium.webdriver.edge.options import Options as edge_option
 
 class Selenium_base:
     def __init__(self, driver, timeout=10):
