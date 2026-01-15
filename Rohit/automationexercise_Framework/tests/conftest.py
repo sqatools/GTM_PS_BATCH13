@@ -1,13 +1,9 @@
 import pytest
+from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
-import os
-from datetime import datetime
 
 
 @pytest.fixture(scope="class")
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
 def get_driver(request):
     options = Options()
     options.add_argument("--headless=new")
