@@ -31,7 +31,7 @@ jobs:
         run: |
           cd Rohit/automationexercise_Framework
           pip install -r requirements.txt
-          python -m pytest -v ./tests/test_commer_websit/
+          python -m pytest -v ./tests/
 
       - name : Upload Rohit Test Report    
         if : always()
