@@ -16,7 +16,6 @@ class Test_Commer_Website:
         self.comm.enter_User_Name(User_Name)
         self.comm.enter_User_Email_address(User_Email_address)
         self.comm.click_signup_button()
-        time.sleep(10)
         self.comm.click_select_MR()
         self.comm.enter_password(Password)
         self.comm.select_date(Date)
@@ -41,7 +40,7 @@ class Test_Commer_Website:
         self.comm.enter_Login_email_address(Login_Email_address)
         self.comm.enter_Login_Password(Login_Password)
         self.comm.click_login_button()
-        time.sleep(10)
+        time.sleep(5)
 
     def test_category_functionality(self):
         self.comm=CommerWebsite(self.driver)
