@@ -7,7 +7,7 @@ on:
     branches: ['main']
 
 jobs:
-  rohit-tasks1:
+  rohit-tasks2:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
