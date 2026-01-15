@@ -7,7 +7,7 @@ from ...Page_objects.Commer_website.class_file import CommerWebsite
 
 
 
-@pytest.mark.usefixtures("get_driver")
+@pytest.mark.usefixtures("get_driver_with_headless")
 class Test_Commer_Website:
 
     def test_Signup_functionality(self):
