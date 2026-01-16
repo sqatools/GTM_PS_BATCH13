@@ -51,5 +51,10 @@ Pay_confirm_btn = (By.XPATH,"//button[@data-qa='pay-button']")
 Download_Invoice = (By.XPATH,"//a[normalize-space()='Download Invoice']")
 order_continue = (By.XPATH,"//a[@data-qa='continue-button']")
 
+#Women
+Polo = (By.XPATH,"//a[@href='/brand_products/Polo']")
+Women = (By.XPATH,"//a[normalize-space()='Women']")
+Saree = (By.XPATH,"//a[normalize-space()='Saree']")
+
 
 
