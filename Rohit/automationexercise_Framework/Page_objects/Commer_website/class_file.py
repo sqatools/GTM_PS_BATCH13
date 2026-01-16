@@ -113,3 +113,39 @@ class CommerWebsite(Selenium_base):
 
     def click_view_cart_btn(self):
         self.click_element(view_cart_button)
+
+    def click_Proceed_to_checkout_button(self):
+        self.click_element(Proceed_to_checkout_btn)
+
+    def enter_Comment_box(self, comment):
+        self.enter_text(comment_box,comment)
+
+    def click_Place_order_button(self):
+        self.click_element(Place_order_btn)
+
+    def enter_name_on_Card(self, card_name):
+        self.enter_text(Name_on_card, card_name)
+
+    def  enter_card_number(self,card_no):
+        self.enter_text(card_number,card_no)
+
+    def  enter_CVC(self, cvc):
+        self.enter_text(CVC,cvc)
+
+    def enter_Exp_month(self, exp_month):
+        self.enter_text(Exp_month,exp_month)
+
+    def  enter_Exp_year(self, exp_year):
+        self.enter_text(Exp_year,exp_year)
+
+    def click_pay_confirm_button(self):
+        self.click_element(Pay_confirm_btn)
+
+    def click_download_Invoice(self):
+        self.click_element(Download_Invoice)
+
+    def click_order_continue_btn(self):
+        self.click_element(order_continue)
+
+
+
