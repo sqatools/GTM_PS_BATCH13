@@ -23,7 +23,10 @@ class CommerWebsite(Selenium_base):
         self.click_element(User_Signup_btn)
 
     # Enter Account Information:
+    #def click_select_MR(self):
+     #   self.click_element(select_MR)
     def click_select_MR(self):
+        select_MR = (By.CSS_SELECTOR, "input#id_gender1")
         self.click_element(select_MR)
 
     def enter_password(self,password):
