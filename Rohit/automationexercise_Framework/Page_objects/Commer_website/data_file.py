@@ -2,7 +2,7 @@ website_url = "https://automationexercise.com/login"
 
 #New_User_Signup
 User_Name = "Rohit Chavan"
-User_Email_address = "rohit85@gmail.com"
+User_Email_address = "rohit86@gmail.com"
 
 #Enter Account Information:
 Password = "Karad@123"
@@ -24,7 +24,7 @@ Mobile_number = "5678906532"
 
 
 #Login to your account
-Login_Email_address= "rohit85@gmail.com"
+Login_Email_address= "rohit86@gmail.com"
 Login_Password = "Karad@123"
 
 #Category
