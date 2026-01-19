@@ -147,5 +147,77 @@ class CommerWebsite(Selenium_base):
     def click_order_continue_btn(self):
         self.click_element(order_continue)
 
+    #Women
+    def click_Polo(self):
+        self.click_element(Polo)
+
+    def click_Women(self):
+        self.click_element(Women)
+
+    def click_Saree(self):
+        self.click_element(Saree)
+
+    def click_Saree_view_product(self):
+        self.click_element(Saree_view_product)
+
+    def click_saree_Add_cart(self):
+        self.click_element(saree_Add_cart)
+
+    def click_saree_view_cart(self):
+        self.click_element(saree_view_cart)
+
+    def  click_saree_proceed_check_out(self):
+        self.click_element(saree_proceed_check_out)
+
+    def enter_saree_comment_box(self, comt_box):
+        self.enter_text(saree_comment_box, comt_box)
+
+    def click_Saree_Place_order_button(self):
+        self.click_element(Saree_Place_order_btn)
+
+    def enter_saree_Name_on_card(self,name_card):
+        self.enter_text(saree_Name_on_card, name_card)
+
+    def enter_saree_card_number(self,saree_card_no):
+        self.enter_text(saree_card_number,saree_card_no)
+
+    def enter_saree_CVV(self,saree_cvv):
+        self.enter_text(saree_CVV,saree_cvv)
+
+    def enter_Saree_Exp_Month(self,saree_exp_month):
+        self.enter_text(Saree_Exp_Month,saree_exp_month)
+
+    def enter_Saree_Exp_Year(self,saree_exp_year):
+        self.enter_text(Saree_Exp_Year,saree_exp_year)
+
+    def click_Saree_Pay_Confirm_btn(self):
+        self.click_element(Saree_Pay_Confirm_btn)
+
+    def click_Saree_Download_Invoice(self):
+        self.click_element(Saree_Download_Invoice)
+
+    def click_Saree_Continue(self):
+        self.click_element(Saree_Continue)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

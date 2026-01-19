@@ -2,7 +2,7 @@ website_url = "https://automationexercise.com/login"
 
 #New_User_Signup
 User_Name = "Rohit Chavan"
-User_Email_address = "rohit47@gmail.com"
+User_Email_address = "rohit58@gmail.com"
 
 #Enter Account Information:
 Password = "Karad@123"
@@ -24,18 +24,25 @@ Mobile_number = "5678906532"
 
 
 #Login to your account
-Login_Email_address= "rohit47@gmail.com"
+Login_Email_address= "rohit58@gmail.com"
 Login_Password = "Karad@123"
 
 #Category
 Quantity = "2"
 
 #Order_Place
-
 comment_box = "Please place the order at given address"
 Name_on_card = "Visa"
 card_number = "7896543234"
 CVC = "234"
 Exp_month = "10"
 Exp_year = "2028"
+
+#Women
+saree_comment_box = "selected women saree for shopping in automation testing"
+saree_Name_on_card = " Visa"
+saree_card_number = "7896543200"
+saree_CVV = "887"
+Saree_Exp_Month = "11"
+Saree_Exp_Year = "2027"
 
