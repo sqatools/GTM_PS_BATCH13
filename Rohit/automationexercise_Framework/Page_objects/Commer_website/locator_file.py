@@ -25,7 +25,7 @@ Zipcode = (By.XPATH,"//input[@data-qa='zipcode']")
 Mobile_number = (By.XPATH,"//input[@data-qa='mobile_number']")
 Create_Account_btn = (By.XPATH,"//button[normalize-space()='Create Account']")
 continue_btn = (By.XPATH,"//a[@data-qa='continue-button']")
-Logout_btn = (By.XPATH,"//a[@href='/logout']")
+Logout_btn = (By.XPATH,"//a[normalize-space()='Logout']")
 
 #Login to your account
 Login_Email_address= (By.XPATH,"//input[@data-qa='login-email']")
