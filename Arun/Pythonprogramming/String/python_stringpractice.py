@@ -47,3 +47,30 @@ for word in word_list: # We, Are, Learning, Python, Programming
         long_word = word # we, Are, Learning, Programming
     else:
         continue
+
+
+
+
+
+
+
+###################################################
+str1= "Rahul ANIL ARUN ARUN"
+
+word_list= str1.split(" ")
+print(word_list)
+result = ""
+for word in word_list:
+    if word not in result:
+        result=result+word+" "
+    else:
+        continue
+    print("Final result:",result)
+
+######################################################
+
+
+
+
+
+
