@@ -34,14 +34,14 @@ class Test_Commer_Website:
         self.comm.click_Create_Account_button()
         self.comm.click_continue_button()
         self.comm.click_logout_button()
-        time.sleep(5)
+
 
     def test_login_functionality(self):
         self.comm = CommerWebsite(self.driver)
         self.comm.enter_Login_email_address(Login_Email_address)
         self.comm.enter_Login_Password(Login_Password)
         self.comm.click_login_button()
-        time.sleep(5)
+
 
     def test_category_functionality(self):
         self.comm=CommerWebsite(self.driver)
@@ -62,7 +62,7 @@ class Test_Commer_Website:
         self.comm.click_pay_confirm_button()
         self.comm.click_download_Invoice()
         self.comm.click_order_continue_btn()
-        time.sleep(5)
+
 
     def test_women_functionality(self):
         self.comm = CommerWebsite(self.driver)
@@ -83,7 +83,7 @@ class Test_Commer_Website:
         self.comm.click_Saree_Pay_Confirm_btn()
         self.comm.click_Saree_Download_Invoice()
         self.comm.click_Saree_Continue()
-        time.sleep(5)
+
 
     def test_Kids_functionality(self):
         self.comm = CommerWebsite(self.driver)
@@ -103,4 +103,4 @@ class Test_Commer_Website:
         self.comm.click_kids_Pay_Confirm_btn()
         self.comm.click_kids_downlaod_invoice()
         self.comm.click_kids_continue_btn()
-        time.sleep(5)
+
