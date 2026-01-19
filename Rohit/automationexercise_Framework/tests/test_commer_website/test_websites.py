@@ -34,6 +34,7 @@ class Test_Commer_Website:
         self.comm.click_Create_Account_button()
         self.comm.click_continue_button()
         self.comm.click_logout_button()
+        time.sleep(5)
 
     def test_login_functionality(self):
         self.comm = CommerWebsite(self.driver)
@@ -82,3 +83,24 @@ class Test_Commer_Website:
         self.comm.click_Saree_Pay_Confirm_btn()
         self.comm.click_Saree_Download_Invoice()
         self.comm.click_Saree_Continue()
+        time.sleep(5)
+
+    def test_Kids_functionality(self):
+        self.comm = CommerWebsite(self.driver)
+        self.comm.click_kids()
+        self.comm.click_tops_shirts()
+        self.comm.click_to_product()
+        self.comm.click_btn_Add_to_cart()
+        self.comm.click_view_Cart()
+        self.comm.click_Proceed_to_checkout()
+        self.comm.enter_kid_comments(kids_comments)
+        self.comm.click_Place_order_btn()
+        self.comm.enter_kids_name_of_Card(Kid_name_of_Card)
+        self.comm.enter_kids_card_no(kid_card_no)
+        self.comm.enter_kids_cvc(kid_cvc)
+        self.comm.enter_kids_Exp_month(kids_Exp_months)
+        self.comm.enter_kids_Exp_year(kids_Exp_Years)
+        self.comm.click_kids_Pay_Confirm_btn()
+        self.comm.click_kids_downlaod_invoice()
+        self.comm.click_kids_continue_btn()
+        time.sleep(5)

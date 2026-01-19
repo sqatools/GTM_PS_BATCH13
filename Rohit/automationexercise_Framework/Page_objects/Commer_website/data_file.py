@@ -2,7 +2,7 @@ website_url = "https://automationexercise.com/login"
 
 #New_User_Signup
 User_Name = "Rohit Chavan"
-User_Email_address = "rohit62@gmail.com"
+User_Email_address = "rohit64@gmail.com"
 
 #Enter Account Information:
 Password = "Karad@123"
@@ -24,7 +24,7 @@ Mobile_number = "5678906532"
 
 
 #Login to your account
-Login_Email_address= "rohit62@gmail.com"
+Login_Email_address= "rohit64@gmail.com"
 Login_Password = "Karad@123"
 
 #Category
@@ -45,4 +45,15 @@ saree_card_number = "7896543200"
 saree_CVV = "887"
 Saree_Exp_Month = "11"
 Saree_Exp_Year = "2027"
+
+#Kids
+kids_comments = "Done shopping of kids dress"
+Kid_name_of_Card = "Visa"
+kid_card_no = "78900976552"
+kid_cvc = "456"
+kids_Exp_months = "01"
+kids_Exp_Years = "2027"
+
+
+
 

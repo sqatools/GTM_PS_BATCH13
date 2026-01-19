@@ -199,6 +199,57 @@ class CommerWebsite(Selenium_base):
     def click_Saree_Continue(self):
         self.click_element(Saree_Continue)
 
+    # KIDS
+    def click_kids(self):
+        self.click_element(Kids)
+
+    def click_tops_shirts(self):
+        self.click_element(Tops_Shirts)
+
+    def click_to_product(self):
+        self.click_element(click_product)
+
+    def click_btn_Add_to_cart(self):
+        self.click_element(btn_Add_to_cart)
+
+    def click_view_Cart(self):
+        self.click_element(click_view_to_Cart)
+
+    def click_Proceed_to_checkout(self):
+        self.click_element(click_Proceed_to_checkout)
+
+    def enter_kid_comments(self,kid_comt):
+        self.enter_text(kid_comments,kid_comt)
+
+    def click_Place_order_btn(self):
+        self.click_element(kids_Place_order)
+
+    def enter_kids_name_of_Card(self,card_name):
+        self.enter_text(Kids_name_of_Card, card_name)
+
+    def enter_kids_card_no(self,card_no):
+        self.enter_text(kids_card_no,card_no)
+
+    def enter_kids_cvc(self,kid_cvc):
+        self.enter_text(kids_cvc,kid_cvc)
+
+    def enter_kids_Exp_month(self,exp_month):
+        self.enter_text(kids_Exp_month,exp_month)
+
+    def enter_kids_Exp_year(self,exp_yrs):
+        self.enter_text(kids_Exp_Year,exp_yrs)
+
+    def click_kids_Pay_Confirm_btn(self):
+        self.click_element(kids_Pay_Confirm_btn)
+
+    def click_kids_downlaod_invoice(self):
+        self.click_element(kids_downlaod_invoice)
+
+    def click_kids_continue_btn(self):
+        self.click_element(kids_continue_btn)
+
+
+
 
 
 
