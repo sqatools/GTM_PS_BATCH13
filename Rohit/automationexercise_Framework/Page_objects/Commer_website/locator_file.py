@@ -6,7 +6,7 @@ User_Email_address = (By.XPATH,"//input[@data-qa='signup-email']")
 User_Signup_btn = (By.XPATH,"//button[@data-qa='signup-button']")
 
 #Enter Account Information:
-select_MR = (By.XPATH,"//input[@value='Mr']")
+select_MR = (By.ID,"id_gender1")
 Password = (By.XPATH,"//input[@data-qa='password']")
 Date = (By.XPATH,"//select[@data-qa='days']")
 Month = (By.XPATH,"//select[@data-qa='months']")
