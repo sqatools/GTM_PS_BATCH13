@@ -26,7 +26,7 @@ class CommerWebsite(Selenium_base):
     #def click_select_MR(self):
      #   self.click_element(select_MR)
     def click_select_MR(self):
-        select_MR = (By.CSS_SELECTOR, "input#id_gender1")
+        select_MR = (By.ID, "id_gender1")
         self.click_element(select_MR)
 
     def enter_password(self,password):
