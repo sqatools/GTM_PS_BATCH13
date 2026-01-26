@@ -1,0 +1,10 @@
+Facebook_URL = "https://www.facebook.com/"
+
+First_Name = "Mahesh"
+Surname = "Patil"
+Day = "18"
+Month = "Jul"
+Year = "2021"
+Gender = "Male"
+Mobile_number = "7890654323"
+New_Password= "QWERT@123"
