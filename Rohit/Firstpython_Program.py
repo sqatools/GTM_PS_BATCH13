@@ -205,7 +205,7 @@ print(list3[::-1])
 print(list3[-1:-5:-1])
 print(list3[::2])
 print(list3[0:4:1])
-'''
+
 
 list1 = [12, 3.5, 'Hello',10+20j, [6, 7, 8],(5, 6, 7), True,{5, 7, 9},{'a': 123}]
 print(list1[0:5:1])
@@ -213,3 +213,21 @@ print(list1[-1:-5:-1])
 print(list1[::2])
 print(list1[5][1])
 print(list1[-4][-3])
+'''
+
+s = "python"
+rev = ""
+for i in s:
+    rev = i+rev
+print(rev)
+
+with open("TestFile.txt","r") as f:
+    data = f.read()
+    print(len(data))
+
+with open("TestFile.txt","w") as f:
+    f.write("I am Learning Python with Automation")
+
+
+
+
