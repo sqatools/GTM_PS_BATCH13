@@ -197,7 +197,7 @@ print("-"*50)
 #########################33
 for i in range(10, 1, -1):
     print(i)
-
+'''
 list3 = [1, 2, 3, 4, 5, 'a', 'b', 'c', 'd']
 
 print(list3[::1])
@@ -213,7 +213,7 @@ print(list1[-1:-5:-1])
 print(list1[::2])
 print(list1[5][1])
 print(list1[-4][-3])
-'''
+
 
 s = "python"
 rev = ""

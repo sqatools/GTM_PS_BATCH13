@@ -14,8 +14,8 @@ driver.find_element(By.XPATH,"//input[@placeholder='Password']").send_keys("Sama
 driver.find_element(By.XPATH,"//button[text()='Log in']").click()
 time.sleep(3)
 
-Create_new_Account=driver.find_element(By.XPATH,"//a[text()='Create new account']").click()
-First_Name = driver.find_element (By.XPATH,"//input[@aria-label='First name']").send_keys("Mahesh")
-Surname = driver.find_element(By.XPATH,"//input[@aria-label='Surname']").send_keys("More")
-Date_of_Birth = driver.find_element(By.NAME,"birthday_day").send_keys("18")
+driver.find_element(By.XPATH, "//a[text()='Create new account']").click()
+driver.find_element(By.XPATH, "//input[@aria-label='First name']").send_keys("Mahesh")
+driver.find_element(By.XPATH, "//input[@aria-label='Surname']").send_keys("More")
+driver.find_element(By.NAME, "birthday_day").send_keys("18")
 time.sleep(5)

@@ -1,8 +1,7 @@
 #1.Python oops program to create a class with the constructor.
 from ssl import get_protocol_name
 
-from Preeti.Py_Program.Python_Variable.py_variable import sur_name
-from Sweety.PythonProgramming.Python_Modules.os_module import file_name
+
 
 
 class Employee:
