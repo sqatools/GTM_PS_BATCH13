@@ -7,7 +7,7 @@ Admin_username = "admin"
 Admin_Password = "admin"
 
 # Add Branches
-Branch_id = "5194"
+Branch_id = "5198"
 Branch_Name = "Sajur Branch"
 Branch_Address = "A/P Bhavani Peth"
 Branch_City = "Thambve"
@@ -36,7 +36,7 @@ update_Branch_Phone = '6789054001'
 
 # Add New Employee
 drop_down_branch = "Yewatmal Branch, 4106"
-Employee_ID = "5594"
+Employee_ID = "5596"
 Employee_FirstName = "Sambhaji"
 Employee_LastName = "Chavan"
 Employee_Email = "sambhajichavan23@gmail.com"
@@ -79,7 +79,7 @@ Delete_Employee_from_drop_down = 'Yewatmal Branch, 4106'
 update_employee_branch = 'Yewatmal Branch, 4106'
 update_employee_FirstName = 'Dheeraj'
 update_employee_LastName = "Chavan"
-update_employee_Email = "dheerajchavan23@gmail.com"
+update_employee_Email = "dheerajchavan24@gmail.com"
 update_employee_Phone = "9097630068"
 update_employee_Position = "Project Manager"
 update_employee_Hire_date = '06/01/2026'
