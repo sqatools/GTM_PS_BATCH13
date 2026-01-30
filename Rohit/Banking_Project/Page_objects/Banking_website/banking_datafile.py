@@ -36,7 +36,7 @@ update_Branch_Phone = '6789054001'
 
 # Add New Employee
 drop_down_branch = "Yewatmal Branch, 4106"
-Employee_ID = "5596"
+Employee_ID = "5599"
 Employee_FirstName = "Sambhaji"
 Employee_LastName = "Chavan"
 Employee_Email = "sambhajichavan23@gmail.com"
@@ -80,7 +80,7 @@ update_employee_branch = 'Yewatmal Branch, 4106'
 update_employee_FirstName = 'Dheeraj'
 update_employee_LastName = "Chavan"
 update_employee_Email = "dheerajchavan24@gmail.com"
-update_employee_Phone = "9097630068"
+update_employee_Phone = "9097630090"
 update_employee_Position = "Project Manager"
 update_employee_Hire_date = '06/01/2026'
 
