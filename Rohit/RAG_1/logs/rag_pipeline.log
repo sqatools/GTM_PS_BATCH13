@@ -1,0 +1,212 @@
+2026-02-06 22:41:40,658 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:41:40,660 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:41:40,661 - app.ingestion.document_loader - WARNING - Data path not found: app/data/raw_docs
+2026-02-06 22:41:40,718 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:41:40,721 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:41:40,723 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-06 22:41:40,872 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-06 22:41:40,874 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-06 22:41:40,879 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-06 22:41:40,879 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-06 22:41:40,883 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-06 22:41:40,883 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-06 22:41:40,886 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-06 22:42:38,031 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:42:38,033 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:42:38,033 - app.ingestion.document_loader - WARNING - Data path not found: app/data/raw_docs
+2026-02-06 22:42:38,095 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:42:38,100 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:42:38,101 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-06 22:42:38,258 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-06 22:42:38,260 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-06 22:42:38,266 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-06 22:42:38,266 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-06 22:42:38,271 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-06 22:42:38,271 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-06 22:42:38,274 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-06 22:43:02,023 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:43:02,026 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:43:02,026 - app.ingestion.document_loader - WARNING - Data path not found: app/data/raw_docs
+2026-02-06 22:43:02,078 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:43:02,081 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-06 22:43:02,083 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-06 22:43:02,227 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-06 22:43:02,229 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-06 22:43:02,234 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-06 22:43:02,234 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-06 22:43:02,241 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-06 22:43:02,242 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-06 22:43:02,244 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:41:03,366 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:41:03,371 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:41:03,371 - app.ingestion.document_loader - WARNING - Data path not found: app/data/raw_docs
+2026-02-07 19:41:03,504 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:41:03,509 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:41:03,511 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:41:03,893 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:41:03,896 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:41:03,903 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:41:03,903 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:41:03,909 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:41:03,909 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:41:03,911 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:44:10,364 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:44:10,366 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:44:10,366 - app.ingestion.document_loader - INFO - Loading Word document: oopsque.docx
+2026-02-07 19:44:10,366 - app.ingestion.document_loader - ERROR - python-docx not installed. Install with: pip install python-docx
+2026-02-07 19:44:10,366 - app.ingestion.document_loader - INFO - Total documents loaded: 0
+2026-02-07 19:44:10,416 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:44:10,416 - app.ingestion.document_loader - ERROR - python-docx not installed. Install with: pip install python-docx
+2026-02-07 19:44:10,421 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:44:10,422 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:44:10,564 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:44:10,565 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:44:10,566 - app.ingestion.text_splitter - INFO - Split text into 7 chunks
+2026-02-07 19:44:10,567 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:44:10,567 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:44:10,567 - app.ingestion.text_splitter - INFO - Split into 3 chunks
+2026-02-07 19:44:10,571 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:44:10,571 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:44:10,573 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:44:10,573 - app.ingestion.text_splitter - INFO - Split text into 2 chunks
+2026-02-07 19:45:03,987 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:45:03,988 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:45:03,988 - app.ingestion.text_splitter - INFO - Split into 3 chunks
+2026-02-07 19:48:55,347 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:48:55,349 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:48:55,349 - app.ingestion.document_loader - INFO - Loading Word document: oopsque.docx
+2026-02-07 19:48:55,609 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:48:55,610 - app.ingestion.document_loader - INFO - Total documents loaded: 1
+2026-02-07 19:48:55,611 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:48:55,685 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:48:55,686 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:48:55,687 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:48:55,689 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:48:55,691 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:48:55,691 - app.vectorstore.retriever - INFO - Retrieving top 2 documents for query: test query...
+2026-02-07 19:48:55,691 - app.vectorstore.retriever - INFO - Retrieved 2 documents
+2026-02-07 19:48:55,694 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:48:55,694 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:48:55,695 - app.ingestion.text_splitter - INFO - Split text into 7 chunks
+2026-02-07 19:48:55,695 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:48:55,695 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:48:55,696 - app.ingestion.text_splitter - INFO - Split into 6 chunks
+2026-02-07 19:48:55,696 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:48:55,697 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:48:55,697 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:48:55,698 - app.ingestion.text_splitter - INFO - Split text into 2 chunks
+2026-02-07 19:49:26,703 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:49:26,705 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:49:26,705 - app.ingestion.document_loader - INFO - Loading Word document: oopsque.docx
+2026-02-07 19:49:26,867 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:49:26,871 - app.ingestion.document_loader - INFO - Total documents loaded: 1
+2026-02-07 19:49:26,873 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:49:26,949 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:49:26,952 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:49:26,953 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:49:26,955 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:49:26,958 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:49:26,958 - app.vectorstore.retriever - INFO - Retrieving top 2 documents for query: test query...
+2026-02-07 19:49:26,958 - app.vectorstore.retriever - INFO - Retrieved 2 documents
+2026-02-07 19:49:27,027 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:49:27,029 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:49:27,029 - app.ingestion.text_splitter - INFO - Split text into 7 chunks
+2026-02-07 19:49:27,030 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:49:27,030 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:49:27,030 - app.ingestion.text_splitter - INFO - Split into 6 chunks
+2026-02-07 19:49:27,032 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:49:27,032 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:49:27,034 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:49:27,034 - app.ingestion.text_splitter - INFO - Split text into 2 chunks
+2026-02-07 19:50:04,259 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:50:04,261 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:50:04,262 - app.ingestion.document_loader - INFO - Loading Word document: oopsque.docx
+2026-02-07 19:50:04,421 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:50:04,422 - app.ingestion.document_loader - INFO - Total documents loaded: 1
+2026-02-07 19:50:04,424 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:50:04,501 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:50:04,503 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:50:04,504 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:50:04,507 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:50:04,509 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:50:04,509 - app.vectorstore.retriever - INFO - Retrieving top 2 documents for query: test query...
+2026-02-07 19:50:04,509 - app.vectorstore.retriever - INFO - Retrieved 2 documents
+2026-02-07 19:50:04,513 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:50:04,515 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:50:04,515 - app.ingestion.text_splitter - INFO - Split text into 7 chunks
+2026-02-07 19:50:04,516 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:50:04,516 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:50:04,517 - app.ingestion.text_splitter - INFO - Split into 6 chunks
+2026-02-07 19:50:04,518 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:50:04,519 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:50:04,520 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:50:04,520 - app.ingestion.text_splitter - INFO - Split text into 2 chunks
+2026-02-07 19:51:20,564 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:51:20,567 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:51:20,567 - app.ingestion.document_loader - INFO - Loading Word document: oopsque.docx
+2026-02-07 19:51:20,745 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:51:20,745 - app.ingestion.document_loader - INFO - Total documents loaded: 1
+2026-02-07 19:51:20,747 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:51:20,830 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:51:20,833 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:51:20,834 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:51:20,838 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:51:20,840 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:51:20,841 - app.vectorstore.retriever - INFO - Retrieving top 2 documents for query: test query...
+2026-02-07 19:51:20,841 - app.vectorstore.retriever - INFO - Retrieved 2 documents
+2026-02-07 19:51:20,845 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:51:20,847 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:51:20,848 - app.ingestion.text_splitter - INFO - Split text into 7 chunks
+2026-02-07 19:51:20,850 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:51:20,850 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:51:20,850 - app.ingestion.text_splitter - INFO - Split into 6 chunks
+2026-02-07 19:51:20,852 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:51:20,852 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:51:20,854 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:51:20,855 - app.ingestion.text_splitter - INFO - Split text into 2 chunks
+2026-02-07 19:55:22,792 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:55:22,794 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:55:22,795 - app.ingestion.document_loader - INFO - Loading Word document: oopsque.docx
+2026-02-07 19:55:22,962 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:55:22,962 - app.ingestion.document_loader - INFO - Total documents loaded: 1
+2026-02-07 19:55:22,964 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:55:23,042 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:55:23,044 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:55:23,045 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:55:23,048 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:55:23,050 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:55:23,051 - app.vectorstore.retriever - INFO - Retrieving top 2 documents for query: test query...
+2026-02-07 19:55:23,051 - app.vectorstore.retriever - INFO - Retrieved 2 documents
+2026-02-07 19:55:23,054 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:55:23,055 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:55:23,055 - app.ingestion.text_splitter - INFO - Split text into 7 chunks
+2026-02-07 19:55:23,057 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:55:23,057 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:55:23,057 - app.ingestion.text_splitter - INFO - Split into 6 chunks
+2026-02-07 19:55:23,059 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:55:23,059 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:55:23,061 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:55:23,061 - app.ingestion.text_splitter - INFO - Split text into 2 chunks
+2026-02-07 19:56:01,905 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:56:01,908 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:56:01,908 - app.ingestion.document_loader - INFO - Loading Word document: oopsque.docx
+2026-02-07 19:56:02,107 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:56:02,108 - app.ingestion.document_loader - INFO - Total documents loaded: 1
+2026-02-07 19:56:02,110 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:56:02,190 - app.ingestion.document_loader - INFO - Successfully loaded Word document: app/data/raw_docs\oopsque.docx
+2026-02-07 19:56:02,192 - app.ingestion.document_loader - INFO - Initialized DocumentLoader with path: app/data/raw_docs
+2026-02-07 19:56:02,193 - app.ingestion.document_loader - INFO - Successfully loaded text file: test_doc.txt
+2026-02-07 19:56:02,195 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:56:02,198 - app.vectorstore.retriever - INFO - Initialized RetrieverService
+2026-02-07 19:56:02,198 - app.vectorstore.retriever - INFO - Retrieving top 2 documents for query: test query...
+2026-02-07 19:56:02,199 - app.vectorstore.retriever - INFO - Retrieved 2 documents
+2026-02-07 19:56:02,204 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=200, chunk_overlap=20
+2026-02-07 19:56:02,206 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=5
+2026-02-07 19:56:02,206 - app.ingestion.text_splitter - INFO - Split text into 7 chunks
+2026-02-07 19:56:02,207 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=100, chunk_overlap=10
+2026-02-07 19:56:02,208 - app.ingestion.text_splitter - INFO - Splitting 3 documents...
+2026-02-07 19:56:02,208 - app.ingestion.text_splitter - INFO - Split into 6 chunks
+2026-02-07 19:56:02,209 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=500, chunk_overlap=50
+2026-02-07 19:56:02,210 - app.ingestion.text_splitter - WARNING - No documents to split
+2026-02-07 19:56:02,211 - app.ingestion.text_splitter - INFO - Initialized TextSplitter: chunk_size=50, chunk_overlap=10
+2026-02-07 19:56:02,211 - app.ingestion.text_splitter - INFO - Split text into 2 chunks
