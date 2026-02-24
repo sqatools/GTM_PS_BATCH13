@@ -25,7 +25,7 @@ click_view_branch_submenu_button = (By.XPATH,"//a[normalize-space()='View Branch
 
 # Delete Branch
 Delete_Branch_submenu_btn = (By.XPATH,"//a[normalize-space()='Delete Branches']")
-Delete_branch = (By.XPATH,"//tr[td[text()='5596']]//img[@src='images/delete.png']")
+Delete_branch = (By.XPATH,"//tr[td[text()='5597']]//img[@src='images/delete.png']")
 
 # update Branch
 update_Branch_submenu_btn = (By.XPATH,"//a[normalize-space()='Update Branches']")
@@ -63,7 +63,7 @@ view_employee_view_btn = (By.XPATH,"//input[@value='View']")
 Delete_Employees_btn = (By.XPATH,"//a[@href='view_del_employee.php']")
 Delete_Employee_drop_down = (By.ID,"BranchID")
 view_btn = (By.XPATH,"//input[@value='View']")
-Delete_Employee_details_btn = (By.XPATH,"//tr[td[text()='5599']]//input[@value='Delete']")
+Delete_Employee_details_btn = (By.XPATH,"//tr[td[text()='5598']]//input[@value='Delete']")
 
 #update Employee
 update_employee_btn = (By.XPATH,"//a[normalize-space()='Update Employees']")

@@ -7,7 +7,7 @@ Admin_username = "admin"
 Admin_Password = "admin"
 
 # Add Branches
-Branch_id = "5198"
+Branch_id = "5199"
 Branch_Name = "Sajur Branch"
 Branch_Address = "A/P Bhavani Peth"
 Branch_City = "Thambve"
@@ -27,16 +27,16 @@ ADD_BRANCH_DATA = {
 
 
 # update Branch
-update_Branch_Name = "Thambve"
-update_Branch_Address = "345S, Koparkarne"
-update_Branch_City = "Thambve"
-update_Branch_State = 'Maharastra'
-update_Branch_Zipcode = '415113'
-update_Branch_Phone = '6789054001'
+update_Branch_Name = "Sajur"
+update_Branch_Address = "789, Navi mumbai"
+update_Branch_City = "Sajur"
+update_Branch_State = 'Goa'
+update_Branch_Zipcode = '415112'
+update_Branch_Phone = '6789054000'
 
 # Add New Employee
 drop_down_branch = "Yewatmal Branch, 4106"
-Employee_ID = "5599"
+Employee_ID = "5598"
 Employee_FirstName = "Sambhaji"
 Employee_LastName = "Chavan"
 Employee_Email = "sambhajichavan23@gmail.com"
