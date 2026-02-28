@@ -1,7 +1,7 @@
 def handle_exception():
     try:
         a=10
-        b='hi'
+        b='Functions'
         print('1.','Addition:',a+b)
     except Exception as e:          ##except=built in  Exception is a Class
 
@@ -14,7 +14,7 @@ print('4.','The next print statement is printed')
 def handle_exception_raise():
     try:
         a=10
-        b='hi'
+        b='Functions'
         print('5.','Addition:',a+b)
     except TypeError:
 

@@ -14,4 +14,4 @@ def with_try_except_else_finally(a,b,c):
             print(i,"*",c,"=",i*c)
 
 #with_try_except_else_finally(10,6,9)
-with_try_except_else_finally(5,'hi','hello')
+with_try_except_else_finally(5,'Functions','hello')

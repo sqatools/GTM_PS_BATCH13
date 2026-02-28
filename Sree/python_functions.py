@@ -62,7 +62,7 @@ def accept_multiple_values(*args):
     print(args)
     for i in args:
         print(i)
-accept_multiple_values(7,9.0,'hi',(6,7,4),[4,6,2],{'Q':876})
+accept_multiple_values(7,9.0,'Functions',(6,7,4),[4,6,2],{'Q':876})
 print('-'*50)
 def add_all(*args):
     Total_sum=0
