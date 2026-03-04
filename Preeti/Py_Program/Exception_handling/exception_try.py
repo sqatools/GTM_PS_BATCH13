@@ -1,6 +1,6 @@
 try:
   a =20
-  b="hi"
+  b="Functions"
 print("addition:",a+b)
 
 except Exception as e:

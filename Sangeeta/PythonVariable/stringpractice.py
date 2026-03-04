@@ -85,7 +85,7 @@ list2.sort(reverse = True) # We have to mention reverse=true to see the desc.
 print("list2 :", list2)
 
 # reverse method : this will reverse the entire list
-list_n = [8,14,'hi',27,42,'true']
+list_n = [8,14,'Functions',27,42,'true']
 list_n.reverse()
 print("list_n :", list_n)
 
