@@ -26,3 +26,9 @@ class Test_Pratice_Automation_site:
          self.tp.click_on_login_button()
          self.tp.click_logout_btn()
 
+     @pytest.mark.parametrize("data", invalid_admins)
+     def test_invalid_login(self, data):
+         self.tp = Practice_Automation(self.driver)
+         self.tp.enter_Login_username(data["Login_Username"])
+         self.tp.enter_login_password(data["Login_Psd"])
+         self.tp.click_on_login_button()

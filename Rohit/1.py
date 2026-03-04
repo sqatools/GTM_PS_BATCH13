@@ -1,6 +1,8 @@
 #Reverse a string without using built-in functions.
 from multiprocessing.reduction import duplicate
 
+from selenium.webdriver.common.bidi.network import Network
+
 s = "python"
 rev = ""
 for i in s:
@@ -256,5 +258,69 @@ char_count = {}
 for i in items:
     char_count[i] = char_count.get(i,0)+1
 print(char_count)
+
+with open("TestFile.txt","r") as f:
+    read_date = f.read()
+    print(read_date)
+
+
+num = 7
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+
+n=5
+a,b = 0, 1
+for _ in range(5):
+    print(a,end="")
+    a,b = b, a+b
+
+
+from selenium import  webdriver
+from selenium.webdriver.common.by import By
+
+driver =  webdriver.Chrome()
+driver.maximize_window()
+
+driver.get("https://testautomationpractice.blogspot.com/")
+row = driver.find_element(By.XPATH,"//td[text()='Firefox']/parent::tr")
+col = row.find_elements(By.TAG_NAME,"td")
+
+print("Network:",col[1].text)
+
+nums = []
+
+for i in range(5):
+    n = int(input(f"Enter number {i+1}: "))
+    nums.append(n)
+
+nums = list(set(nums))   # remove duplicates (important)
+
+nums.sort(reverse=True)
+
+print("2nd highest value:", nums[1])
+
+
+lst = [1, 2, 3, 2, 4, 1]
+
+duplicate = [x for x in lst if lst.count(x)> 1]
+print(duplicate)
+
+lst = [1, 2, 2, 3, 4, 4,5]
+unique = []
+for i in lst:
+    if i not in unique:
+        unique.append(i)
+    print(i)
+
+n= 5
+a,b = 0,1
+for _ in range(n):
+    print(a,end="")
+    a,b = b, a+b
 
 
