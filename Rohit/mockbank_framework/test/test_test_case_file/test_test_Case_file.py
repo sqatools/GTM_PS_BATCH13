@@ -32,3 +32,4 @@ class Test_Pratice_Automation_site:
          self.tp.enter_Login_username(data["Login_Username"])
          self.tp.enter_login_password(data["Login_Psd"])
          self.tp.click_on_login_button()
+
