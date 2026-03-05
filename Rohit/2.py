@@ -18,3 +18,4 @@ password = driver.find_element(By.XPATH,"//input[@type='password']").send_keys("
 signin_btn = driver.find_element(By.XPATH,"//button[normalize-space()='Sign In']").click()
 time.sleep(10)
 driver.close()
+
