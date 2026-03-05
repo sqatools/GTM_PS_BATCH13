@@ -29,9 +29,9 @@ jobs:
 
       - name: Run Rohit Script
         run: |
-          cd Rohit/Pratice_Framework
+          cd Rohit/mockbank_framework
           pip install -r requirements.txt
-          python -m pytest -v --headless=True ./tests/ --html=report.html --self-contained-html
+          python -m pytest -v --headless=True ./test/ --html=report.html --self-contained-html
 
 
       - name : Upload Rohit Test Report    
@@ -39,5 +39,5 @@ jobs:
         uses : actions/upload-artifact@v4
         with:
             name : Rohit Test Report
-            path : Rohit/Pratice_Framework/report.html
+            path : Rohit/mockbank_framework/report.html
 
