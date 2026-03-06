@@ -9,7 +9,8 @@ class Base_Hitachi():
         self.wait = WebDriverWait(driver,timeout)
 
     def get_element(self, locator):
-        return self.wait.until(EC.presence_of_element_located(locator))
+        element = self.wait.until(EC.element_to_be_clickable(locator))
+        element.click()
 
     def click_element(self, locator):
         element = self.wait.until(EC.visibility_of_element_located(locator))

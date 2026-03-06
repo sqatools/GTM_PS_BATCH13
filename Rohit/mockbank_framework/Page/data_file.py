@@ -1,10 +1,10 @@
 web_url = "https://practice.automationtesting.in/"
 
-Email_Address = "mahesh_jadhav01@gmail.com"
+Email_Address = "mahesh_jadhav02@gmail.com"
 Password_btn = "Karad@12345"
 
 #Login
-Login_Username = "mahesh_jadhav01@gmail.com"
+Login_Username = "mahesh_jadhav02@gmail.com"
 Login_Psd = "Karad@12345"
 
 # --- negative (invalid) credentials ---
