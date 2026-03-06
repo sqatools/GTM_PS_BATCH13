@@ -1,4 +1,4 @@
-name: Rohit Ecomerance
+name: Rohit Ecommerce
 
 on:
   push:
@@ -9,6 +9,7 @@ on:
 jobs:
   rohit-tasks2:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
@@ -21,23 +22,22 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
+          pip install -r Rohit/mockbank_framework/requirements.txt
 
-      - name: Install chrome browser
+      - name: Install Chrome Browser
         run: |
-            sudo apt-get update
-            sudo apt-get install -y google-chrome-stable
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
 
       - name: Run Rohit Script
         run: |
           cd Rohit/mockbank_framework
-          pip install -r requirements.txt
-          python -m pytest -v --browser=chrome --headless=True ./test/ --html=report.html --self-contained-html
+          pytest -v --browser=chrome --headless=True ./test/ --html=report.html --self-contained-html
 
-
-      - name : Upload Rohit Test Report    
-        if : always()
-        uses : actions/upload-artifact@v4
+      - name: Upload Rohit Test Report
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-            name : Rohit Test Report
-            path : Rohit/mockbank_framework/report.html
+          name: Rohit Test Report
+          path: Rohit/mockbank_framework/report.html
 
