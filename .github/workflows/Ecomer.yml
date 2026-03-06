@@ -31,7 +31,7 @@ jobs:
         run: |
           cd Rohit/mockbank_framework
           pip install -r requirements.txt
-          python -m pytest -v ./test/ --html=report.html --self-contained-html
+          python -m pytest -v --browser=chrome --headless=True ./test/ --html=report.html --self-contained-html
 
 
       - name : Upload Rohit Test Report    
