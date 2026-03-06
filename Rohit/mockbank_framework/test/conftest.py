@@ -5,8 +5,14 @@ from selenium.webdriver.chrome.options import Options
 @pytest.fixture(scope="class")
 def get_driver(request):
 
+    browser = request.config.getoption("--browser")
+    headless = request.config.getoption("--headless")
+
     chrome_options = Options()
-    chrome_options.add_argument("--headless")
+
+    if headless == "True":
+        chrome_options.add_argument("--headless")
+
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
 
