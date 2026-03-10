@@ -32,7 +32,7 @@ jobs:
       - name: Run Rohit Script
         run: |
           cd Rohit/mockbank_framework
-          pytest -v ./test/ --html=report.html --self-contained-html
+          pytest -v --browser=chrome --headless=True ./test/ --html=report.html
 
       - name: Upload Rohit Test Report
         if: always()
