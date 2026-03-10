@@ -1,0 +1,10 @@
+[
+  {
+    "prompt": "Explain API testing in one sentence",
+    "keywords": ["API", "testing"]
+  },
+  {
+    "prompt": "What is Selenium?",
+    "keywords": ["automation", "testing"]
+  }
+]
