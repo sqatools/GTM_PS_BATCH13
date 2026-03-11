@@ -1,10 +1,10 @@
 [
   {
-    "prompt": "Explain API testing in one sentence",
-    "keywords": ["API", "testing"]
+    "prompt": "Explain Regression testing in one sentence",
+    "keywords": ["Regression", "testing"]
   },
   {
-    "prompt": "What is Selenium?",
-    "keywords": ["automation", "testing"]
+    "prompt": "What is AI Testing?",
+    "keywords": ["AI", "testing"]
   }
 ]

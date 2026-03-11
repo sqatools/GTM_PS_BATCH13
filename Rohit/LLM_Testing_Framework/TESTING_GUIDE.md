@@ -1,42 +1,46 @@
 # LLM Testing Framework - Comprehensive Guide
 
 ## Overview
-This framework tests LLM responses through **three validation layers** to ensure quality and consistency.
+This framework tests LLM responses through **four comprehensive validation layers** to ensure quality, accuracy, safety, and performance.
 
 ---
 
-## ✅ Three Levels of Validation
+## ✅ Four Levels of Validation
 
-### 1. **Format Validation**
+### 1. **Format Validation** ✓
 Checks if the response meets basic quality criteria:
 - Not empty
 - Minimum length (≥10 characters)
 - Properly structured
 
-**File:** `validators/rule_validator.py`
+**File:** [validators/rule_validator.py](validators/rule_validator.py)
 
 ```python
-validate_response_format(response)
+from validators.rule_validator import validate_response_format
+
+valid_format, format_msg = validate_response_format(response)
 # Returns: (bool, message)
 # Example: (True, "Valid response")
 ```
 
 ---
 
-### 2. **Keyword Validation**
+### 2. **Keyword Validation** ✓
 Verifies that all required keywords appear in the response:
 - Case-insensitive matching
 - Ensures LLM covered expected topics
 
-**File:** `validators/rule_validator.py`
+**File:** [validators/rule_validator.py](validators/rule_validator.py)
 
 ```python
-check_keywords(response, keywords)
+from validators.rule_validator import check_keywords
+
+keywords_valid, keywords_msg = check_keywords(response, keywords)
 # Returns: (bool, message)
 # Example: (True, "Keywords found")
 ```
 
-**Test Data Format:**
+**Test Data Format (test_data/prompts.json):**
 ```json
 {
   "prompt": "Explain API testing in one sentence",
@@ -46,16 +50,86 @@ check_keywords(response, keywords)
 
 ---
 
-### 3. **AI Evaluation**
-Uses an LLM to score the answer's accuracy:
-- Generates evaluation prompt
-- Returns scoring feedback
+### 3. **Safety Validation** 🛡️ (NEW)
+Validates that responses are safe and complete:
+- No unsafe/malicious keywords
+- Response length is adequate
+- Response is not truncated
+- Safety score (0-100)
 
-**File:** `validators/ai_evaluator.py`
+**File:** [validators/safety_validator.py](validators/safety_validator.py)
 
 ```python
-evaluate_answer(question, answer)
-# Returns: score/feedback from LLM
+from validators.safety_validator import check_response_safety, get_response_safety_score
+
+safety_valid, safety_msg = check_response_safety(response)
+# Returns: (bool, message)
+
+safety_score = get_response_safety_score(response)
+# Returns: int (0-100)
+```
+
+**Example Unsafe Keywords Checked:**
+- hack, crash, error, bug, attack, malicious, exploit, vulnerability, injection, overflow
+
+---
+
+### 4. **AI Evaluation** 🎯
+Uses an LLM to score the answer's accuracy:
+- Generates evaluation prompt
+- Returns scoring feedback (0-10)
+
+**File:** [validators/ai_evaluator.py](validators/ai_evaluator.py)
+
+```python
+from validators.ai_evaluator import evaluate_answer
+
+accuracy_score = evaluate_answer(question, answer)
+# Returns: float (0-10)
+```
+
+---
+
+## � Comprehensive Output Display
+
+The framework now displays results for all **THREE KEY METRICS**:
+
+### 1. **Validating Responses Using Python Automation** ✅
+
+Shows validation results at multiple levels:
+```
+✅ VALIDATION METRICS BREAKDOWN:
+   Format Validation:     2/2 passed (100.0%)
+   Keywords Validation:   2/2 passed (100.0%)
+   Safety Validation:     2/2 passed (100.0%)
+```
+
+### 2. **Response Accuracy, Format, and Safety** 🎯
+
+Displays comprehensive quality metrics:
+```
+🎯 ACCURACY & SAFETY SCORES:
+   Average Accuracy Score: 8.50/10
+   Average Safety Score:   100.00/100
+
+Per-Test Metrics:
+   ├─ [1] Format Validation: ✓ PASS - Valid response
+   ├─ [2] Keywords Validation: ✓ PASS - Keywords found
+   ├─ [3] Safety Validation: ✓ PASS - Safe response - No concerns detected
+   └─ [4] Accuracy Evaluation: 8.5/10
+```
+
+### 3. **Response Time and Automated Tests** ⏱️
+
+Measures and displays performance metrics:
+```
+⏱️  PERFORMANCE METRICS:
+   Total Response Time:    0.70 seconds
+   Average Response Time:  0.35 seconds
+   Min Response Time:      0.32 seconds
+   Max Response Time:      0.38 seconds
+
+Per-Test: Response Time: 0.35 seconds
 ```
 
 ---
@@ -68,14 +142,26 @@ cd LLM_Testing_Framework
 python -m pytest tests/test_llm_response.py -v
 ```
 
-### Detailed Output (with validation checks)
+### Full Output Display (Recommended)
 ```powershell
 python -m pytest tests/test_llm_response.py -v -s
 ```
+This shows all validation metrics, summary report, and detailed metrics table.
 
 ### Run with Coverage Report
 ```powershell
-python -m pytest tests/test_llm_response.py --cov=validators --cov=clients
+python -m pytest tests/test_llm_response.py --cov=validators --cov=utils --cov=clients -v -s
+```
+
+### Run Demo Script (Without pytest)
+```powershell
+python demo_framework.py
+```
+Interactive demo with manual responses demonstrating all features.
+
+### Run with HTML Report
+```powershell
+python -m pytest tests/test_llm_response.py --html=report.html --self-contained-html -v -s
 ```
 
 ---
@@ -252,6 +338,142 @@ LLM_Testing_Framework/
 
 ---
 
+## � Report Generator - Enhanced Output Formatting
+
+The framework now includes a comprehensive **Report Generator** module (`utils/report_generator.py`) that creates professional, multi-level output reports.
+
+### Report Generator Features
+
+1. **Individual Test Case Display**
+   - Prompt and response preview
+   - All validation metrics with status
+   - Performance metrics
+   - Overall pass/fail status
+
+2. **Summary Report**
+   - Total tests, passed/failed count
+   - Validation metrics breakdown
+   - Accuracy and safety scores
+   - Performance metrics (average, min, max response times)
+
+3. **Detailed Metrics Table**
+   - Tabular view of all results
+   - Quick reference for all metrics
+   - Sortable by test number
+
+### Using Report Generator Programmatically
+
+```python
+from utils.report_generator import ReportGenerator, TestResult
+
+# Create report
+report = ReportGenerator()
+
+# Add test results
+result = TestResult(
+    test_num=1,
+    prompt="Your prompt here",
+    response="LLM response",
+    format_valid=True,
+    format_msg="Valid format",
+    keywords_valid=True,
+    keywords_msg="Keywords found",
+    keywords=["keyword1", "keyword2"],
+    accuracy_score=8.5,
+    safety_valid=True,
+    safety_msg="Safe response",
+    safety_score=100,
+    response_time=0.35
+)
+
+report.add_result(result)
+
+# Generate reports
+report.print_test_case(result)
+report.print_summary_report()
+report.print_detailed_metrics_table()
+```
+
+---
+
+## 🎯 New Modules (Enhanced Framework)
+
+### 1. Safety Validator Module
+**File:** [validators/safety_validator.py](validators/safety_validator.py)
+
+Functions:
+- `check_response_safety(response)` - Returns (bool, message)
+- `get_response_safety_score(response)` - Returns int (0-100)
+
+**Checks for:**
+- Unsafe keywords (hack, exploit, injection, etc.)
+- Response truncation
+- Adequate response length
+
+### 2. Report Generator Module
+**File:** [utils/report_generator.py](utils/report_generator.py)
+
+Classes:
+- `TestResult` - Stores individual test result data
+- `ReportGenerator` - Generates formatted reports
+
+**Methods:**
+- `add_result(result)` - Add a test result
+- `print_test_case(result)` - Print individual test details
+- `print_summary_report()` - Print summary statistics
+- `print_detailed_metrics_table()` - Print tabular view
+
+### 3. Demo Framework
+**File:** [demo_framework.py](demo_framework.py)
+
+Run interactive demos:
+```powershell
+python demo_framework.py
+```
+
+Choose between:
+1. Manual responses demo
+2. API mocking demo with various scenarios
+3. Run both demos
+
+---
+
+## 🔧 Customizing Output Reports
+
+### Customize Test Case Display
+Edit `utils/report_generator.py`, method `print_test_case()`:
+
+```python
+def print_test_case(self, result: TestResult):
+    # Modify formatting, symbols, or order of displayed metrics
+    pass
+```
+
+### Customize Summary Report
+Edit `utils/report_generator.py`, method `print_summary_report()`:
+
+```python
+def print_summary_report(self):
+    # Add/remove metrics, change calculations, adjust formatting
+    pass
+```
+
+### Customize Safety Validation
+Edit `validators/safety_validator.py`:
+
+```python
+# Add more unsafe keywords to check
+UNSAFE_KEYWORDS = [
+    "hack", "crash", "error", "bug", "attack", "malicious",
+    "exploit", "vulnerability", "injection", "overflow",
+    "your_new_keyword"  # Add here
+]
+
+# Modify scoring weights in get_response_safety_score()
+```
+
+---
+
 ## 🐛 Troubleshooting
 
 ### Issue: "API_KEY is not configured"
@@ -262,6 +484,37 @@ LLM_Testing_Framework/
 - API key is valid
 - API URL is correct
 - Network connectivity
+
+### Issue: Report not generating
+**Solution:** Ensure utils/__init__.py exists and test results are added:
+```python
+report.add_result(result)  # Must call before printing reports
+```
+
+---
+
+## 📚 Additional Resources
+
+- **OUTPUT_GUIDE.md** - Detailed guide on output formatting and metrics
+- **demo_framework.py** - Interactive demonstration of all features
+- **test_data/prompts.json** - Sample test cases
+- **config/config.py** - API configuration guide
+
+---
+
+## ✅ Summary of Three Testing Metrics
+
+| Metric | Description | File | Output |
+|--------|-------------|------|--------|
+| **1. Validation** | Format, keywords, safety checks | `validators/` | ✓/✗ PASS/FAIL |
+| **2. Accuracy/Safety** | AI scores and safety ratings | `validators/`, `utils/` | 0-10, 0-100 scores |
+| **3. Performance** | Response time tracking | `utils/report_generator.py` | Time in seconds |
+
+All metrics displayed in comprehensive reports with:
+- Individual test details
+- Summary statistics
+- Detailed metrics table
+- Professional formatting
 
 ### Issue: "Keywords not found"
 **Solution:**
