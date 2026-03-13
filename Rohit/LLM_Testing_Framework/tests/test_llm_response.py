@@ -16,7 +16,6 @@ def get_mock_response(prompt):
     }
     return mock_responses.get(prompt, "This is a test response from a mocked LLM.")
 
-
 @patch('clients.llm_client.requests.post')
 def test_llm_responses(mock_post):
     """Test LLM responses with comprehensive validation and reporting"""
