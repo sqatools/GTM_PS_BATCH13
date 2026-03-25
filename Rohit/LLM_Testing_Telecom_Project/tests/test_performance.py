@@ -10,6 +10,8 @@ def test_response_time():
 
     response_time = end - start
 
-    print(f"\n⏱ Response Time: {response_time:.6f} seconds")
+    print("\nQuery:", query)
+    print("Response:", response)
+    print(f"\nResponse Time: {response_time:.6f} seconds")
 
     assert response_time < 1
