@@ -13,7 +13,7 @@ def test_ambiguous_query():
     query = "Not working"
     response = ask_llm(query)
 
-    print("\n🔹 Query:", query)
-    print("🔹 Response:", response)
+    print("\nQuery:", query)
+    print("Response:", response)
 
     assert "clarify" in response.lower() or "didn't understand" in response.lower()

@@ -10,8 +10,8 @@ def test_response_quality():
     query = "My Internet is down since morning"
     response = ask_llm(query)
 
-    print("\n🔹 Query:", query)
-    print("🔹 Response:", response)
+    print("\nQuery:", query)
+    print("Response:", response)
 
     relevance = is_relevant(response)
     troubleshooting = has_troubleshooting_steps(response)
