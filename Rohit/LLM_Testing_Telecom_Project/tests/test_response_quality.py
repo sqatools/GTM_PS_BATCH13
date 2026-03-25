@@ -18,10 +18,10 @@ def test_response_quality():
     escalation = escalation_check(response)
     hallucination = hallucination_check(response)
 
-    print("🔹 Relevance:", relevance)
-    print("🔹 Troubleshooting:", troubleshooting)
-    print("🔹 Escalation:", escalation)
-    print("🔹 Hallucination:", hallucination)
+    print("Relevance:", relevance)
+    print("Troubleshooting:", troubleshooting)
+    print("Escalation:", escalation)
+    print("Hallucination:", hallucination)
 
     assert relevance
     assert troubleshooting

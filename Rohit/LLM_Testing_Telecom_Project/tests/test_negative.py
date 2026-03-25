@@ -4,8 +4,8 @@ def test_negative_query():
     query = "asdfgh12345"
     response = ask_llm(query)
 
-    print("\n🔹 Query:", query)
-    print("🔹 Response:", response)
+    print("\nQuery:", query)
+    print("Response:", response)
 
     assert "didn't understand" in response.lower(), "❌ Should ask clarification for invalid input"
 

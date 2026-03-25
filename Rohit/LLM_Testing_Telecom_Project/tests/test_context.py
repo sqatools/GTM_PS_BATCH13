@@ -4,8 +4,8 @@ def test_context_basic():
     response1 = ask_llm("Internet not working")
     response2 = ask_llm("Still not working")
 
-    print("\n🔹 Basic First Response:", response1)
-    print("🔹 Basic Second Response:", response2)
+    print("\nBasic First Response:", response1)
+    print("Basic Second Response:", response2)
 
     assert response1 != "", "❌ First response is empty"
     assert response2 != "", "❌ Second response is empty"
