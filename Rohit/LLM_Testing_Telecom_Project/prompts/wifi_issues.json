@@ -1,0 +1,10 @@
+[
+  {
+    "input": "Internet not working",
+    "should_escalate": true
+  },
+  {
+    "input": "WiFi slow",
+    "should_escalate": false
+  }
+]

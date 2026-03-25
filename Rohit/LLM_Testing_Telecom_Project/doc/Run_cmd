@@ -1,0 +1,4 @@
+python -m pytest -v -s tests/
+
+# For Report also
+ python -m pytest -v -s tests/ --html=report.html

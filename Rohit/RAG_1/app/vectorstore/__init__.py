@@ -1,3 +1,0 @@
-"""
-Vectorstore package
-"""
