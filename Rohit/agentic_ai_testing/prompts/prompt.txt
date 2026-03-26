@@ -1,9 +1,0 @@
-Test the login functionality of website:
-https://ctcorphyd.com/EBanking_build1/admin.php
-
-Steps:
-1. Open website
-2. Enter username
-3. Enter password
-4. Click login
-5. Validate success message

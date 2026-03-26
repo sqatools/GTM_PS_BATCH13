@@ -1,0 +1,13 @@
+Internet down issues should be first checked by restarting router.
+
+If issue persists for 15 minutes, escalate to L1 support.
+
+If issue not resolved within 30 minutes, escalate to L2 network team.
+
+New Wi-Fi connection requests should be fulfilled within 24 hours.
+
+If service is not available in area, notify customer politely.
+
+TV issues should be resolved by checking set-top box and cable.
+
+Recharge issues should be handled by billing team.
