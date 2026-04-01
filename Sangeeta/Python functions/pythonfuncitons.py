@@ -70,7 +70,7 @@ def accept_multiple_values(*args):
     for val in args:
         print(val)
 
-accept_multiple_values(3, 4.5, 'hello', [5,7],{'a': 'hey'})
+accept_multiple_values(3, 4.5, 'hello', [5,7],{'a': 'hey.html'})
 
 print("*"*50)
 

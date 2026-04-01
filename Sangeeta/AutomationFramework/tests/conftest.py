@@ -32,7 +32,7 @@ def get_driver_with_headless(request, pytestconfig):
     driver.close()
 
 def pytest_configure(config):
-    logs_path = os.path.join(os.getcwd(), "logs")
+    logs_path = os.path.join(os.getcwd(), "log")
     if not os.path.exists(logs_path):
         os.mkdir(logs_path)
 
