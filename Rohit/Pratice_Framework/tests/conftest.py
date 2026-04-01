@@ -17,8 +17,8 @@ def pytest_addoption(parser):
 
 
 def pytest_configure(config):
-    # create a logs folder if is not there
-    logs_path = os.path.join(os.getcwd(), "logs")
+    # create a log folder if is not there
+    logs_path = os.path.join(os.getcwd(), "log")
     if not os.path.exists(logs_path):
         os.mkdir(logs_path)
 
