@@ -44,11 +44,16 @@ class Para_bank(Selenium_Base):
     def enter_Password(self,password):
         self.enter_text(Password, password)
 
-    def enter_Confirm(self,confirm):
-        self.enter_text(Confirm, confirm)
+    def enter_Confirm_Password(self, locator, value):
+        element = self.driver.find_element(*locator)
+        element.clear()
+        element.send_keys(value)
 
     def click_Register_button(self):
         self.click_element(Register_btn)
+
+    def click_Logout_button(self):
+        self.click_element(Logout_btn)
 
     # Customer Login
     def enter_loginUser_name(self,loginuser_name):

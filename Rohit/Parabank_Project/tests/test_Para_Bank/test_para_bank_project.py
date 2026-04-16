@@ -24,8 +24,9 @@ class Test_Para_Bank_Website:
           self.Para_bank.enter_SSN(ssn)
           self.Para_bank.enter_Username(username)
           self.Para_bank.enter_Password(password)
-          self.Para_bank.enter_Confirm(Confirm)
+          self.Para_bank.enter_Confirm_Password(Confirm,'Rohit@123')
           self.Para_bank.click_Register_button()
+          self.Para_bank.click_Logout_button()
 
 
       def test_customer_login_functionality(self):

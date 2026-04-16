@@ -1,6 +1,9 @@
+import time
+
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.keys import Keys
 
 class Selenium_Base:
     def __init__(self,driver,timeout=30):
@@ -10,8 +13,11 @@ class Selenium_Base:
     def get_element(self,locator):
         return self.wait.until(EC.presence_of_element_located(locator))
 
-    def click_element(self,locator):
+
+    #def click_element(self,locator):
         self.get_element(locator).click()
+    def click_element(self,locator):
+        self.wait.until(EC.element_to_be_clickable(locator)).click()
 
     def enter_text(self,locator,value):
         self.get_element(locator).send_keys(value)
@@ -26,3 +32,7 @@ class Selenium_Base:
         element = self.get_element(locator)
         select = Select(element)
         select.select_by_visible_text(value)
+
+    def clear_field(self, locator):
+        element = self.get_element(locator)
+        element.clear()

@@ -14,6 +14,7 @@ Username = (By.XPATH,"//input[contains(@id,'customer.username')]")
 Password = (By.XPATH,"//input[contains(@id,'customer.password')]")
 Confirm = (By.XPATH,"//input[contains(@id,'repeatedPassword')]")
 Register_btn = (By.XPATH,"//input[contains(@value,'Register')]")
+Logout_btn = (By.XPATH,"//a[text()='Log Out']")
 
 #Customer Login
 User_name = (By.XPATH,"//input[starts-with(@name,'username')]")

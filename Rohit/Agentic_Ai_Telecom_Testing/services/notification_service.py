@@ -1,5 +1,7 @@
 class NotificationService:
  def notify(self, ticket):
     print("\n📩 CUSTOMER NOTIFICATION")
-    print(f"Your issue is assigned to {ticket['assigned_team']}")
-    print(f"Ticket ID: {ticket['ticket_id']}")
+    assigned_team = ticket.get('assigned_team', 'Support Team')
+    print(f"Your issue is assigned to {assigned_team}")
+    ticket_id = ticket.get('ticket_id', 'Unknown')
+    print(f"Ticket ID: {ticket_id}")
