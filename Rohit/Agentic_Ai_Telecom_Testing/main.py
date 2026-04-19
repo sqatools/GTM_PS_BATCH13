@@ -36,3 +36,28 @@ def run_agentic_flow(user_input):
     print(result)
 
     print("\n✅ FINAL STATUS: Issue handled successfully")
+    return result
+
+
+if __name__ == "__main__":
+    # Example usage
+    print("🤖 Agentic AI Telecom Customer Service System")
+    print("=" * 50)
+
+    # Test scenarios
+    test_cases = [
+        "My internet is not working since morning",
+        "I need wifi connection in my new apartment",
+        "I was overcharged on my bill",
+        "My internet speed is very slow",
+        "What packages do you offer?"
+    ]
+
+    for i, test_case in enumerate(test_cases, 1):
+        print(f"\n{'='*20} TEST CASE {i} {'='*20}")
+        run_agentic_flow(test_case)
+
+    print("\n" + "="*60)
+    print("🎉 All test cases completed!")
+    print("To run interactively, call: run_agentic_flow('your customer issue')")
+    print("="*60)

@@ -1,4 +1,0 @@
-url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
-
-user_name = "Admin"
-Password = "admin123"

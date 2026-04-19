@@ -13,8 +13,11 @@ class ActionAgent:
         # Step 1: Create Ticket
         ticket = self.ticket_service.create_ticket(user_input, escalation_data)
 
-        # Step 2: Notify Customer
-        self.notification_service.notify(ticket)
+        # Step 2: Notify Customer (with error handling)
+        try:
+            self.notification_service.notify(ticket)
+        except Exception as e:
+            print(f"⚠️ Notification failed: {e}")
 
         # Step 3: Return final response
         return {
