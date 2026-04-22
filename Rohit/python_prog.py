@@ -49,6 +49,20 @@ else:
     print("Not Palindrome")
 
 
+lst = [10, 5, 20, 8]
 
+maximum = max(lst)
+minimum = min(lst)
 
+print("Maximum : ", maximum)
+print("Minimum: ", minimum)
 
+rows =4
+
+for i in range(1, rows + 1):
+    print(" " * (rows - 1), end=" ")
+
+    for j in range(1,i + 1):
+        print(j,end="  ")
+
+    print()
