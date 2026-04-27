@@ -16,12 +16,12 @@ class API_Base:
         headers = headers if headers else {}
         payload = payload if payload else {}
         res = requests.get("Get",url, headers=headers,data=payload)
-        self.log.info(f"method name : get method")
-        self.log.info(f"url : {url}")
-        self.log.info(f"headers: {headers}")
-        self.log.info(f"payload: {payload}")
-        self.log.info(f"response: {res}")
-        self.log.info(f"status_code: {res.status_code}")
+        self.logs.info(f"method name : get method")
+        self.logs.info(f"url : {url}")
+        self.logs.info(f"headers: {headers}")
+        self.logs.info(f"payload: {payload}")
+        self.logs.info(f"response: {res}")
+        self.logs.info(f"status_code: {res.status_code}")
         return res.json, res.status_code
 '''
 
