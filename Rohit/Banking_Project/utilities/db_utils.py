@@ -1,6 +1,3 @@
-
-from ..Page_objects.Banking_website.banking_datafile import *
-
 import sqlite3
 
 class DBUtils:

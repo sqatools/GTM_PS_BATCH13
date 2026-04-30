@@ -8,7 +8,7 @@ with open("2ndFiles.txt","w") as f:
 
 with open ("2ndFiles.txt","a") as f:
     f.write("Hy Good Night")
-
+'''
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
@@ -28,5 +28,22 @@ row = driver.find_element(By.XPATH,"//td[normalize-space()='Internet Explorer']/
 cols = row.find_elements(By.TAG_NAME,"td")
 
 print("CPU:",cols[2].text)
+
+'''
+s = "Hello I am Rohit"
+
+result = " ".join(word[::-1] for word in s.split())
+
+print(result)
+
+
+s = "programming"
+
+result = ""
+for ch in s:
+    if ch not in result:
+        result = result + ch
+
+print(result)
 
 
