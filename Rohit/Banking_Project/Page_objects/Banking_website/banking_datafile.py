@@ -1,5 +1,3 @@
-from Rohit.Banking_Project.Page_objects.Banking_website.banking_locator import Delete_Employee_drop_down
-
 website_url = "https://ctcorphyd.com/EBanking_build1/"
 
 # Admin login
@@ -7,13 +5,13 @@ Admin_username = "admin"
 Admin_Password = "admin"
 
 # Add Branches
-Branch_id = "1101"
-Branch_Name = "Sajur Branch"
-Branch_Address = "A/P Bhavani Peth"
-Branch_City = "Thambve"
+Branch_id = "7891"
+Branch_Name = "Karvenagar Branch"
+Branch_Address = "A/P Mangalwar Peth"
+Branch_City = "Vathar"
 Branch_State = "Maharastra"
-Branch_Zipcode = "415126"
-Branch_Phone = "9346523678"
+Branch_Zipcode = "415120"
+Branch_Phone = "8789990001"
 
 ADD_BRANCH_DATA = {
     "branch_id": Branch_id,

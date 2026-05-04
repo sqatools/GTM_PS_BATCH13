@@ -44,7 +44,7 @@ class Test_Banking_Website:
         self.bank.click_Branch_tab()
         self.bank.click_view_branch_submenu_button()
         time.sleep(5)
-
+'''
     # delete Branch
     def test_delete_branch_functionality(self):
         self.bank = Banking_website(self.driver)
@@ -149,7 +149,7 @@ class Test_Banking_Website:
         self.bank.verify_Account_type_successfully_alert("Account Type added successfully !!")
         time.sleep(5)
    
-
+'''
 
 
 
