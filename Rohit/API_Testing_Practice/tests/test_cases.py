@@ -12,4 +12,12 @@ class Test_API_Automation:
 
     def test_get_login_details(self):
         response, status_code = self.A_api.get_user_login_details()
+        print(response)
+        print(status_code)
+        assert status_code == 200
+
+    def test_Add_new_employee(self):
+        response, status_code = self.A_api.Add_new_employee()
+        print(response)
+        print(status_code)
         assert status_code == 200
