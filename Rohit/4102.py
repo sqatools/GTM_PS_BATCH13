@@ -1,49 +1,58 @@
 with open ("2ndFiles.txt","r") as f:
-    line = f.read()
-    print(len(line))
+    lines = f.read()
+    print(len(lines))
 
-with open("2ndFiles.txt","w") as f:
-    f.write("Hy guys Good Morning")
+with open ("TestFile.txt","w") as f:
+    f.write("Hello Good Evening Guys")
 
 
-with open ("2ndFiles.txt","a") as f:
-    f.write("Hy Good Night")
-'''
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver import ActionChains
+st = "a2b3c4d1"
+result = ""
 
-driver = webdriver.Chrome()
-driver.implicitly_wait(10)
-driver.maximize_window()
+for i in range(0,len(st),2):
+    char = st[i]
+    count = int(st[i+1])
+    result += char * count
+print(result)
 
-driver = webdriver.Chrome()
-driver.get("https://testautomationpractice.blogspot.com/")
 
-row = driver.find_element(By.XPATH,"//td[normalize-space()='Internet Explorer']/parent::tr")
 
-cols = row.find_elements(By.TAG_NAME,"td")
+st = "abcabcbb"
 
-print("CPU:",cols[2].text)
+unique = ""
 
-'''
+for i in st:
+    if i not in unique:
+        unique += i
+print(unique)
+
+rows = 4
+
+for i in range(1,rows+1):
+    print(""*(rows-1),end="")
+
+    for j in range(1,i+1):
+        print(j,end="  ")
+
+    print()
+
 s = "Hello I am Rohit"
 
-result = " ".join(word[::-1] for word in s.split())
+result1 = " ".join(words[::-1] for words in s.split())
+print(result1)
 
-print(result)
+str1 = "Gurgaon city is Good"
 
+words = str1.split()
 
-s = "programming"
+# rearranging words
+output = words[0] + " " + words[2] + " " + words[3] + " " + words[1]
 
-result = ""
-for ch in s:
-    if ch not in result:
-        result = result + ch
-
-print(result)
+print(output)
 
 
+text = "I Love JAVA Programming"
+
+unique_chars = set(text)
+
+print(unique_chars)
