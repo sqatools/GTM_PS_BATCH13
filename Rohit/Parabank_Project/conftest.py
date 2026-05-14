@@ -1,10 +1,19 @@
-import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
+import pytest
+
 
 @pytest.fixture(scope="class")
 def get_driver(request):
-    driver = webdriver.Chrome()
-    driver.maximize_window()
+    options = Options()
+
+    options.add_argument("--headless")  # MUST for Docker
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver = webdriver.Chrome(options=options)
+
     request.cls.driver = driver
-    yield
+    yield driver
     driver.close()
