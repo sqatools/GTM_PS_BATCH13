@@ -1,5 +1,5 @@
-from Sweety.PythonProgramming.Python_Modules.os_module import file_name
 
+"""
 with open("2ndFiles.txt", "r") as f:
     lines = f.read()
     print(len(lines))
@@ -225,7 +225,7 @@ obj.details_of_Father()
 obj.details_of_famaily()
 
 print("-"*50)
-sampleJson = """{ 
+sampleJson = {
    "company":{ 
       "employee":{ 
          "name":"emma",
@@ -235,7 +235,8 @@ sampleJson = """{
          }
       }
    }
-}"""
+}
+
 import json
 data = json.loads(sampleJson)
 data["company"]["employee"]["payble"]["salary"] = 9000
@@ -244,3 +245,39 @@ update_json = json.dumps(data,indent=4)
 
 print(update_json)
 
+print("-"*50)
+
+
+n=4
+num=1
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(num,end=" ")
+        num += 1
+    print()
+print("-"*50)
+import requests
+
+response = requests.get("https://chatgpt.com/")
+print(response.status_code)
+response_time = response.elapsed.total_seconds()
+
+print(response_time)
+assert response_time < 2
+"""
+import csv
+
+unique_name = set()
+unique_department = set()
+count = 0
+with open("Book1.csv", "r") as f:
+    reader = csv.DictReader(f)
+
+    for row in reader:
+        unique_name.add(row["Name"])
+        unique_department.add(row["Department"])
+        count +=1
+
+print(unique_name)
+print(unique_department)
+print("count:",count)

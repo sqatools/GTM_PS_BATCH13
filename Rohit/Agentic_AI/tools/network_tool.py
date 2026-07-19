@@ -27,7 +27,10 @@ class NetworkTool:
 
         return routers.get(router, "UNKNOWN")
 
-    def signal_strength(self):
+    def signal_strength(self, area=None):
+
+        if area == "Mumbai":
+            return 25
 
         return random.randint(20, 100)
 

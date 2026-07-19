@@ -1,6 +1,7 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
+from selenium.webdriver.common.by import By
 
 
 class NaukriSelenium:
@@ -25,3 +26,6 @@ class NaukriSelenium:
         select = Select(element)
         select.select_by_visible_text(value)
 
+    def select_years_from_drop_down(self, select_years_dp, value):
+        self.get_element(select_years_dp).click()
+        self.driver.find_element(By.XPATH, f"//span[text()='{value}']").click()

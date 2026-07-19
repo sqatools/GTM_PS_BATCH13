@@ -1,0 +1,137 @@
+[
+    {
+        "query": "Internet is down",
+        "response": {
+            "ticket_id": 6369,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "Internet issue",
+        "response": {
+            "ticket_id": 8550,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "Wifi installation required",
+        "response": {
+            "ticket_id": 9280,
+            "status": "OPEN",
+            "assigned_team": "FIELD_TEAM",
+            "priority": "MEDIUM"
+        }
+    },
+    {
+        "query": "Internet is down",
+        "response": {
+            "ticket_id": 9533,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "test",
+        "response": {
+            "status": "OPEN"
+        }
+    },
+    {
+        "query": "Internet issue",
+        "response": {
+            "ticket_id": 4364,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "Wifi installation required",
+        "response": {
+            "ticket_id": 7771,
+            "status": "OPEN",
+            "assigned_team": "FIELD_TEAM",
+            "priority": "MEDIUM"
+        }
+    },
+    {
+        "query": "Internet is down from last 5 hours",
+        "response": {
+            "ticket_id": 6400,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "Internet is down",
+        "response": {
+            "ticket_id": 9143,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "test",
+        "response": {
+            "status": "OPEN"
+        }
+    },
+    {
+        "query": "Internet issue",
+        "response": {
+            "ticket_id": 7590,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "Wifi installation required",
+        "response": {
+            "ticket_id": 4223,
+            "status": "OPEN",
+            "assigned_team": "FIELD_TEAM",
+            "priority": "MEDIUM"
+        }
+    },
+    {
+        "query": "Internet is down",
+        "response": {
+            "ticket_id": 8826,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "test",
+        "response": {
+            "status": "OPEN"
+        }
+    },
+    {
+        "query": "Internet issue",
+        "response": {
+            "ticket_id": 4591,
+            "status": "OPEN",
+            "assigned_team": "L1_SUPPORT",
+            "priority": "HIGH"
+        }
+    },
+    {
+        "query": "Wifi installation required",
+        "response": {
+            "ticket_id": 6490,
+            "status": "OPEN",
+            "assigned_team": "FIELD_TEAM",
+            "priority": "MEDIUM"
+        }
+    }
+]

@@ -1,5 +1,5 @@
 from langchain_openai import ChatOpenAI
-from data.mock_data import SERVICEABLE_AREAS, NETWORK_OUTAGES
+from ..data.mock_data import SERVICEABLE_AREAS, NETWORK_OUTAGES
 import json
 
 class RootCauseAgent:
